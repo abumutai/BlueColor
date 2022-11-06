@@ -74,59 +74,48 @@
                                     </li> --}}
                                     <li><a href="/">Home</a></li>
                                     <li class=" has-children">
-                                        <a href="#">for candidates</a>
+                                        <a href="#">Categories</a>
                                         <ul>
                                             <li class="has-inner-child">
-                                                <li><a href="{{route('home.jobs')}}">Browse Jobs</a></li>
+                                                <li><a href="{{route('home.jobs')}}">Plumbing</a></li>
                                             </li>
                                             <li class="has-inner-child">
-                                                <a href="#">candidate dashboard</a>
-                                                <ul>
-                                                    <li><a href="{{route('home.candidate.dashboard')}}">Candidate dashboard</a></li>
-                                                    <li><a href="{{route('home.candidate.profile')}}">Candidate profile</a></li>
-                                                    {{-- <li><a href="message.html">messages</a></li> --}}
-                                                    <li><a href="{{route('home.candidate.change_password')}}">change password</a></li>
-                                                </ul>
+                                                <li><a href="{{route('home.jobs')}}">Mechanic</a></li>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="has-children">
-                                        <a href="#">for employers</a>
-                                        <ul>
-                                            <li><a href="{{route('home.employer.candidates')}}">Browse Candidates</a></li>
-                                            <li><a href="{{route('home.employer.profile')}}">Public Profile</a></li>
-                                            <li><a href="{{route('home.employer.dashboard.post')}}">Post A job</a></li>
-                                            <li class="has-inner-child">
-                                                <a href="#">employer dashboard</a>
-                                                <ul>
-                                                    <li><a href="{{route('home.employer.dashboard.index')}}">employer dashboard</a></li>
-                                                    <li><a href="{{route('home.employer.dashboard.profile')}}">edit profile</a></li>
-                                           
-                                                    <li><a href="{{route('home.employer.dashboard.applications')}}">manage applications</a></li>
-                                                    <li><a href="{{route('home.employer.dashboard.change_password')}}">change password</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                   
                                     <li><a href="{{route('home.about')}}">About us</a></li>
                                     <li><a href="{{route('home.contact')}}">contact us</a></li>
-                                    <li class="has-children">
-                                        <a href="#"> sign up</a>
-                                        <ul>
-                                            <li><a href="{{route('register')}}">Candidate</a></li>
-                                            <li><a href="{{route('register')}}">Employer</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="{{route('home.contact')}}">Blog</a></li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="header-right-menu">
-                            <ul>
-                                <li><a href="{{route('home.jobs')}}" class="post-jobs">jobs</a></li>
-                                <li><a href="{{route('login')}}"><i class="fa fa-lock"></i>login</a></li>
-                            </ul>
+                        <div class="header-menu">
+                            <nav id="navigation">
+                                <ul id="jobguru_navigation">
+                                    @guest
+                                    <li><a href="{{route('users.login')}}"> <i class="fa fa-lock"></i> Login</a></li>
+                                    <li class=" has-children">
+                                        <a href="#"> <i class="fa fa-user"></i> Register</a>
+                                        <ul>
+                                            <li class="has-inner-child">
+                                                <li><a href="{{route('professional.register')}}">Professional</a></li>
+                                            </li>
+                                            <li class="has-inner-child">
+                                                <li><a href="{{route('user.register')}}">User</a></li>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    @endguest
+                                  @auth
+                                  <li><button form="logout" type="submit" class="post-jobs border-0 text-white"><i class="fa fa-sign-out"></i> Logout</button></li>
+                                  <form id="logout" action="{{route('logout')}}" method="post">@csrf</form>
+                                  @endauth
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>

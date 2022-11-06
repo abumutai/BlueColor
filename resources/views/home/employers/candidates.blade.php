@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Candidates</title>
+    <title>Professionals</title>
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="breadcromb-box">
-                            <h3>Browse Candidates</h3>
+                            <h3>Browse Professionals</h3>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                             <ul>
                                 <li><a href="#">home</a></li>
                                 <li><a href="#">employers</a></li>
-                                <li class="active-breadcromb"><a href="#">Browse Candidates</a></li>
+                                <li class="active-breadcromb"><a href="#">Browse Professionals</a></li>
                             </ul>
                         </div>
                     </div>

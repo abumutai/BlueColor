@@ -20,8 +20,8 @@
                   <div class="row">
                      <div class="col-md-12">
                         <div class="banner-search">
-                           <h2>Hire experts.</h2>
-                           <h4>We have 1542 job offers for you! </h4>
+                           <h2>Hire Professionals</h2>
+                           <h4>We have 100 professionals on our platform! </h4>
                            <form>
                               <div class="banner-form-box">
                                  <div class="banner-form-input">
@@ -177,9 +177,9 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="inner-hire-left">
-                        <h3>Hire an employee</h3>
-                        <p>placerat congue dui rhoncus sem et blandit .et consectetur Fusce nec nunc lobortis lorem ultrices facilisis. Ut dapibus placerat blandit nunc.congue dui rhoncus sem et blandit .et consectetur Fusce nec nunc lobortis lorem ultrices facilisis. Ut dapibus placerat blandi </p>
-                        <a href="#" class="jobguru-btn-3">sign up as company</a>
+                        <h3>Hire a professional</h3>
+                        <p>Explore The Greatest of Our Services. You Won’t Be Disappointed</p>
+                        <a href="#" class="jobguru-btn-3">sign up as user</a>
                      </div>
                   </div>
                </div>
@@ -194,8 +194,8 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="site-heading">
-                        <h2>Companies & <span>job offers</span></h2>
-                        <p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes</p>
+                        <h2>Top Services <span></span></h2>
+                        <p>It's easy. Simply book a service that you need completed and receive booking from our providers within minutes</p>
                      </div>
                   </div>
                </div>
@@ -224,7 +224,7 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">jamulai - consulting & finance Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.9</p>
@@ -243,7 +243,7 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">Buildo - construction Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.2</p>
@@ -262,7 +262,7 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">palms - school & college.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.6</p>
@@ -281,7 +281,7 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">finance - consulting & business Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.9</p>
@@ -306,9 +306,9 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">Regional Sales Manager</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-clock-o"></i>2 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : $1200-$2000</p>
+                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 1200-Kshs 2000</p>
                                           <p class="rating-company">4.1</p>
                                        </div>
                                        <div class="company-list-btn">
@@ -325,9 +325,9 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">C Developer (Senior) C .Net</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-clock-o"></i>2 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : $800-$1200</p>
+                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 800-Kshs 1200</p>
                                           <p class="rating-company">3.1</p>
                                        </div>
                                        <div class="company-list-btn">
@@ -344,9 +344,9 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">Asst. Teacher</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-clock-o"></i>3 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : $800-$1200</p>
+                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 800-Kshs 1200</p>
                                           <p class="rating-company">4.3</p>
                                        </div>
                                        <div class="company-list-btn">
@@ -363,9 +363,9 @@
                                        </div>
                                        <div class="company-list-details">
                                           <h3><a href="#">civil engineer</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Chicago, Michigan</p>
+                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
                                           <p class="open-icon"><i class="fa fa-clock-o"></i>30 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : $2000-$2500</p>
+                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 2000-Kshs 2500</p>
                                           <p class="rating-company">3.7</p>
                                        </div>
                                        <div class="company-list-btn">
@@ -397,7 +397,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="video-container">
-                        <h2>Hire experts freelancers today for <br> any job, any time.</h2>
+                        <h2>Hire experts service providers today for <br> any job, any time.</h2>
                         <div class="video-btn">
                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=k-R6AFn9-ek">
                            <i class="fa fa-play"></i>

@@ -50,7 +50,7 @@
               <div class="col-lg-9 col-md-8">
                  <div class="dashboard-right">
                     <div class="welcome-dashboard">
-                       <h3>Welcome Candidate !</h3>
+                       <h3>Welcome Professional !</h3>
                     </div>
                     <div class="row">
                        <div class="col-lg-4 col-md-6">

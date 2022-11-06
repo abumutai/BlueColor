@@ -25,7 +25,7 @@
                         <div class="breadcromb-box-pagin">
                             <ul>
                                 <li><a href="#">home</a></li>
-                                <li><a href="#">candidates</a></li>
+                                <li><a href="#">Professionals</a></li>
                                 <li class="active-breadcromb"><a href="#">browse jobs</a></li>
                             </ul>
                         </div>
