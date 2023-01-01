@@ -14,4 +14,9 @@ class ProfessionalController extends Controller
     {
         return view('home.professionals.dashboard.index');
     }
+    public function services()
+    {
+
+        return view('home.professionals.dashboard.services');
+    }
 }

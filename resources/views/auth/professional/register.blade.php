@@ -45,31 +45,50 @@
                         <div class="login-title">
                             <h3>Sign up as a Professional</h3>
                         </div>
-                        <form action="{{ route('users.login') }}" method="POST">
+                        <form action="{{ route('users.register') }}" method="POST">
                             @csrf
-                            <input type="hidden" name="user_type" value="2">
-                            <div class="single-login-field form-group">
-                                <label for="">What Service do you Provide</label>
-                                <select class="form-control" name="" id="">
-                                    <option value="">Plumbing</option>
-                                    <option value="">Mechanic</option>
-                                </select>
-                            </div>
+                            <input type="hidden" name="user_type" value="1">
                             <div class="single-login-field">
-                                <input type="text" placeholder="Full Name">
+                                <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}">
                             </div>
+                            @error('name')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="single-login-field">
-                                <input type="email" placeholder="Email Addresss">
+                                <input type="email" placeholder="Email Address" name="email" value="{{ old('email') }}"
+                                    autocomplete="off">
                             </div>
+                            @error('name')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="single-login-field">
-                                <input type="text" placeholder="Phone Number">
+                                <input type="text" placeholder="Phone Number" name="phone_number" value="{{ old('phone_number') }}">
                             </div>
+                            @error('phone_number')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="single-login-field">
-                                <input type="password" placeholder="Choose Password">
+                                <input type="password" placeholder="Choose Password" name="password">
                             </div>
+                            @error('password')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="single-login-field">
-                                <input type="password" placeholder="Confirm Password">
+                                <input type="password" placeholder="Confirm Password" name="password_confirmation">
                             </div>
+                            @error('password')
+                                <div class="alert alert-danger">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="remember-row single-login-field clearfix">
                                 <p class="checkbox remember">
                                     <input class="checkbox-spin" type="checkbox" id="Freelance">
@@ -81,7 +100,7 @@
                             </div>
                         </form>
                         <div class="dont_have">
-                            <a href="{{ route('login') }}">Already have an account?</a>
+                            <a href="{{ route('users.login') }}">Already have an account?</a>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,10 @@
 @extends('layouts.auth')
 
+@section('title')
+    <title>Admin Login - Blue Color</title>
+@endsection
 @section('content')
-    <div class="col-12">
+    {{-- <div class="col-12">
         <div class="row justify-content-center no-gutters">
             <div class="col-lg-5 col-md-5 col-12">
                 <div class="bg-white rounded30 shadow-lg">
@@ -70,5 +73,40 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
+    @if (session('exception'))
+        <div class="alert alert-danger">
+            {{ session('exception') }}
+        </div>
+    @endif
+    <h4 class="text-center mb-4 text-white">Admin Login</h4>
+    <form action="{{ route('admin.login.submit') }}" method="POST">
+        @csrf
+        <div class="form-group">
+            <label class="mb-1 text-white"><strong>Email</strong></label>
+            <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+            @error('email')
+                <div class="alert alert-danger">
+                    {{ $message }}
+                </div>
+            @enderror
+        </div>
+        <div class="form-group">
+            <label class="mb-1 text-white"><strong>Password</strong></label>
+            <input type="password" class="form-control" name="password">
+            @error('password')
+                <div class="alert alert-danger">
+                    {{ $message }}
+                </div>
+            @enderror
+        </div>
+        <div class="form-row d-flex justify-content-between mt-4 mb-2">
+            <div class="form-group">
+                <a class="text-white" href="">Forgot Password?</a>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn bg-white text-primary btn-block">Sign Me In</button>
+        </div>
+    </form>
 @endsection

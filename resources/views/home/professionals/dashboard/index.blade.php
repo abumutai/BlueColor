@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Employer Dashboard</title>
+    <title>Professional Dashboard</title>
 @endsection
 
 @section('content')
@@ -25,7 +25,7 @@
                     <div class="breadcromb-box-pagin">
                        <ul>
                           <li><a href="#">home</a></li>
-                          <li><a href="#">employer</a></li>
+                          <li><a href="#">professional</a></li>
                           <li class="active-breadcromb"><a href="#">Dashboard</a></li>
                        </ul>
                     </div>
@@ -47,17 +47,17 @@
               <div class="col-md-8 col-lg-9">
                  <div class="dashboard-right">
                     <div class="welcome-dashboard">
-                       <h3>Welcome <span>Employer !</span></h3>
+                       <h3>Welcome <span>{{Auth::user()->name}} !</span></h3>
                     </div>
                     <div class="row">
                        <div class="col-lg-4 col-md-6">
                           <div class="widget_card_page grid_flex widget_bg_blue">
                              <div class="widget-icon">
-                                <i class="fa fa-gavel"></i>
+                                <i class="fa fa-calendar"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>1426</h4>
-                                <h2>new Bids</h2>
+                                <h4>100</h4>
+                                <h2>Total Bookings</h2>
                              </div>
                           </div>
                        </div>
@@ -67,8 +67,8 @@
                                 <i class="fa fa-usd"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>Khs 12,000</h4>
-                                <h2> Payment</h2>
+                                <h4>Kshs 12,000</h4>
+                                <h2>Total Earnings</h2>
                              </div>
                           </div>
                        </div>
@@ -79,7 +79,7 @@
                              </div>
                              <div class="widget-page-text">
                                 <h4>127</h4>
-                                <h2>Candidates</h2>
+                                <h2>Customers Served</h2>
                              </div>
                           </div>
                        </div>

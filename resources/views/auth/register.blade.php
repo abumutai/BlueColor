@@ -70,7 +70,7 @@
                        </div>
                     </form>
                     <div class="dont_have">
-                       <a href="{{route('login')}}">Already have an account?</a>
+                       <a href="{{route('users.login')}}">Already have an account?</a>
                     </div>
                  </div>
               </div>

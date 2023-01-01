@@ -31,11 +31,6 @@ class AuthController extends Controller
             'password' => 'required|min:8|confirmed',
             'phone_number' => 'numeric|required|unique:users,phone|min:9'
         ]);
-        if ($request->user_type == 1) {
-            $request->validate([
-                'category' => 'required'
-            ]);
-        }
         try {
             $user = User::create([
                 'name' => $request->name,
@@ -43,7 +38,6 @@ class AuthController extends Controller
                 'password' => Hash::make($request->password),
                 'phone' => $request->phone_number,
                 'user_type' => $request->user_type,
-                'category' => $request->category
             ]);
             if ($user) {
                 Auth::login($user);
