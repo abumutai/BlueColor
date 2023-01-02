@@ -111,8 +111,10 @@
                                     </li>
                                     @endguest
                                   @auth
+                                  <li><a href="{{Auth::user()->user_type== 1 ? route('professionals.dashboard') : route('users.dashboard')}}" class="btn btn-success btn-rounded post-jobs bg-transparent text-success mr-2"> <i class="fa fa-home"></i> Dashboard</a></li>
                                   <li><button form="logout" type="submit" class="post-jobs border-0 text-white"><i class="fa fa-sign-out"></i> Logout</button></li>
                                   <form id="logout" action="{{route('logout')}}" method="post">@csrf</form>
+                         
                                   @endauth
                                 </ul>
                             </nav>

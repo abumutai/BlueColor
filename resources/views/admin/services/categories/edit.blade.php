@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    <title>Add Service Category</title>
+    <title>Edit Service Category</title>
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
         <div class="container-fluid">
             <div class="row page-titles">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Add Service Category</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Edit Service Category</a></li>
                 </ol>
             </div>
             <!-- row -->
@@ -26,12 +26,13 @@
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
-                                <form action="{{ route('service-categories.store') }}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('service-categories.update',$serviceCategory->id) }}" method="POST" enctype="multipart/form-data">
                                     @csrf
+                                    @method('PUT')
                                     <div class="mb-3">
                                         <label for="">Category Name</label>
                                         <input type="text" class="form-control input-default " placeholder="Name"
-                                            name="name" value="{{old('name')}}">
+                                            name="name" value="{{old('name') ?? $serviceCategory->title}}">
                                         @error('name')
                                             <div class="alert alert-danger">
                                                 {{ $message }}
@@ -47,7 +48,7 @@
                                             </div>
                                         @enderror
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Add</button>
+                                    <button type="submit" class="btn btn-primary">Update</button>
                                 </form>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    <title>Add Service Category</title>
+    <title>Add County</title>
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
         <div class="container-fluid">
             <div class="row page-titles">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Add Service Category</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">Add County</a></li>
                 </ol>
             </div>
             <!-- row -->
@@ -22,15 +22,15 @@
                 <div class="col-xl-9 col-lg-9">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Category Details</h4>
+                            <h4 class="card-title">County Details</h4>
                         </div>
                         <div class="card-body">
                             <div class="basic-form">
-                                <form action="{{ route('service-categories.store') }}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('counties.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="mb-3">
-                                        <label for="">Category Name</label>
-                                        <input type="text" class="form-control input-default " placeholder="Name"
+                                        <label for="">County Name</label>
+                                        <input type="text" class="form-control input-default " placeholder="County Name"
                                             name="name" value="{{old('name')}}">
                                         @error('name')
                                             <div class="alert alert-danger">
@@ -39,9 +39,10 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3">
-                                        <label for="">Category Image</label>
-                                        <input type="file" class="form-file-input form-control" name="image">
-                                        @error('image')
+                                        <label for="">County Number</label>
+                                        <input type="text" class="form-control input-default " placeholder="County Number"
+                                            name="county_number" value="{{old('county_number')}}">
+                                        @error('county_number')
                                             <div class="alert alert-danger">
                                                 {{ $message }}
                                             </div>

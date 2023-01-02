@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ServiceSubCategory;
+use Exception;
 use Illuminate\Http\Request;
+use App\Models\ServiceCategory;
+use App\Models\ServiceSubCategory;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceSubCategoryController extends Controller
 {
@@ -14,7 +18,8 @@ class ServiceSubCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $subcategories = ServiceSubCategory::all();
+        return view('admin.services.subcategories.index', compact('subcategories'));
     }
 
     /**
@@ -24,7 +29,8 @@ class ServiceSubCategoryController extends Controller
      */
     public function create()
     {
-        //
+        $categories = ServiceCategory::all();
+        return view('admin.services.subcategories.create', compact('categories'));
     }
 
     /**
@@ -35,7 +41,26 @@ class ServiceSubCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|unique:service_categories,title',
+            'image' => 'required|mimes:png,jpeg,svg,jpg',
+            'category' => 'required'
+        ]);
+        try {
+            $image = $request->image;
+            $image_name = time() . '.' . $image->extension();
+            $image->move(public_path('service/subcategories/images'), $image_name);
+            ServiceSubCategory::create([
+                'title' => $request->name,
+                'image' => $image_name,
+                'user_id' => Auth::user()->id,
+                'category_id' => $request->category
+            ]);
+            return redirect()->route('service-subcategories.index')->with('success', 'Service SubCategory added successfully.');
+        } catch (Exception $e) {
+            Log::critical($e);
+            return redirect()->back()->with('exception', 'An unexpected error occurred. Please try again.');
+        }
     }
 
     /**
@@ -55,9 +80,11 @@ class ServiceSubCategoryController extends Controller
      * @param  \App\Models\ServiceSubCategory  $serviceSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(ServiceSubCategory $serviceSubCategory)
+    public function edit($id)
     {
-        //
+        $serviceSubCategory = ServiceSubCategory::findOrFail($id);
+        $categories = ServiceCategory::all();
+        return view('admin.services.subcategories.edit', compact('categories', 'serviceSubCategory'));
     }
 
     /**
@@ -67,9 +94,31 @@ class ServiceSubCategoryController extends Controller
      * @param  \App\Models\ServiceSubCategory  $serviceSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ServiceSubCategory $serviceSubCategory)
+    public function update(Request $request, $id)
     {
-        //
+        $serviceSubCategory = ServiceSubCategory::findOrFail($id);
+        $request->validate([
+            'name' => 'required|unique:service_categories,title,'.$serviceSubCategory->id,
+            'image' => 'nullable|mimes:png,jpeg,svg,jpg',
+            'category' => 'required'
+        ]);
+        try {
+            $image_name = $serviceSubCategory->image;
+            if ($request->has('image')) {
+                $image = $request->image;
+                $image_name = time() . '.' . $image->extension();
+                $image->move(public_path('service/subcategories/images'), $image_name);
+            }
+            $serviceSubCategory->update([
+                'title' => $request->name,
+                'image' => $image_name,
+                'category_id' => $request->category
+            ]);
+            return redirect()->route('service-subcategories.index')->with('success', 'Service SubCategory updated successfully.');
+        } catch (Exception $e) {
+            Log::critical($e);
+            return redirect()->back()->with('exception', 'An unexpected error occurred. Please try again.');
+        }
     }
 
     /**
@@ -78,8 +127,10 @@ class ServiceSubCategoryController extends Controller
      * @param  \App\Models\ServiceSubCategory  $serviceSubCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ServiceSubCategory $serviceSubCategory)
+    public function destroy($id)
     {
-        //
+        $serviceSubCategory = ServiceSubCategory::findOrFail($id);
+        $serviceSubCategory->delete();
+        return redirect()->route('service-subcategories.index')->with('success','Service Category deleted successfully');
     }
 }

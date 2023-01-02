@@ -34,7 +34,8 @@
         rel="stylesheet" type="text/css" />
 
     <link href="{{ asset('dashboard/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-	<link href="{{asset('dashboard/assets/vendor/datatables/css/jquery.dataTables.min.css')}}" rel="stylesheet" type="text/css"/>	
+    <link href="{{ asset('dashboard/assets/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet"
+        type="text/css" />
 
 </head>
 
@@ -187,7 +188,7 @@
         <div class="deznav">
             <div class="deznav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li><a href="{{route('home')}}" class="ai-icon" aria-expanded="false">
+                    <li><a href="{{ route('home') }}" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-381-networking"></i>
                             <span class="nav-text">Dashboard</span>
                         </a>
@@ -198,12 +199,12 @@
                             <span class="nav-text">Services</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="app_profile.html">Add Service</a></li>
-                            <li><a href="app_profile.html">All Services</a></li>
+                            <li><a href="{{route('admin-services.create')}}">Add Service</a></li>
+                            <li><a href="{{route('admin-services.index')}}">All Services</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Categories</a>
                                 <ul aria-expanded="false">
-                                    <li><a href="{{route('service-categories.index')}}">Categories</a></li>
-                                    <li><a href="{{route('service-categories.index')}}">Subcategories</a></li>
+                                    <li><a href="{{ route('service-categories.index') }}">Categories</a></li>
+                                    <li><a href="{{ route('service-subcategories.index') }}">Subcategories</a></li>
                                 </ul>
                             </li>
                             <li><a href="app_calendar.html">Reviews</a></li>
@@ -225,6 +226,16 @@
                             <li><a href="morris.html">Add Blog</a></li>
                             <li><a href="chartjs.html">Categories</a></li>
                             <li><a href="chartist.html">Comments</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
+                            aria-expanded="false">
+                            <i class="fa fa-map"></i>
+                            <span class="nav-text">Locations</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{route('counties.index')}}">Counties</a></li>
+                            <li><a href="{{route('cities.index')}}">Cities</a></li>
                         </ul>
                     </li>
                     <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
@@ -256,16 +267,16 @@
                 </ul>
 
                 <div class="copyright">
-                    <p><strong>Blue Color</strong> © {{now()->year}} All Rights Reserved</p>
-                    
+                    <p><strong>Blue Color</strong> © {{ now()->year }} All Rights Reserved</p>
+
                 </div>
             </div>
         </div>
         @yield('content')
         <div class="footer">
             <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="https://techxers.co.ke/"
-                        target="_blank">Techxers Limited</a> {{now()->year}}</p>
+                <p>Copyright © Designed &amp; Developed by <a href="https://techxers.co.ke/" target="_blank">Techxers
+                        Limited</a> {{ now()->year }}</p>
             </div>
         </div>
         <!--**********************************
@@ -285,8 +296,8 @@
     <script src="{{ asset('dashboard/assets/js/deznav-init.js') }}"></script>
     {{-- <script src="{{ asset('dashboard/assets/js/demo.js') }}"></script>
     <script src="{{ asset('dashboard/assets/js/styleSwitcher.js') }}"></script> --}}
-	<script src="{{asset('dashboard/assets/vendor/datatables/js/jquery.dataTables.min.js')}}"></script>
-	<script src="{{asset('dashboard/assets/js/plugins-init/datatables.init.js')}}"></script>
+    <script src="{{ asset('dashboard/assets/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('dashboard/assets/js/plugins-init/datatables.init.js') }}"></script>
 
 
     <script>

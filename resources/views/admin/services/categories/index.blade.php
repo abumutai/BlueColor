@@ -7,12 +7,18 @@
 @section('content')
     <div class="content-body">
         <div class="container-fluid">
-            <div class="row">  
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+            <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Service Categories</h4>
-                            <a href="{{route('service-categories.create')}}" class="btn btn-primary pull-right"><i class="fa fa-plus"> Add Category</i></a>
+                            <a href="{{ route('service-categories.create') }}" class="btn btn-primary pull-right"><i
+                                    class="fa fa-plus"> Add Category</i></a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -28,12 +34,21 @@
                                     <tbody>
                                         @foreach ($categories as $item)
                                             <tr>
-                                                <td>{{$item->id}}</td>
-                                                <td>{{$item->name}}</td>
-                                                <td>{{$item->user->name}}</td>
+                                                <td>{{ $item->id }}</td>
+                                                <td>{{ $item->title }}</td>
+                                                <td>{{ $item->user->name }}</td>
                                                 <td>
-                                                    <a href="" class="btn btn-primary"><i class="fa fa-edit"></i> Edit</a>
-                                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                                                    <a href="{{ route('service-categories.edit', $item->id) }}"
+                                                        class="btn btn-primary"><i class="fa fa-edit"></i>
+                                                        Edit</a>
+                                                    <button form="delete{{ $item->id }}" type="submit"
+                                                        class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button>
+                                                    <form id="delete{{ $item->id }}"
+                                                        action="{{ route('service-categories.destroy', $item->id) }}"
+                                                        method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach

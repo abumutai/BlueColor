@@ -6,12 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ServiceCategory extends Model
+class County extends Model
 {
     use HasFactory,SoftDeletes;
     protected $fillable = [
-        'title',
-        'image',
+        'name',
+        'county_number',
         'user_id'
     ];
     public function user()

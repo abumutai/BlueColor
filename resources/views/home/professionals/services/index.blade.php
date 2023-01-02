@@ -47,15 +47,21 @@
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-8 mx-auto">
+
                     <div class="dashboard-right ">
                         <div class="manage-jobs">
                             <div class="manage-jobs-heading">
                                 <p> <span class="h2"> My Services </span>
-                                    <a href="{{route('services.create')}}" class="btn btn-success pull-right">
+                                    <a href="{{ route('services.create') }}" class="btn btn-success pull-right">
                                         <i class="fa fa-plus"></i> Add Service
                                     </a>
                                 </p>
                             </div>
+                            @if (session('success'))
+                                <div class="alert alert-success mt-5">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <div class="single-manage-jobs table-responsive">
                                 <table class="table">
                                     <thead>
@@ -63,128 +69,46 @@
                                             <th>Service</th>
                                             <th>Category </th>
                                             <th>Subcategory </th>
+                                            <th>Amount </th>
                                             <th>Status</th>
                                             <th>action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Frontend React Developer</a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Full Stack PHP Developer </a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="expired">Expired</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Node.js Developer</a></td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Frontend React Developer</a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Full Stack PHP Developer </a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="expired">Expired</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Node.js Developer</a></td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Frontend React Developer</a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Full Stack PHP Developer </a>
-                                            </td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="expired">Expired</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="manage-jobs-title"><a href="#">Node.js Developer</a></td>
-                                            <td class="table-date">28 June, 2018</td>
-                                            <td class="table-date">10 July, 2018</td>
-                                            <td><span class="pending">Pending Approval</span></td>
-                                            <td class="action">
-                                                <a href="#" class="action-edit"><i
-                                                        class="fa fa-pencil-square-o"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
-                                            </td>
-                                        </tr>
+                                        @forelse ($services as $item)
+                                            <tr>
+                                                <td class="manage-jobs-title"><a href="#">{{ $item->title }}</a>
+                                                </td>
+                                                <td class="table-date">{{ $item->category->title }}</td>
+                                                <td class="table-date">{{ $item->subcategory->title }}</td>
+                                                <td class="table-date">Kshs {{ $item->amount }}</td>
+                                                <td><span
+                                                        class="{{ $item->status == 0 ? 'pending' : 'expired' }}">{{ $item->status == 0 ? 'Active' : 'InActive' }}</span>
+                                                </td>
+                                                <td class="action">
+                                                    <a href="{{ route('services.edit', $item->id) }}" class="action-edit"><i
+                                                            class="fa fa-pencil-square-o"></i></a>
+                                                    <button form="delete{{ $item->id }}" type="submit"
+                                                        class="action-delete border-0"><i class="fa fa-trash-o"></i></button>
+                                                    <form id="delete{{ $item->id }}"
+                                                        action="{{ route('services.destroy', $item->id) }}" method="post">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        @empty
+                                            <tr>
+                                                <td class="manage-jobs-title" colspan="6"><a href="#">No Services
+                                                        Added</a>
+                                                </td>
+                                            </tr>
+                                        @endforelse
+
                                     </tbody>
                                 </table>
                                 <div class="pagination-box-row">
-                                    <p>Page 1 of 6</p>
-                                    <ul class="pagination">
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li>...</li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                                    </ul>
+                                    {{ $services->links() }}
                                 </div>
                             </div>
                         </div>

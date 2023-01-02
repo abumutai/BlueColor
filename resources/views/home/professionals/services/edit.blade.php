@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Add Service - Blue Color</title>
+    <title>Edit Service - Blue Color</title>
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="breadcromb-box">
-                            <h3>Add Service</h3>
+                            <h3>Edit Service</h3>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                             <ul>
                                 <li><a href="#">home</a></li>
                                 <li><a href="#">Professional</a></li>
-                                <li class="active-breadcromb"><a href="#">Add Service</a></li>
+                                <li class="active-breadcromb"><a href="#">Edit Service</a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,14 +60,15 @@
                                 </div>
                             @endif
                             <div class="new-job-submission">
-                                <form action="{{ route('services.store') }}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('services.update',$service->id) }}" method="POST" enctype="multipart/form-data">
                                     @csrf
+                                    @method('PUT')
                                     <div class="resume-box">
                                         <div class="single-resume-feild feild-flex-2">
                                             <div class="single-input">
                                                 <label for="j_title">Title:</label>
                                                 <input type="text" placeholder="e.g Plumbing" name="title"
-                                                    value="{{ old('title') }}">
+                                                    value="{{ old('title') ?? $service->title }}">
                                             </div>
                                             @error('title')
                                                 <div class="alert alert-danger">
@@ -77,7 +78,7 @@
                                             <div class="single-input">
                                                 <label for="Location">Charges:</label>
                                                 <input type="text" placeholder="Service Charges" name="charges"
-                                                    value="{{ old('charges') }}">
+                                                    value="{{ old('charges') ?? $service->amount}}">
                                             </div>
                                             @error('charges')
                                                 <div class="alert alert-danger">
@@ -92,7 +93,7 @@
                                                     <option value=''>Select Category</option>
                                                     @foreach ($categories as $item)
                                                         <option value="{{ $item->id }}"
-                                                            {{ old('category') == $item->id ? 'selected' : '' }}>
+                                                            {{ $service->category_id == $item->id ? 'selected' : '' }}>
                                                             {{ $item->title }}</option>
                                                     @endforeach
                                                 </select>
@@ -108,7 +109,7 @@
                                                     <option value=''>Select Subcategory</option>
                                                     @foreach ($subcategories as $item)
                                                         <option value="{{ $item->id }}"
-                                                            {{ old('subcategory') == $item->id ? 'selected' : '' }}>
+                                                            {{ $service->sub_category_id == $item->id ? 'selected' : '' }}>
                                                             {{ $item->title }}</option>
                                                     @endforeach
                                                 </select>
@@ -126,7 +127,7 @@
                                                     <option value=''>Select County</option>
                                                     @foreach ($counties as $item)
                                                         <option value="{{ $item->id }}"
-                                                            {{ old('county') == $item->id ? 'selected' : '' }}>
+                                                            {{ $service->county_id == $item->id ? 'selected' : '' }}>
                                                             {{ $item->name }}</option>
                                                     @endforeach
                                                 </select>
@@ -142,7 +143,7 @@
                                                     <option value=''>Select City</option>
                                                     @foreach ($cities as $item)
                                                         <option value="{{ $item->id }}"
-                                                            {{ old('city') == $item->id ? 'selected' : '' }}>
+                                                            {{ $service->city_id == $item->id ? 'selected' : '' }}>
                                                             {{ $item->name }}</option>
                                                     @endforeach
                                                 </select>
@@ -158,7 +159,7 @@
                                             <div class="single-input">
                                                 <label for="mn_salary">Address:</label>
                                                 <input type="text" placeholder="e.g. Nairobi CBD" id="mn_salary"
-                                                    name="address" value="{{ old('address') }}">
+                                                    name="address" value="{{ old('address') ?? $service->address }}">
                                             </div>
                                             @error('address')
                                                 <div class="alert alert-danger">
@@ -169,7 +170,7 @@
                                         <div class="single-resume-feild">
                                             <div class="single-input">
                                                 <label for="j_desc">Service Description:</label>
-                                                <textarea id="j_desc" name="description">{{ old('description') }}</textarea>
+                                                <textarea id="j_desc" name="description">{{ old('description') ?? $service->description }}</textarea>
                                             </div>
                                             @error('description')
                                                 <div class="alert alert-danger">

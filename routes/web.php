@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CityController;
+use App\Http\Controllers\CountyController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfessionalController;
@@ -84,4 +87,9 @@ Route::controller(UserController::class)->group(function () {
 Route::prefix('admin')->group(function(){
     Route::resource('service-categories',ServiceCategoryController::class);
     Route::resource('service-subcategories',ServiceSubCategoryController::class);
+
+    Route::resource('counties',CountyController::class);
+    Route::resource('cities',CityController::class);
+
+    Route::resource('admin-services',AdminServiceController::class);
 });
