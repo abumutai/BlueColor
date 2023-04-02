@@ -111,11 +111,11 @@ p {
 	font-weight: 500;
 	background: transparent;
 	border-radius: 4px;
-	border: 1px solid #25AD60;
+	border: 1px solid #40189D;
 }
 
 .jobguru-btn:hover {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff
 }
 
@@ -142,7 +142,7 @@ p {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 }
 
@@ -329,7 +329,7 @@ li {
 
 .slicknav_arrow {
 	float: right;
-	color: #25ad60
+	color: #40189D
 }
 
 .slicknav_nav a:hover {
@@ -342,7 +342,7 @@ li {
 
 .slicknav_nav a:hover,
 .slicknav_nav .slicknav_row:hover {
-	background: #25ad60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff
 }
 
@@ -364,7 +364,7 @@ li {
 
 .slicknav_nav {
 	background: #fff none repeat scroll 0 0;
-	border-top: 1px solid #25ad60;
+	border-top: 1px solid #40189D;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.19);
     position: relative;
     top: 20px
@@ -445,7 +445,7 @@ li {
 
 .pagination li.active a,
 .pagination li a:hover {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff
 }
 
@@ -505,11 +505,11 @@ li {
 }
 
 .breadcromb-box-pagin ul li.active-breadcromb a {
-	color: #25AD60
+	color: #40189D
 }
 
 .breadcromb-box-pagin ul li a:hover {
-	color: #25AD60;
+	color: #40189D;
 	text-decoration: underline
 }
 
@@ -538,8 +538,8 @@ li {
 }
 
 .btntoTop {
-	background-color: #25ad60;
-	border: 2px solid #25ad60;
+	background-color: #40189D;
+	border: 2px solid #40189D;
 	border-radius: 50%;
 	bottom: 30px;
 	cursor: pointer;
@@ -816,7 +816,7 @@ header,
 .post-jobs {
 	display: block;
 	padding: 10px 30px !important;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 40px;
 }
 
@@ -989,7 +989,7 @@ header,
 	width: 100%;
 	border: medium none;
 	cursor: pointer;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff;
 	border-radius: 0px 4px 4px 0px;
 	-webkit-transition: all 0.4s ease 0s;
@@ -1045,7 +1045,7 @@ header,
 
 .banner-slider .owl-dots .owl-dot.active span,
 .banner-slider .owl-dots .owl-dot:hover span {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 }
 
 
@@ -1126,7 +1126,7 @@ header,
 
 .category-holder-icon i {
 	font-size: 30px;
-	color: #25AD60;
+	color: #40189D;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s
 }
@@ -1176,7 +1176,7 @@ header,
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	z-index: -1;
 }
 
@@ -1243,7 +1243,7 @@ header,
 	color: #fff;
 	font-family: 'Montserrat', sans-serif !important;
 	font-weight: 500 !important;
-	background: #25AD60 none repeat scroll 0 0 !important;
+	background: #40189D none repeat scroll 0 0 !important;
 }
 .jobguru-job-tab-area .nav-pills .nav-link:hover{
     color: #111
@@ -1372,13 +1372,13 @@ header,
 .company-list-btn a.jobguru-btn {
 	background: transparent none repeat scroll 0 0;
 	color: #111;
-	border: 1px solid #25AD60;
+	border: 1px solid #40189D;
 }
 
 .company-list-btn a.jobguru-btn:hover {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff;
-	border: 1px solid #25AD60;
+	border: 1px solid #40189D;
 }
 
 
@@ -1438,7 +1438,7 @@ header,
 	background: #fff none repeat scroll 0 0;
 	border: 2px solid #fff;
 	border-radius: 50%;
-	color: #25AD60;
+	color: #40189D;
 	display: inline-block;
 	font-size: 20px;
 	height: 50px;
@@ -1452,8 +1452,8 @@ header,
 }
 
 .popup-youtube:hover i {
-	background: #25AD60 none repeat scroll 0 0;
-	border: 2px solid #25AD60;
+	background: #40189D none repeat scroll 0 0;
+	border: 2px solid #40189D;
 	color: #fff;
 }
 
@@ -1494,7 +1494,7 @@ position: absolute;
 }
 
 .works-box-icon i {
-	color: #25AD60;
+	color: #40189D;
 	font-size: 45px;
 	margin-bottom: 20px;
 }
@@ -1641,7 +1641,7 @@ position: absolute;
 	height: 22%;
 	text-align: center;
 	color: #fff;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	font-weight: 600;
 	font-family: "Montserrat", sans-serif;
 	font-size: 17px;
@@ -1819,7 +1819,7 @@ ul.footer-social li a>i {
 }
 
 .single-footer-widget p>i {
-	color: #25AD60;
+	color: #40189D;
 	margin-right: 5px;
 }
 
@@ -1971,7 +1971,7 @@ ul.footer-social li a>i {
 	border: medium none;
 	padding: 15px 20px;
 	border-radius: 4px;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s
@@ -2041,7 +2041,7 @@ ul.footer-social li a>i {
 }
 
 .top-job-company-image h3 a:hover {
-	color: #25AD60
+	color: #40189D
 }
 
 .top-job-company-desc {
@@ -2145,7 +2145,7 @@ ul.footer-social li a>i {
 }
 
 .happy-freelancer-info p {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	display: inline-block;
 	line-height: normal;
 	color: #fff;
@@ -2182,7 +2182,7 @@ ul.footer-social li a>i {
 
 .happy-freelancer-slider .owl-dots .owl-dot.active span,
 .happy-freelancer-slider .owl-dots .owl-dot:hover span {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 }
 
 
@@ -2286,7 +2286,7 @@ ul.footer-social li a>i {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	z-index: -1;
 }
 
@@ -2455,9 +2455,9 @@ ul.footer-social li a>i {
 	height: 100%;
 	width: 20%;
 	cursor: pointer;
-	border: 1px solid #25AD60;
+	border: 1px solid #40189D;
 	color: #fff;
-	background: #25AD60;
+	background: #40189D;
 	border-radius: 0px 4px 4px 0px;
 	-webkit-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s
@@ -2501,7 +2501,7 @@ label.styled:before {
 	transition: all 0.4s ease;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	border-right: 2px solid #25AD60;
+	border-right: 2px solid #40189D;
 }
 
 label.styled:hover:before {
@@ -2518,7 +2518,7 @@ input.styled {
 /* :: CHECKED :: */
 
 input.styled:checked~label.styled {
-	background-color: #25AD60;
+	background-color: #40189D;
 	-webkit-animation: throw 0.5s linear;
 	animation: throw 0.5s linear;
 	color: #fff;
@@ -2616,7 +2616,7 @@ input.styled:checked~label.styled:before {
 
 .available-count h4 a:hover {
 	text-decoration: none;
-	color: #25AD60;
+	color: #40189D;
 }
 
 
@@ -2706,7 +2706,7 @@ input.styled:checked~label.styled:before {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-	background-color: #25AD60;
+	background-color: #40189D;
 	color: #fff;
 }
 
@@ -2738,8 +2738,8 @@ input.styled:checked~label.styled:before {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-	background-color: #25AD60;
-	border: 1px solid #25AD60;
+	background-color: #40189D;
+	border: 1px solid #40189D;
 	margin-top: 7px;
 	color: #fff;
 }
@@ -2840,8 +2840,8 @@ input.styled:checked~label.styled:before {
 .checkbox-spin:checked+label span:before {
 	-webkit-transform: rotateZ(180deg);
 	transform: rotateZ(180deg);
-	background: #25AD60;
-	border: 1px solid #25AD60;
+	background: #40189D;
+	border: 1px solid #40189D;
 }
 
 .form-group.form-radio {
@@ -2873,13 +2873,13 @@ input.styled:checked~label.styled:before {
 }
 
 .form-group.form-radio input[type="radio"]:checked+.control-label:before {
-	background-color: #25AD60;
+	background-color: #40189D;
 	box-shadow: inset 0 0 0 4px #f4f4f4;
 }
 
 .form-group.form-radio input[type="radio"]:focus+.control-label:before {
 	outline: none;
-	border-color: #25AD60;
+	border-color: #40189D;
 }
 
 .form-group.form-radio input[type="radio"]:disabled {
@@ -2937,14 +2937,14 @@ input.styled:checked~label.styled:before {
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
 	border-radius: 50%;
-	border: 2px solid #25AD60;
+	border: 2px solid #40189D;
 	background: #fff;
 	cursor: pointer;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
 	border-radius: 50%;
-	border: 2px solid #25AD60;
+	border: 2px solid #40189D;
 	background: #fff;
 	cursor: pointer;
 	height: 17px;
@@ -3004,11 +3004,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .in.checkbox label:hover {
-	color: #25AD60
+	color: #40189D
 }
 
 .checkbox-spin:checked+label {
-	color: #25AD60
+	color: #40189D
 }
 
 
@@ -3057,7 +3057,7 @@ html .ui-button.ui-state-disabled:active {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
 	color: #fff;
-	background-color: #25AD60;
+	background-color: #40189D;
 	border-color: #dee2e6 #dee2e6 #fff;
 }
 
@@ -3081,7 +3081,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .single-browse-company h3 a:hover {
-	color: #25AD60
+	color: #40189D
 }
 
 .single-browse-company ul {
@@ -3181,7 +3181,7 @@ html .ui-button.ui-state-disabled:active {
 	cursor: pointer;
 	display: inline-block;
 	padding: 7px 18px;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	margin: 20px 0;
 }
@@ -3312,7 +3312,7 @@ html .ui-button.ui-state-disabled:active {
 
 .datepicker td.active,
 .datepicker td span.active {
-	background: #25AD60 none repeat scroll 0 0 !important
+	background: #40189D none repeat scroll 0 0 !important
 }
 
 .product-upload {
@@ -3371,7 +3371,7 @@ html .ui-button.ui-state-disabled:active {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	cursor: pointer
 }
@@ -3419,12 +3419,12 @@ html .ui-button.ui-state-disabled:active {
 
 .dashboard-menu li a:hover,
 .dashboard-menu li.active a {
-	color: #25AD60
+	color: #40189D
 }
 
 .dashboard-menu li.active a i,
 .dashboard-menu li a:hover i {
-	color: #25AD60
+	color: #40189D
 }
 
 .grid_flex {
@@ -3449,7 +3449,7 @@ html .ui-button.ui-state-disabled:active {
 .widget-icon {
 	border: 1px solid #ddd;
 	border-radius: 5px;
-	color: #25AD60;
+	color: #40189D;
 	font-size: 25px;
 	height: 55px;
 	line-height: 55px;
@@ -3474,7 +3474,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .widget-page-text h2 {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 5px;
 	color: #fff;
 	display: inline-block;
@@ -3495,7 +3495,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .welcome-dashboard h3 span {
-	color: #25AD60
+	color: #40189D
 }
 
 .single-input label .twitter {
@@ -3674,7 +3674,7 @@ html .ui-button.ui-state-disabled:active {
 
 .nav.navbar-nav.pull-right.custom-menu>li>a {
 	font-size: 18px;
-	color: #25AD60;
+	color: #40189D;
 }
 
 .nav.navbar-nav.pull-right.custom-menu>li>ul {
@@ -3815,7 +3815,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .message-text-area button {
-	color: #25AD60;
+	color: #40189D;
 	background: transparent none repeat scroll 0 0;
 	border: medium none;
 	font-size: 19px;
@@ -3989,7 +3989,7 @@ td span {
 	-ms-flex-line-pack: center;
 	align-content: center;
 	padding: 20px;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	margin-right: 15px;
 	border-radius: 5px;
 	position: relative
@@ -4054,7 +4054,7 @@ td span {
 }
 
 .single-balance-box h2 {
-	color: #25AD60;
+	color: #40189D;
 	margin-top: 15px;
 	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
@@ -4074,7 +4074,7 @@ td span {
 }
 
 .widget_chart_analytics_right>p {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 5px;
 	color: #fff;
 	margin-bottom: 10px;
@@ -4099,7 +4099,7 @@ td span {
 }
 
 .single-balance-box h3 span a {
-	color: #25AD60;
+	color: #40189D;
 }
 
 .change-pass form p {
@@ -4131,7 +4131,7 @@ td span {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	cursor: pointer;
 	margin-top: 20px
@@ -4362,7 +4362,7 @@ td span {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	margin-left: 10px;
 	border: 1px solid #25ad6a
@@ -4385,7 +4385,7 @@ td span {
 }
 
 .single-candidate-action a.bookmarks:hover {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border: 1px solid #25ad6a
 }
 
@@ -4525,7 +4525,7 @@ ul.job-overview>li>h4 {
 }
 
 .progress-bar-info {
-	background-color: #25AD60;
+	background-color: #40189D;
 }
 
 .progress-bar {
@@ -4564,7 +4564,7 @@ ul.job-overview>li>h4 {
 
 .single-candidate-widget-2 ul li i {
 	margin-right: 5px;
-	color: #25AD60
+	color: #40189D
 }
 
 .single-candidate-widget-2 ul li {
@@ -4593,7 +4593,7 @@ ul.job-overview>li>h4 {
 }
 
 .single-candidate-widget-2>ul.candidate-social>li>a:hover>i {
-	color: #25AD60
+	color: #40189D
 }
 
 .single-candidate-widget-2 p {
@@ -4631,7 +4631,7 @@ ul.job-overview>li>h4 {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	cursor: pointer;
 	width: 100%
@@ -4657,7 +4657,7 @@ ul.company-desc-list li i {
 	height: 20px;
 	line-height: 22px;
 	text-align: center;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff;
 	margin-right: 5px;
 	border-radius: 50%;
@@ -4708,7 +4708,7 @@ ul.company-desc-list li i {
 
 .job-details-meta p i {
 	margin-right: 5px;
-	color: #25AD60
+	color: #40189D
 }
 
 
@@ -4971,7 +4971,7 @@ ul.company-desc-list li i {
 
 .blog-categories li a:hover,
 .blog-thumb-info-content h4 a:hover {
-	color: #25AD60
+	color: #40189D
 }
 
 .Tags-catagory>li {
@@ -4990,7 +4990,7 @@ ul.company-desc-list li i {
 }
 
 .Tags-catagory>li>a:hover {
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff
 }
 
@@ -5053,7 +5053,7 @@ ul.company-desc-list li i {
 }
 
 .single-blog-item-date>h4 {
-	background: #25ad60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 5px;
 	color: #fff;
 	display: inline-block;
@@ -5081,7 +5081,7 @@ ul.company-desc-list li i {
 
 .blog-title p i {
 	margin-right: 5px;
-	color: #25ad60
+	color: #40189D
 }
 
 .blog-title p:last-child {
@@ -5103,7 +5103,7 @@ ul.company-desc-list li i {
 }
 
 .blog-title>h3 a:hover {
-	color: #25ad60
+	color: #40189D
 }
 
 .blog-content {
@@ -5164,7 +5164,7 @@ ul.company-desc-list li i {
 }
 
 .blog-content blockquote .author-name {
-	color: #25ad60;
+	color: #40189D;
 	font-size: 18px;
 	font-weight: 500;
 	position: relative;
@@ -5229,7 +5229,7 @@ ul.company-desc-list li i {
 }
 
 .reply {
-	color: #25ad60;
+	color: #40189D;
 	font-weight: 600
 }
 
@@ -5265,7 +5265,7 @@ ul.company-desc-list li i {
 }
 
 .leave-comment form button {
-	background: #25ad60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 4px;
 	color: #fff;
@@ -5331,7 +5331,7 @@ ul.company-desc-list li i {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	cursor: pointer;
 }
@@ -5355,7 +5355,7 @@ ul.company-desc-list li i {
 
 .lost-pass a:hover,
 .dont_have a:hover {
-	color: #25ad60
+	color: #40189D
 }
 
 .dont_have {
@@ -5387,7 +5387,7 @@ ul.company-desc-list li i {
 }
 
 .contact-details p i {
-	color: #25ad60;
+	color: #40189D;
 	margin-right: 5px
 }
 
@@ -5443,9 +5443,9 @@ ul.company-desc-list li i {
 }
 
 .social-links-contact ul li a:hover {
-	background: #25ad60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	color: #fff;
-	border: 1px solid #25ad60
+	border: 1px solid #40189D
 }
 
 .contact-right form {
@@ -5483,7 +5483,7 @@ ul.company-desc-list li i {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	background: #25AD60 none repeat scroll 0 0;
+	background: #40189D none repeat scroll 0 0;
 	border-radius: 4px;
 	cursor: pointer;
 }

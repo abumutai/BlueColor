@@ -7,7 +7,13 @@
 @section('content')
     <div class="content-body">
         <!-- row -->
+
         <div class="container-fluid">
+            @if (session('succes'))
+                <div class="alert alert-success">
+                    {{session('success')}}
+                </div>
+            @endif
             <div class="d-flex align-items-center flex-wrap search-job bg-white rounded py-3 px-3 mb-4">
 
                 <div class="col-lg-9 d-md-flex">
@@ -71,7 +77,7 @@
                                     class="d-flex flex-wrap search-row bg-white py-3 mb-3 rounded justify-content-between align-items-center">
                                     <div class="d-flex col-xl-4 col-xxl-3 col-lg-4 col-sm-6 align-items-center">
 
-                                        <img src="{{ asset('service/images/' . $item->image) }}" class="me-3" alt=""
+                                        <img src="{{ asset($item->image) }}" class="me-3" alt=""
                                             width="80" height="80">
                                         <div>
                                             <h2 class="title"><a href="profile.html"
@@ -128,8 +134,7 @@
                                     </div>
                                     <div
                                         class="col-xl-2 col-xxl-3 text-xl-end text-lg-start text-sm-end col-lg-12 col-sm-6 mt-xl-0 mt-3">
-                                        <a href="profile.html" class="btn btn-sm btn-outline-primary rounded me-2">Apply
-                                            Now</a>
+                                        <a href="profile.html" class="btn btn-sm btn-outline-primary rounded me-2">Details</a>
                                         <label class="like-btn mb-2 mt-3 mt-sm-0">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
@@ -154,7 +159,7 @@
                                                 <h4 class="fs-20 text-black">{{$item->title}}</h4>
                                             </div>
                                            
-                                            <img src="{{asset('service/images/'.$item->image)}}" alt="" class="ms-3" width="60" height="60">
+                                            <img src="{{asset($item->image)}}" alt="" class="ms-3" width="200">
                                         </div>
                                         <span class="text-primary font-w500 d-block mb-3">Kshs {{$item->amount}}</span>
                                         <p class="fs-14">{{$item->description}}</p>
