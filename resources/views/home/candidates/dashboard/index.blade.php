@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Candidate Dashboard</title>
+    <title>User Dashboard</title>
 @endsection
 
 @section('content')
@@ -26,7 +26,7 @@
                     <div class="breadcromb-box-pagin">
                        <ul>
                           <li><a href="#">home</a></li>
-                          <li><a href="#">Worker</a></li>
+                          <li><a href="#">User</a></li>
                           <li class="active-breadcromb"><a href="#">Dashboard</a></li>
                        </ul>
                     </div>
@@ -50,7 +50,7 @@
               <div class="col-lg-9 col-md-8">
                  <div class="dashboard-right">
                     <div class="welcome-dashboard">
-                       <h3>Welcome Professional !</h3>
+                       <h3>Welcome {{Auth::user()->name}} !</h3>
                     </div>
                     <div class="row">
                        <div class="col-lg-4 col-md-6">
@@ -59,8 +59,8 @@
                                 <i class="fa fa-gavel"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>1426</h4>
-                                <h2>New Jobs</h2>
+                                <h4>142</h4>
+                                <h2>Professionals</h2>
                              </div>
                           </div>
                        </div>
@@ -70,8 +70,8 @@
                                 <i class="fa fa-usd"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>Kshs 4,000</h4>
-                                <h2>Earnings</h2>
+                                <h4>40</h4>
+                                <h2>Services</h2>
                              </div>
                           </div>
                        </div>
@@ -81,8 +81,8 @@
                                 <i class="fa fa-users"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>45</h4>
-                                <h2>Jobs Applied</h2>
+                                <h4>4</h4>
+                                <h2>Bookings</h2>
                              </div>
                           </div>
                        </div>

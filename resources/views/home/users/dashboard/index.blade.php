@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Candidate Dashboard</title>
+    <title>User Dashboard</title>
 @endsection
 
 @section('content')
@@ -59,8 +59,8 @@
                                 <i class="fa fa-gavel"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>1426</h4>
-                                <h2>New Jobs</h2>
+                                <h4>142</h4>
+                                <h2>Professionals</h2>
                              </div>
                           </div>
                        </div>
@@ -70,8 +70,8 @@
                                 <i class="fa fa-usd"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>Kshs 4,000</h4>
-                                <h2>Earnings</h2>
+                                <h4>40</h4>
+                                <h2>Services</h2>
                              </div>
                           </div>
                        </div>
@@ -81,8 +81,8 @@
                                 <i class="fa fa-users"></i>
                              </div>
                              <div class="widget-page-text">
-                                <h4>45</h4>
-                                <h2>Jobs Applied</h2>
+                                <h4>4</h4>
+                                <h2>Bookings Made</h2>
                              </div>
                           </div>
                        </div>

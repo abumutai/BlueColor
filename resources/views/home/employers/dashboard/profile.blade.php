@@ -13,7 +13,7 @@
               <div class="row">
                  <div class="col-md-12">
                     <div class="breadcromb-box">
-                       <h3>Employer Profile</h3>
+                       <h3>Professional Profile</h3>
                     </div>
                  </div>
               </div>
@@ -26,8 +26,8 @@
                     <div class="breadcromb-box-pagin">
                        <ul>
                           <li><a href="#">home</a></li>
-                          <li><a href="#">employer</a></li>
-                          <li class="active-breadcromb"><a href="#">Employer Profile</a></li>
+                          <li><a href="#">Professional</a></li>
+                          <li class="active-breadcromb"><a href="#">Professional Profile</a></li>
                        </ul>
                     </div>
                  </div>
@@ -50,8 +50,8 @@
                     <div class="candidate-profile">
                        <div class="candidate-single-profile-info">
                           {{-- <div class="single-resume-feild resume-avatar">
-                             <div class="resume-image Employer-resume-image">
-                                <img src="assets/img/Employer_page_logo.jpg" alt="resume avatar">
+                             <div class="resume-image Professional-resume-image">
+                                <img src="assets/img/Professional_page_logo.jpg" alt="resume avatar">
                                 <div class="resume-avatar-hover">
                                    <div class="resume-avatar-upload">
                                       <p>
@@ -67,14 +67,14 @@
                        <div class="candidate-single-profile-info">
                           <form>
                              <div class="resume-box">
-                                <h3>Employer profile</h3>
+                                <h3>Professional profile</h3>
                                 <div class="single-resume-feild feild-flex-2">
                                    <div class="single-input">
-                                      <label for="name">Employer Name:</label>
-                                      <input type="text" value="Jennie Wilson" id="name">
+                                      <label for="name">Professional Name:</label>
+                                      <input type="text" value="{{Auth::user()->name}}" id="name">
                                    </div>
                                    <div class="single-input">
-                                      <label for="c_cat">Employer category:</label>
+                                      <label for="c_cat">Professional category:</label>
                                       <select id="c_cat">
                                          <option selected>Choose Category</option>
                                          <option>IT Service</option>
@@ -96,18 +96,18 @@
                                 </div> --}}
                                 <div class="single-resume-feild feild-flex-2">
                                    <div class="single-input">
-                                      <label for="Location">Country:</label>
-                                      <input type="text" value="London" id="Location">
+                                      <label for="Location">County:</label>
+                                      <input type="text" value="County" id="Location">
                                    </div>
                                    <div class="single-input">
                                       <label for="City">City:</label>
-                                      <input type="text" value="Westminster" id="City">
+                                      <input type="text" value="Nairobi" id="City">
                                    </div>
                                 </div>
                                 <div class="single-resume-feild ">
                                    <div class="single-input">
                                       <label for="Bio">Description:</label>
-                                      <textarea id="Bio">Maecenas is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
+                                      <textarea id="Bio"></textarea>
                                    </div>
                                 </div>
                              </div>
@@ -116,28 +116,15 @@
                                 <div class="single-resume-feild feild-flex-2">
                                    <div class="single-input">
                                       <label for="Phone">Phone:</label>
-                                      <input type="text" value="+88-123-4467-9" id="Phone">
+                                      <input type="text" value="{{Auth::user()->phone}}" id="Phone">
                                    </div>
                                    <div class="single-input">
                                       <label for="Email">Email:</label>
-                                      <input type="text" value="demo@mail.com" id="Email">
+                                      <input type="text" value="{{Auth::user()->email}}" id="Email">
                                    </div>
                                 </div>
                                 <div class="single-resume-feild feild-flex-2">
-                                   <div class="single-input">
-                                      <label for="contry">contry:</label>
-                                      <select id="contry">
-                                         <option>Arab Amirats</option>
-                                         <option>America</option>
-                                         <option>Netherlands</option>
-                                         <option>Russia</option>
-                                         <option selected>Bangladesh</option>
-                                         <option>India</option>
-                                         <option>Pakistan</option>
-                                         <option>Brazil</option>
-                                         <option>Africa</option>
-                                      </select>
-                                   </div>
+                                 
                                    <div class="single-input">
                                       <label for="City2">City:</label>
                                       <input type="text" value="Nairobi" id="City2">

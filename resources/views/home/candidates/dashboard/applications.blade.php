@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Manage Applications</title>
+    <title>My Bookings</title>
 @endsection
 
 @section('content')
@@ -25,8 +25,8 @@
                     <div class="breadcromb-box-pagin">
                        <ul>
                           <li><a href="#">home</a></li>
-                          <li><a href="#">Professionals</a></li>
-                          <li class="active-breadcromb"><a href="#">Manage Jobs</a></li>
+                          <li><a href="#">users</a></li>
+                          <li class="active-breadcromb"><a href="#">My Bookings</a></li>
                        </ul>
                     </div>
                  </div>
@@ -35,8 +35,6 @@
         </div>
      </section>
      <!-- Breadcromb Area End -->
-      
-      
      <!-- Candidate Dashboard Area Start -->
      <section class="candidate-dashboard-area section_70">
         <div class="container">
@@ -50,7 +48,7 @@
                  <div class="dashboard-right ">
                     <div class="manage-jobs">
                        <div class="manage-jobs-heading">
-                          <h3>My Job Listing</h3>
+                          <h3>My Bookings</h3>
                        </div>
                        <div class="single-manage-jobs table-responsive">
                           <table class="table">
@@ -63,7 +61,7 @@
                                    <th>action</th>
                                 </tr>
                              </thead>
-                             <tbody>
+                             {{-- <tbody>
                                 <tr>
                                    <td class="manage-jobs-title"><a href="#">Frontend React Developer</a></td>
                                    <td class="table-date">28 June, 2022</td>
@@ -154,9 +152,9 @@
                                       <a href="#" class="action-delete"><i class="fa fa-trash-o"></i></a>
                                    </td>
                                 </tr>
-                             </tbody>
+                             </tbody> --}}
                           </table>
-                          <div class="pagination-box-row">
+                          {{-- <div class="pagination-box-row">
                              <p>Page 1 of 6</p>
                              <ul class="pagination">
                                 <li class="active"><a href="#">1</a></li>
@@ -166,7 +164,7 @@
                                 <li><a href="#">6</a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
                              </ul>
-                          </div>
+                          </div> --}}
                        </div>
                     </div>
                  </div>

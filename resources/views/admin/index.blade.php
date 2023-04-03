@@ -44,7 +44,7 @@
 								</svg>
 							</span>
 							<div class="media-body text-end feature-icon-text">
-								<p class="fs-18 text-white mb-2">Service Providers</p>
+								<p class="fs-18 text-white mb-2">Professionals</p>
 								<span class="fs-48 text-white font-w600">75</span>
 							</div>
 						</div>
@@ -118,7 +118,7 @@
 					</div>
 					<div class="col-xl-12">
 						<h4 class="fs-20 text-black mb-sm-4 mt-sm-0 mt-2  mb-2">Recent Bookings</h4>
-						<div class="testimonial-one owl-carousel">
+						{{-- <div class="testimonial-one owl-carousel">
 							<div class="items">
 								<div class="card shadow">
 									<div class="card-body">	
@@ -191,7 +191,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 					</div>
 				</div>
 			</div>
@@ -204,7 +204,7 @@
 						</svg>
 					</a>
 				</div>
-				<div class="testimonial-two owl-carousel">
+				{{-- <div class="testimonial-two owl-carousel">
 					<div class="items">
 						<div class="card">
 							<div class="card-body">
@@ -295,7 +295,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</div>

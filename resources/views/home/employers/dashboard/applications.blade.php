@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Manage Applications</title>
+    <title>Manage Bookings</title>
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
               <div class="row">
                  <div class="col-md-12">
                     <div class="breadcromb-box">
-                       <h3>Manage Applications</h3>
+                       <h3>Manage Bookings</h3>
                     </div>
                  </div>
               </div>
@@ -26,7 +26,7 @@
                        <ul>
                           <li><a href="#">home</a></li>
                           <li><a href="#">employer</a></li>
-                          <li class="active-breadcromb"><a href="#">Manage Applications</a></li>
+                          <li class="active-breadcromb"><a href="#">Manage Bookings</a></li>
                        </ul>
                     </div>
                  </div>
@@ -48,10 +48,10 @@
                  <div class="dashboard-right">
                     <div class="manage-jobs manage-candidates">
                        <div class="manage-jobs-heading">
-                          <h3>Manage Applications</h3>
+                          <h3>Manage Bookings</h3>
                        </div>
                     </div>
-                    <div class="candidate-list-page">
+                    {{-- <div class="candidate-list-page">
                        <div class="single-candidate-list">
                           <div class="main-comment">
                              <div class="candidate-image">
@@ -310,7 +310,7 @@
                           </ul>
                        </div>
                        <!-- End Pagination -->
-                    </div>
+                    </div> --}}
                  </div>
               </div>
            </div>

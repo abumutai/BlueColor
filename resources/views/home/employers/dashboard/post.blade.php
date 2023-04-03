@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Post A Job</title>
+    <title>My Subscription</title>
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
               <div class="row">
                  <div class="col-md-12">
                     <div class="breadcromb-box">
-                       <h3>Post A job</h3>
+                       <h3>My Subscription</h3>
                     </div>
                  </div>
               </div>
@@ -25,8 +25,8 @@
                     <div class="breadcromb-box-pagin">
                        <ul>
                           <li><a href="#">home</a></li>
-                          <li><a href="#">Employeer</a></li>
-                          <li class="active-breadcromb"><a href="#">Post A job</a></li>
+                          <li><a href="#">Professional</a></li>
+                          <li class="active-breadcromb"><a href="#">My Subscription</a></li>
                        </ul>
                     </div>
                  </div>
@@ -50,9 +50,9 @@
                  <div class="dashboard-right">
                     <div class="earnings-page-box manage-jobs">
                        <div class="manage-jobs-heading">
-                          <h3>Post A new job</h3>
+                          <h3>My Subscription</h3>
                        </div>
-                       <div class="new-job-submission">
+                       {{-- <div class="new-job-submission">
                           <form>
                              <div class="resume-box">
                                 <div class="single-resume-feild feild-flex-2">
@@ -150,7 +150,7 @@
                                 <button type="submit">Post Job</button>
                              </div>
                           </form>
-                       </div>
+                       </div> --}}
                     </div>
                  </div>
               </div>
