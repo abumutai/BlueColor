@@ -1,7 +1,7 @@
 @extends('layouts.home')
 
 @section('title')
-    <title>Browse Jobs</title>
+    <title>Browse Professionals</title>
 @endsection
 
 @section('content')
@@ -12,7 +12,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="breadcromb-box">
-                            <h3>Browse Jobs</h3>
+                            <h3>Browse Professionals</h3>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                             <ul>
                                 <li><a href="#">home</a></li>
                                 <li><a href="#">Professionals</a></li>
-                                <li class="active-breadcromb"><a href="#">browse jobs</a></li>
+                                <li class="active-breadcromb"><a href="#">browse professionals</a></li>
                             </ul>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-md-10 col-lg-9 mx-auto">
-                    <div class="job-grid-right">
+                    {{-- <div class="job-grid-right">
                         <div class="browse-job-head-option">
                             <div class="job-browse-search">
                                 <form>
@@ -426,7 +426,7 @@
                             </ul>
                         </div>
                         <!-- end pagination -->
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

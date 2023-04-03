@@ -25,20 +25,17 @@
                            <form>
                               <div class="banner-form-box">
                                  <div class="banner-form-input">
-                                    <input type="text" placeholder="Job Title, Keywords, or Phrase">
+                                    <input type="text" placeholder="Service Title, Keywords, or Phrase">
                                  </div>
                                  <div class="banner-form-input">
-                                    <input type="text" placeholder="City, State or ZIP">
+                                    <input type="text" placeholder="City or County">
                                  </div>
                                  <div class="banner-form-input">
                                     <select class="banner-select">
-                                       <option selected>Select Sector</option>
-                                       <option value="1">Design & multimedia</option>
-                                       <option value="2">Programming & tech</option>
-                                       <option value="3">Accounting/finance</option>
-                                       <option value="4">content writting</option>
-                                       <option value="5">Training</option>
-                                       <option value="6">Digital Marketing</option>
+                                       <option selected>Select Category</option>
+                                       <option value="1">Plumbing</option>
+                                       <option value="2">Car wash</option>
+                                       <option value="3">Cleaning</option>
                                     </select>
                                  </div>
                                  <div class="banner-form-input">
@@ -61,8 +58,8 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="site-heading">
-                        <h2>top Trending <span>Categories</span></h2>
-                        <p>A better career is out there. We'll help you find it. We're your first step to becoming everything you want to be.</p>
+                        <h2>top Trending <span>Service Categories</span></h2>
+                        <p>An expert is out there. We'll help you find them. We're your first step to find the services you need.</p>
                      </div>
                   </div>
                </div>
@@ -73,7 +70,7 @@
                            <i class="fa fa-briefcase"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Accounting & Finance</h3>
+                           <h3>Office Cleaning</h3>
                         </div>
                         <img src="assets/img/account_cat.jpg" alt="category" />
                      </a>
@@ -84,7 +81,7 @@
                            <i class="fa fa-pencil-square-o"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Design, Art & Multimedia</h3>
+                           <h3>Clerical Work</h3>
                         </div>
                         <img src="assets/img/design_art.jpg" alt="category" />
                      </a>
@@ -95,7 +92,7 @@
                            <i class="fa fa-cutlery"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Restaurant / Food Service</h3>
+                           <h3>Cooking</h3>
                         </div>
                         <img src="assets/img/restaurent.jpg" alt="category" />
                      </a>
@@ -106,7 +103,7 @@
                            <i class="fa fa-code"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Programming & Tech</h3>
+                           <h3>Computer</h3>
                         </div>
                         <img src="assets/img/programing_cat.jpg" alt="category" />
                      </a>
@@ -119,7 +116,7 @@
                            <i class="fa fa-bar-chart"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Data Science & Analitycs</h3>
+                           <h3>Maths Tutor</h3>
                         </div>
                         <img src="assets/img/data_cat.png" alt="category" />
                      </a>
@@ -141,7 +138,7 @@
                            <i class="fa fa-graduation-cap"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>Education / Training</h3>
+                           <h3>Home Schooling</h3>
                         </div>
                         <img src="assets/img/edu_cat.jpg" alt="category" />
                      </a>
@@ -152,7 +149,7 @@
                            <i class="fa fa-bullhorn"></i>
                         </div>
                         <div class="category-holder-text">
-                           <h3>sales / marketing</h3>
+                           <h3>sales</h3>
                         </div>
                         <img src="assets/img/sale_cat.png" alt="category" />
                      </a>
@@ -178,7 +175,7 @@
                   <div class="col-md-12">
                      <div class="inner-hire-left">
                         <h3>Hire a professional</h3>
-                        <p>Explore The Greatest of Our Services. You Won’t Be Disappointed</p>
+                        <p>Explore The Greatest of Our professionals. You Won’t Be Disappointed</p>
                         <a href="#" class="jobguru-btn-3">sign up as user</a>
                      </div>
                   </div>
@@ -194,7 +191,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="site-heading">
-                        <h2>Top Services <span></span></h2>
+                        <h2>Top Service Providers <span></span></h2>
                         <p>It's easy. Simply book a service that you need completed and receive booking from our providers within minutes</p>
                      </div>
                   </div>
@@ -225,7 +222,7 @@
                                        <div class="company-list-details">
                                           <h3><a href="#">jamulai - consulting & finance Co.</a></h3>
                                           <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
+                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.9</p>
                                        </div>
@@ -244,7 +241,7 @@
                                        <div class="company-list-details">
                                           <h3><a href="#">Buildo - construction Co.</a></h3>
                                           <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
+                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.2</p>
                                        </div>
@@ -263,7 +260,7 @@
                                        <div class="company-list-details">
                                           <h3><a href="#">palms - school & college.</a></h3>
                                           <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
+                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.6</p>
                                        </div>
@@ -282,7 +279,7 @@
                                        <div class="company-list-details">
                                           <h3><a href="#">finance - consulting & business Co.</a></h3>
                                           <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 open position</p>
+                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
                                           <p class="varify"><i class="fa fa-check"></i>Verified</p>
                                           <p class="rating-company">4.9</p>
                                        </div>
@@ -382,7 +379,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="load-more">
-                        <a href="#" class="jobguru-btn">browse more listing</a>
+                        <a href="#" class="jobguru-btn">browse more professionals</a>
                      </div>
                   </div>
                </div>
@@ -419,7 +416,7 @@
                   <div class="col-md-12">
                      <div class="site-heading">
                         <h2>how it <span>works</span></h2>
-                        <p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes</p>
+                        <p>It's easy. Simply search for services you need completed and book within minutes</p>
                      </div>
                   </div>
                </div>
@@ -442,7 +439,7 @@
                            <i class="fa fa-gavel"></i>
                         </div>
                         <div class="works-box-text">
-                           <p>post job</p>
+                           <p>find expert</p>
                         </div>
                      </div>
                   </div>
@@ -452,7 +449,7 @@
                            <i class="fa fa-thumbs-up"></i>
                         </div>
                         <div class="works-box-text">
-                           <p>choose expert</p>
+                           <p>book</p>
                         </div>
                      </div>
                   </div>
@@ -469,7 +466,7 @@
                   <div class="col-md-12">
                      <div class="site-heading">
                         <h2>Recent From <span>Blog</span></h2>
-                        <p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes</p>
+                        <p>Learn more about BlueColor</p>
                      </div>
                   </div>
                </div>
@@ -482,7 +479,7 @@
                               <p><span> 21</span> July</p>
                            </div>
                            <div class="blog-text">
-                              <h3>If you're having trouble coming up with</h3>
+                              <h3>How to become a BlueColor Professional</h3>
                            </div>
                         </div>
                      </a>
@@ -495,7 +492,7 @@
                               <p><span> 21</span> July</p>
                            </div>
                            <div class="blog-text">
-                              <h3>details about Apple’s new iPad Pro models</h3>
+                              <h3>Learn how to earn a living from BlueColor</h3>
                            </div>
                         </div>
                      </a>
@@ -508,7 +505,7 @@
                               <p><span> 21</span> July</p>
                            </div>
                            <div class="blog-text">
-                              <h3>what are those Steps to be a Successful developer</h3>
+                              <h3>what are those Steps to be a Successful provider</h3>
                            </div>
                         </div>
                      </a>
