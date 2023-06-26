@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.layout')
 
 @section('title')
     <title>Home</title>
@@ -6,512 +6,1030 @@
 
 @section('content')
          <!-- Banner Area Start -->
-         <section class="jobguru-banner-area">
-            <div class="banner-slider owl-carousel">
-               <div class="banner-single-slider slider-item-1">
-                  <div class="slider-offset"></div>
-               </div>
-               <div class="banner-single-slider slider-item-2">
-                  <div class="slider-offset"></div>
-               </div>
-            </div>
-            <div class="banner-text">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="banner-search">
-                           <h2>Hire Professionals</h2>
-                           <h4>We have 100 professionals on our platform! </h4>
-                           <form>
-                              <div class="banner-form-box">
-                                 <div class="banner-form-input">
-                                    <input type="text" placeholder="Service Title, Keywords, or Phrase">
-                                 </div>
-                                 <div class="banner-form-input">
-                                    <input type="text" placeholder="City or County">
-                                 </div>
-                                 <div class="banner-form-input">
-                                    <select class="banner-select">
-                                       <option selected>Select Category</option>
-                                       <option value="1">Plumbing</option>
-                                       <option value="2">Car wash</option>
-                                       <option value="3">Cleaning</option>
-                                    </select>
-                                 </div>
-                                 <div class="banner-form-input">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Banner Area End -->
-          
-          
-         <!-- Categories Area Start -->
-         <section class="jobguru-categories-area section_70">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="site-heading">
-                        <h2>top Trending <span>Service Categories</span></h2>
-                        <p>An expert is out there. We'll help you find them. We're your first step to find the services you need.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder account_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-briefcase"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Office Cleaning</h3>
-                        </div>
-                        <img src="assets/img/account_cat.jpg" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder design_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-pencil-square-o"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Clerical Work</h3>
-                        </div>
-                        <img src="assets/img/design_art.jpg" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder restaurant_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-cutlery"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Cooking</h3>
-                        </div>
-                        <img src="assets/img/restaurent.jpg" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder tech_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-code"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Computer</h3>
-                        </div>
-                        <img src="assets/img/programing_cat.jpg" alt="category" />
-                     </a>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder data_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-bar-chart"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Maths Tutor</h3>
-                        </div>
-                        <img src="assets/img/data_cat.png" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder writing_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-pencil"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Writing / Translations</h3>
-                        </div>
-                        <img src="assets/img/writing_cat.jpg" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder edu_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-graduation-cap"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>Home Schooling</h3>
-                        </div>
-                        <img src="assets/img/edu_cat.jpg" alt="category" />
-                     </a>
-                  </div>
-                  <div class="col-lg-3 col-md-6 col-sm-6">
-                     <a href="#" class="single-category-holder sale_cat">
-                        <div class="category-holder-icon">
-                           <i class="fa fa-bullhorn"></i>
-                        </div>
-                        <div class="category-holder-text">
-                           <h3>sales</h3>
-                        </div>
-                        <img src="assets/img/sale_cat.png" alt="category" />
-                     </a>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="load-more">
-                        <a href="#" class="jobguru-btn">browse all categories</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Categories Area End -->
-          
-          
-         <!-- Inner Hire Area Start -->
-         <section class="jobguru-inner-hire-area section_100">
-            <div class="hire_circle"></div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="inner-hire-left">
-                        <h3>Hire a professional</h3>
-                        <p>Explore The Greatest of Our professionals. You Won’t Be Disappointed</p>
-                        <a href="#" class="jobguru-btn-3">sign up as user</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Inner Hire Area End -->
-          
-          
-         <!-- Job Tab Area Start -->
-         <section class="jobguru-job-tab-area section_70">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="site-heading">
-                        <h2>Top Service Providers <span></span></h2>
-                        <p>It's easy. Simply book a service that you need completed and receive booking from our providers within minutes</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class=" job-tab">
-                        <ul class="nav nav-pills job-tab-switch" id="pills-tab" role="tablist">
-                           <li class="nav-item">
-                              <a class="nav-link active" id="pills-companies-tab" data-bs-toggle="pill" href="#pills-companies" role="tab" aria-controls="pills-companies" aria-selected="true">top Companies</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" id="pills-job-tab" data-bs-toggle="pill" href="#pills-job" role="tab" aria-controls="pills-job" aria-selected="false">job openning</a>
-                           </li>
-                        </ul>
-                     </div>
-                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-companies" role="tabpanel" aria-labelledby="pills-companies-tab">
-                           <div class="top-company-tab">
-                              <ul>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-4.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">jamulai - consulting & finance Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Verified</p>
-                                          <p class="rating-company">4.9</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">view profile</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-2.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">Buildo - construction Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Verified</p>
-                                          <p class="rating-company">4.2</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">view profile</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-3.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">palms - school & college.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Verified</p>
-                                          <p class="rating-company">4.6</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">view profile</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-1.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">finance - consulting & business Co.</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-briefcase"></i>32 Services</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Verified</p>
-                                          <p class="rating-company">4.9</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">view profile</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-job" role="tabpanel" aria-labelledby="pills-job-tab">
-                           <div class="top-company-tab">
-                              <ul>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-1.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">Regional Sales Manager</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-clock-o"></i>2 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 1200-Kshs 2000</p>
-                                          <p class="rating-company">4.1</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">bid now</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-4.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">C Developer (Senior) C .Net</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-clock-o"></i>2 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 800-Kshs 1200</p>
-                                          <p class="rating-company">3.1</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">bid now</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-3.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">Asst. Teacher</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-clock-o"></i>3 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 800-Kshs 1200</p>
-                                          <p class="rating-company">4.3</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">bid now</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                                 <li>
-                                    <div class="top-company-list">
-                                       <div class="company-list-logo">
-                                          <a href="#">
-                                          <img src="assets/img/company-logo-2.png" alt="company list 1" />
-                                          </a>
-                                       </div>
-                                       <div class="company-list-details">
-                                          <h3><a href="#">civil engineer</a></h3>
-                                          <p class="company-state"><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                          <p class="open-icon"><i class="fa fa-clock-o"></i>30 minutes ago</p>
-                                          <p class="varify"><i class="fa fa-check"></i>Fixed price : Kshs 2000-Kshs 2500</p>
-                                          <p class="rating-company">3.7</p>
-                                       </div>
-                                       <div class="company-list-btn">
-                                          <a href="#" class="jobguru-btn">bid now</a>
-                                       </div>
-                                    </div>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="load-more">
-                        <a href="#" class="jobguru-btn">browse more professionals</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Job Tab Area End -->
-          
-          
-         <!-- Video Area Start -->
-         <section class="jobguru-video-area section_100">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="video-container">
-                        <h2>Hire experts service providers today for <br> any job, any time.</h2>
-                        <div class="video-btn">
-                           <a class="popup-youtube" href="https://www.youtube.com/watch?v=k-R6AFn9-ek">
-                           <i class="fa fa-play"></i>
-                           how it works
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- Video Area End -->
-          
-          
-         <!-- How Works Area Start -->
-         <section class="how-works-area section_70">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="site-heading">
-                        <h2>how it <span>works</span></h2>
-                        <p>It's easy. Simply search for services you need completed and book within minutes</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="how-works-box box-1">
-                        <img src="assets/img/arrow-right-top.png" alt="works" />
-                        <div class="works-box-icon">
-                           <i class="fa fa-user"></i>
-                        </div>
-                        <div class="works-box-text">
-                           <p>sign up</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="how-works-box box-2">
-                        <img src="assets/img/arrow-right-bottom.png" alt="works" />
-                        <div class="works-box-icon">
-                           <i class="fa fa-gavel"></i>
-                        </div>
-                        <div class="works-box-text">
-                           <p>find expert</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="how-works-box box-3">
-                        <div class="works-box-icon">
-                           <i class="fa fa-thumbs-up"></i>
-                        </div>
-                        <div class="works-box-text">
-                           <p>book</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- How Works Area End -->
-          
-          
-         <!-- Blog Area Start -->
-         <section class="jobguru-blog-area section_70">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="site-heading">
-                        <h2>Recent From <span>Blog</span></h2>
-                        <p>Learn more about BlueColor</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-lg-4 col-md-12">
-                     <a href="#">
-                        <div class="single-blog">
-                           <div class="blog-image">
-                              <img src="assets/img/blog-1.jpg" alt="blog image" />
-                              <p><span> 21</span> July</p>
-                           </div>
-                           <div class="blog-text">
-                              <h3>How to become a BlueColor Professional</h3>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <a href="#">
-                        <div class="single-blog">
-                           <div class="blog-image">
-                              <img src="assets/img/blog-2.jpg" alt="blog image" />
-                              <p><span> 21</span> July</p>
-                           </div>
-                           <div class="blog-text">
-                              <h3>Learn how to earn a living from BlueColor</h3>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="col-lg-4 col-md-12">
-                     <a href="#">
-                        <div class="single-blog">
-                           <div class="blog-image">
-                              <img src="assets/img/blog-3.jpeg" alt="blog image" />
-                              <p><span> 21</span> July</p>
-                           </div>
-                           <div class="blog-text">
-                              <h3>what are those Steps to be a Successful provider</h3>
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section>
+       	<!-- Hero Section -->
+		<section class="hero-section">			
+			<div class="container">
+				<div class="home-banner">
+					<div class="row align-items-center w-100">
+						<div class="col-lg-7 col-md-10 mx-auto">
+							<div class="section-search aos" data-aos="fade-up">
+								<h1>Professional Services For Your Home & Commercial </h1>
+								<p>Search From 100 Awesome Verified Ads!</p>
+								<div class="search-box">
+									<form action="https://html.truelysell.com/template3/search.html"> 
+										<div class="search-input line">
+											<div class="search-group-icon">
+												<i class="feather-map-pin"></i>
+											</div>
+											<div class="form-group mb-0">
+												<label>Your Location</label>
+												<input type="text" class="form-control" placeholder="America">
+											</div>
+										</div>
+										<div class="search-input">
+											<div class="search-group-icon search-icon">
+												<i class="feather-search"></i>
+											</div>
+											<div class="form-group mb-0">
+												<label>What are you looking for?</label>
+												<input type="text" class="form-control" placeholder="Car Repair Services">
+											</div>
+										</div>
+										<div class="search-btn">
+											<button class="btn btn-primary" type="submit"><i class="feather-search me-2"></i>Search</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="banner-imgs">
+								<div class="banner-1 shape-1">
+									<img class="img-fluid" alt="banner" src="assets/img/banner1.png">
+								</div>
+								<div class="banner-2 shape-3">
+									<img class="img-fluid" alt="banner" src="assets/img/banner2.png">
+								</div>
+								<div class="banner-3 shape-3">
+									<img class="img-fluid" alt="banner" src="assets/img/banner3.png">
+								</div>
+								<div class="banner-4 shape-2">
+									<img class="img-responsive" alt="banner" src="assets/img/banner4.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<!-- /Hero Section -->
+		
+		<!-- Feature Section -->
+		<section class="feature-section">			
+			<div class="container">			
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-md-6 aos" data-aos="fade-up">
+							<h2>Featured Categories</h2>
+							<p>What do you need to find?</p>
+						</div>
+						<div class="col-md-6 text-md-end aos" data-aos="fade-up">
+							<a href="categories.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-01.svg" alt="img">
+								</span>
+							</div>
+							<h5>Construction</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-02.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-02.svg" alt="img">
+								</span>
+							</div>
+							<h5>Car Wash</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/feature.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-03.svg" alt="img">
+								</span>
+							</div>
+							<h5>Electrical</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-01.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-04.svg" alt="img">
+								</span>
+							</div>
+							<h5>Cleaning</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-09.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-05.svg" alt="img">
+								</span>
+							</div>
+							<h5>Interior</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-07.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-06.svg" alt="img">
+								</span>
+							</div>
+							<h5>Carpentry</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-03.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-07.svg" alt="img">
+								</span>
+							</div>
+							<h5>Computer</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-06.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
+							<div class="feature-icon">
+								<span>
+									<img src="assets/img/icons/feature-icon-08.svg" alt="img">
+								</span>
+							</div>
+							<h5>Plumbing</h5>
+							<div class="feature-overlay">
+								<img src="assets/img/services/service-11.jpg" alt="img">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Feature Section -->
+		
+		<!-- Service Section -->
+		<section class="service-section">			
+			<div class="container">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-md-6 aos" data-aos="fade-up">						
+							<h2>Featured Services</h2>
+							<p>Explore the greates our services. You won’t be disappointed</p>
+						</div>
+						<div class="col-md-6 text-md-end aos" data-aos="fade-up">
+							<div class="owl-nav mynav"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="owl-carousel service-slider">
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-01.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Cleaning</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-01.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Electric Panel Repairing Service</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>New Jersey, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$25.00<span class="old-price">$35.00</span></h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-02.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Construction</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-02.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Toughened Glass Fitting Services</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$45.00</h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-03.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Carpentry</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-03.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Wooden Carpentry Work</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$45.00</h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-11.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Construction</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-04.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Plumbing Services</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Georgia, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$45.00</h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="btn-sec aos" data-aos="fade-up">
+						<a href="search.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Service Section -->
+
+		<!-- Providers Section -->
+		<section class="providers-section">			
+			<div class="container">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-md-6 aos" data-aos="fade-up">					
+							<h2>Top Providers</h2>
+							<p>Meet Our Experts</p>	
+						</div>
+						<div class="col-md-6 text-md-end aos" data-aos="fade-up">
+							<a href="providers.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="row  aos" data-aos="fade-up">
+					<div class="col-lg-3 col-sm-6">
+						<div class="providerset">
+							<div class="providerset-img">
+								<a href="provider-details.html">
+									<img src="assets/img/provider/provider-11.jpg" alt="img">
+								</a>
+							</div>
+							<div class="providerset-content">
+								<div class="providerset-price">
+									<div class="providerset-name">
+										<h4><a href="provider-details.html">John Smith</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+										<span>Electrician</span>
+									</div>
+									<div class="providerset-prices">
+										<h6>$20.00<span>/hr</span></h6>
+									</div>
+								</div>
+								<div class="provider-rating">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fa-solid fa-star-half-stroke filled"></i><span>(320)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="providerset">
+							<div class="providerset-img">
+								<a href="provider-details.html">
+									<img src="assets/img/provider/provider-12.jpg" alt="img">
+								</a>
+							</div>
+							<div class="providerset-content">
+								<div class="providerset-price">
+									<div class="providerset-name">
+										<h4><a href="provider-details.html">Michael</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+										<span>Carpenter</span>
+									</div>
+									<div class="providerset-prices">
+										<h6>$50.00<span>/hr</span></h6>
+									</div>
+								</div>
+								<div class="provider-rating">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fa-solid fa-star-half-stroke filled"></i><span>(228)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="providerset">
+							<div class="providerset-img">
+								<a href="provider-details.html">
+									<img src="assets/img/provider/provider-13.jpg" alt="img">
+								</a>
+							</div>
+							<div class="providerset-content">
+								<div class="providerset-price">
+									<div class="providerset-name">
+										<h4><a href="provider-details.html">Antoinette</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+										<span>Cleaner</span>
+									</div>
+									<div class="providerset-prices">
+										<h6>$25.00<span>/hr</span></h6>
+									</div>
+								</div>
+								<div class="provider-rating">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fa-solid fa-star-half-stroke filled"></i><span>(130)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="providerset">
+							<div class="providerset-img">
+								<a href="provider-details.html">
+									<img src="assets/img/provider/provider-14.jpg" alt="img">
+								</a>
+							</div>
+							<div class="providerset-content">
+								<div class="providerset-price">
+									<div class="providerset-name">
+										<h4><a href="provider-details.html">Thompson</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+										<span>Mechanic</span>
+									</div>
+									<div class="providerset-prices">
+										<h6>$25.00<span>/hr</span></h6>
+									</div>
+								</div>
+								<div class="provider-rating">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fa-solid fa-star-half-stroke filled"></i><span>(95)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Providers Section -->
+
+		<!-- Work Section -->
+		<section class="work-section pt-0">		
+			<div class="container">
+				<div class="row  aos" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="offer-paths">
+							<div class="offer-pathimg">
+								<img src="assets/img/offer.png" alt="img">
+							</div>
+							<div class="offer-path-content">
+								<h3>We Are Offering 14 Days Free Trial</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore minim veniam, quis nostrud exercitation ullamco magna aliqua. </p>
+								<a href="free-trial.html" class="btn btn-primary btn-views">Try 14 Days Free Trial<i class="feather-arrow-right-circle"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section-heading aos" data-aos="fade-up">
+							<h2>How It Works</h2>
+							<p>Aliquam lorem ante, dapibus in, viverra quis</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="work-box aos" data-aos="fade-up">
+							<div class="work-icon">
+								<span>
+									<img src="assets/img/icons/work-icon.svg" alt="img">
+								</span>
+							</div>
+							<h5>Choose What To Do</h5>
+							<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+							<h4>01</h4>
+						</div>						
+					</div>
+					<div class="col-md-4">
+						<div class="work-box aos" data-aos="fade-up">
+							<div class="work-icon">
+								<span>
+									<img src="assets/img/icons/find-icon.svg" alt="img">
+								</span>
+							</div>
+							<h5>Find What You Want</h5>
+							<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+							<h4>02</h4>
+						</div>						
+					</div>
+					<div class="col-md-4">
+						<div class="work-box aos" data-aos="fade-up">
+							<div class="work-icon">
+								<span>
+									<img src="assets/img/icons/place-icon.svg" alt="img">
+								</span>
+							</div>
+							<h5>Amazing Places</h5>
+							<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+							<h4>03</h4>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Work Section -->
+		
+		<!-- Service Section -->
+		<section class="service-section">			
+			<div class="container">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-md-6 aos" data-aos="fade-up">
+							<h2>Most Popular Services</h2>
+							<p>Explore the greates our services. You won’t be disappointed</p>
+						</div>
+						<div class="col-md-6 text-md-end aos" data-aos="fade-up">
+							<div class="owl-nav mynav1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="owl-carousel popular-slider">
+								
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-04.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Car Wash</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-01.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Car Repair Services</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Maryland City, MD, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$20.00<span class="old-price">$35.00</span></h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-05.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Cleaning</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-02.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Commercial Painting Services</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Alabama, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$500.00</h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-06.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Computer</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-03.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Computer & Server AMC Service</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>California, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$80.00<span class="old-price">$96.00</span></h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="service-widget aos" data-aos="fade-up">
+								<div class="service-img">
+									<a href="service-details.html">
+										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-08.jpg">
+									</a>
+									<div class="fav-item">
+										<a href="categories.html"><span class="item-cat">Cleaning</span></a>
+										<a href="javascript:void(0)" class="fav-icon">
+											<i class="feather-heart"></i>
+										</a>
+									</div>
+									<div class="item-info">
+										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-04.jpg" class="avatar" alt=""></span></a>
+									</div>
+								</div>
+								<div class="service-content">
+									<h3 class="title">
+										<a href="service-details.html">Steam Car Wash</a>
+									</h3>
+									<p><i class="feather-map-pin"></i>Texas, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
+									<div class="serv-info">
+										<h6>$500.00</h6>
+										<a href="service-details.html" class="btn btn-book">Book Now</a>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="btn-sec aos" data-aos="fade-up">
+						<a href="search.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Service Section -->
+
+		<!-- pricing Section -->
+		<section class="service-section pricing-sections pt-0">			
+			<div class="container">
+				<div class="section-heading">
+					<div class="row">
+						<div class="col-md-12 text-center aos" data-aos="fade-up">
+							<h2>Pricing Plans</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+					</div>
+				</div>
+				<div class="row aos" data-aos="fade-up">
+					<div class="col-lg-4 col-sm-12">
+						<div class="pricing-popular">
+							<span class="btn w-100">Popular</span>
+						</div>
+						<div class="pricing-plans">
+							<div class="pricing-planshead">
+								<h4>Basic</h4>
+								<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+								<h6>$50<span>/month</span></h6>
+							</div>
+							<div class="pricing-planscontent">
+								<ul>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis unde omnis natus error</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Duis irure dolor reprehenderit voluptate</span>
+									</li>
+									<li class="inactive">
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Nemo enim ipsam voluptatem quia </span>
+									</li>
+									<li class="inactive">
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis iste natus error </span>
+									</li>
+									<li class="inactive">
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit </span>
+									</li>
+								</ul>
+								<div class="pricing-btn">
+									<a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-12">
+						<div class="pricing-popular active">
+							<span class="btn w-100">Popular</span>
+						</div>
+						<div class="pricing-plans active">
+							<div class="pricing-planshead">
+								<h4>Standard</h4>
+								<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+								<h6>$100<span>/month</span></h6>
+							</div>
+							<div class="pricing-planscontent">
+								<ul>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis unde omnis natus error</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Duis irure dolor reprehenderit voluptate</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Nemo enim ipsam voluptatem quia </span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis iste natus error </span>
+									</li>
+									<li class="inactive">
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit </span>
+									</li>
+								</ul>
+								<div class="pricing-btn">
+									<a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-12">
+						<div class="pricing-popular ">
+							<span class="btn w-100">Popular</span>
+						</div>
+						<div class="pricing-plans ">
+							<div class="pricing-planshead">
+								<h4>Premium</h4>
+								<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+								<h6>$150<span>/month</span></h6>
+							</div>
+							<div class="pricing-planscontent">
+								<ul>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis unde omnis natus error</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Duis irure dolor reprehenderit voluptate</span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Nemo enim ipsam voluptatem quia </span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Sed perspiciatis iste natus error </span>
+									</li>
+									<li>
+										<i class="fa fa-check-circle me-2 text-primary"></i>
+										<span>Lorem dolor consecteturadipiscing elit </span>
+									</li>
+								</ul>
+								<div class="pricing-btn">
+									<a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /pricing Section -->
+		
+		<!-- Client Section -->
+		<section class="client-section">			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="section-heading aos" data-aos="fade-up">
+							<h2>What our client says</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur elit</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="owl-carousel testimonial-slider">
+								
+							<div class="client-widget aos" data-aos="fade-up">
+								<div class="client-img">
+									<a href="#">
+										<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-01.jpg">
+									</a>
+								</div>
+								<div class="client-content">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+									<h5>Sophie Moore</h5>
+									<h6>Director</h6>
+								</div>
+							</div>
+							<div class="client-widget aos" data-aos="fade-up">
+								<div class="client-img">
+									<a href="#">
+										<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-02.jpg">
+									</a>
+								</div>
+								<div class="client-content">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+									<h5>Mike Hussy</h5>
+									<h6>Lead</h6>
+								</div>
+							</div>
+							<div class="client-widget aos" data-aos="fade-up">
+								<div class="client-img">
+									<a href="#">
+										<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-03.jpg">
+									</a>
+								</div>
+								<div class="client-content">
+									<div class="rating">
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+										<i class="fas fa-star filled"></i>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+									<h5>John Doe</h5>
+									<h6>CEO</h6>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Client Section -->
+		
+		<!-- Blog Section -->
+		<section class="blog-section">			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center aos" data-aos="fade-up">
+						<div class="section-heading">
+							<h2>Latest Blog</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur elit</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-lg-4 col-md-6 d-flex">
+						<div class="blog flex-fill aos" data-aos="fade-up">
+							<div class="blog-image">
+								<a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-01.jpg" alt="Post Image"></a>
+							</div>
+							<div class="blog-content">
+								<ul class="blog-item">
+									<li><i class="feather-calendar"></i>09 Aug 2022</li>
+									<li>
+										<div class="post-author">
+											<a href="#"><i class="feather-user"></i><span>Hal Lewis</span></a>
+										</div>
+									</li>
+								</ul>
+								<h3 class="blog-title">
+									<a href="blog-details.html">How to Choose a Electrical ServiceProvider?</a>
+								</h3>
+							</div>
+						</div>					
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex">
+						<div class="blog flex-fill aos" data-aos="fade-up">
+							<div class="blog-image">
+								<a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-02.jpg" alt="Post Image"></a>
+							</div>
+							<div class="blog-content">
+								<ul class="blog-item">
+									<li><i class="feather-calendar"></i>09 Aug 2022</li>
+									<li>
+										<div class="post-author">
+											<a href="#"><i class="feather-user"></i><span>JohnDoe</span></a>
+										</div>
+									</li>
+								</ul>
+								<h3 class="blog-title">
+									<a href="blog-details.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+								</h3>
+							</div>
+						</div>						
+					</div>
+					<div class="col-lg-4 col-md-6 d-flex">
+						<div class="blog flex-fill aos" data-aos="fade-up">
+							<div class="blog-image">
+								<a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-03.jpg" alt="Post Image"></a>
+							</div>
+							<div class="blog-content">
+								<ul class="blog-item">
+									<li><i class="feather-calendar"></i>09 Aug 2022</li>
+									<li>
+										<div class="post-author">
+											<a href="#"><i class="feather-user"></i><span>Greg Avery</span></a>
+										</div>
+									</li>
+								</ul>
+								<h3 class="blog-title">
+									<a href="blog-details.html">Construction Service Scams: How to Avoid Them</a>
+								</h3>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Blog Section -->
+
+		<!-- Partners Section -->
+		<section class="blog-section pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center aos " data-aos="fade-up">
+						<div class="section-heading">
+							<h2>Our Partners</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur elit</p>
+						</div>
+					</div>
+					<div class="owl-carousel partners-slider aos " data-aos="fade-up">
+						<div class="partner-img">
+							<img src="assets/img/partner/partner1.svg" alt="img">
+						</div>
+						<div class="partner-img">
+							<img src="assets/img/partner/partner2.svg" alt="img">
+						</div>
+						<div class="partner-img">
+							<img src="assets/img/partner/partner3.svg" alt="img">
+						</div>
+						<div class="partner-img">
+							<img src="assets/img/partner/partner4.svg" alt="img">
+						</div>
+						<div class="partner-img">
+							<img src="assets/img/partner/partner5.svg" alt="img">
+						</div>
+						<div class="partner-img">
+							<img src="assets/img/partner/partner6.svg" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Partners Section -->
+
+		<!-- App Section -->
+		<section class="app-section">
+			<div class="container">
+				<div class="app-sec">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="col-md-12">
+								<div class="heading aos" data-aos="fade-up">
+									<h2>Download Our App</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h6>Scan the QR code to get the app now</h6>
+									<div class="scan-img">										
+										<img src="assets/img/scan-img.png" class="img-fluid" alt="img">
+									</div>
+								</div>
+							</div>
+							<div class="downlaod-btn aos" data-aos="fade-up">
+								<a href="#" target="_blank">
+									<img src="assets/img/googleplay.svg" alt="img">
+								</a>									
+								<a href="#" target="_blank">
+									<img src="assets/img/appstore.svg" alt="img">
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="appimg-set aos" data-aos="fade-up">
+								<img src="assets/img/app-img.png" class="img-fluid" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /App Section -->
          <!-- Blog Area End -->
 @endsection

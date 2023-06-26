@@ -1,116 +1,75 @@
-@extends('layouts.home')
+@extends('layouts.layout')
 
 @section('title')
     <title>Register</title>
 @endsection
 @section('content')
-    <!-- Breadcromb Area Start -->
-    <section class="jobguru-breadcromb-area">
-        <div class="breadcromb-top section_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcromb-box">
-                            <h3>Register</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="breadcromb-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcromb-box-pagin">
-                            <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">pages</a></li>
-                                <li class="active-breadcromb"><a href="#">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcromb Area End -->
-
-
     <!-- Login Area Start -->
-    <section class="jobguru-login-area section_70">
+    <div class="content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 offset-lg-4 col-sm-6 offset-sm-3">
-                    <div class="login-box">
-                        <div class="login-title">
-                            <h3>Sign up</h3>
+                <div class="col-md-6 col-lg-6 mx-auto">
+                    <div class="login-wrap">
+                        <div class="login-back">
+                            <a href="index.html"><img src="{{ asset('assets/img/icons/undo-icon.svg') }}" class="me-2" alt="icon">Back To Home</a>
                         </div>
-                        @if (session('exception'))
-                            <div class="alert alert-danger"></div>
-                            {{session('exception')}}
-                        @endif
+                        <div class="login-header">
+                            <h3>User Signup</h3>
+                        </div>
+                        
+                        <!-- Login Form -->
                         <form action="{{route('users.register')}}" method="POST">
-                           @csrf
-                           <input type="hidden" name="user_type" value="2">
-                            <div class="single-login-field">
-                                <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}">
+                            @csrf
+                            <input type="hidden" name="user_type" value="2">
+                            <div class="form-group">
+                                <label class="col-form-label">Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your name">
                             </div>
-                            @error('name')
-                                <div class="alert alert-danger">
-                                    {{ $message }}
+                            <div class="form-group">
+                                <label class="col-form-label">E-mail</label>
+                                <input type="email" class="form-control" placeholder="example@email.com">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="col-form-label">Phone Number</label>	
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-lg group_formcontrol" id="phone" name="phone" placeholder="(256) 789-6253">
+                                    </div>
                                 </div>
-                            @enderror
-                            <div class="single-login-field">
-                                <input type="email" placeholder="Email Addresss" name="email"
-                                    value="{{ old('email') }}">
                             </div>
-                            @error('email')
-                                <div class="alert alert-danger">
-                                    {{ $message }}
+                            <div class="form-group">
+                                <label class="col-form-label d-block">Password<span class="brief-bio float-end">Must be 8 Characters at Least</span></label>
+                                <div class="pass-group">
+                                    <input type="password" class="form-control pass-input" placeholder="*************">
+                                    <span class="toggle-password feather-eye"></span>
                                 </div>
-                            @enderror
-                            <div class="single-login-field">
-                                <input type="text" placeholder="Phone Number" value="{{ old('phone_number') }}"
-                                    name="phone_number">
                             </div>
-                            @error('phone_number')
-                                <div class="alert alert-danger">
-                                    {{ $message }}
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="rememberme"  class="rememberme">
+                                        <span class="checkmark"></span>Remember Me
+                                    </label>
                                 </div>
-                            @enderror
-                            <div class="single-login-field">
-                                <input type="password" placeholder="Choose Password" name="password">
-                            </div>
-                            @error('password')
-                                <div class="alert alert-danger">
-                                    {{ $message }}
+                                <div class="col-6 text-end">
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="loginotp"  class="loginotp">
+                                        <span class="checkmark"></span>Login with OTP
+                                    </label>
                                 </div>
-                            @enderror
-                            <div class="single-login-field">
-                                <input type="password" placeholder="Confirm Password" name="password_confirmation">
                             </div>
-                            @error('password')
-                                <div class="alert alert-danger">
-                                    {{ $message }}
-                                </div>
-                            @enderror
-                            <div class="remember-row single-login-field clearfix">
-                                <p class="checkbox remember">
-                                    <input class="checkbox-spin" type="checkbox" id="Freelance">
-                                    <label for="Freelance"><span></span>accept terms & condition</label>
-                                </p>
-                            </div>
-                            <div class="single-login-field">
-                                <button type="submit">Sign in</button>
+                            <button class="btn btn-primary w-100 login-btn" type="submit">Signup</button>
+                            <div class="dont_have">
+                                <a href="{{ route('users.login') }}">Already have an account?</a>
                             </div>
                         </form>
-                        <div class="dont_have">
-                            <a href="{{ route('users.login') }}">Already have an account?</a>
-                        </div>
+                        <!-- /Login Form -->
+                                        
                     </div>
                 </div>
             </div>
+            
         </div>
-    </section>
+    </div>
     <!-- Login Area End -->
 @endsection

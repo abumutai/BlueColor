@@ -1,386 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from jobie.dexignzone.com/codeigniter/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Nov 2022 19:38:29 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
+<!-- Mirrored from html.truelysell.com/template3/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 09:48:52 GMT -->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Blue Color -  Admin Dashboard" />
-    <meta property="og:title" content="Blue Color -  Admin Dashboard" />
-    <meta property="og:description" content="Blue Color -  Admin Dashboard" />
-    <meta name="format-detection" content="telephone=no">
-    <title>Blue Color - Admin Dashboard </title>
-    <!-- Favicon icon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Truelysell | Template</title>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('dashboard/assets/images/favicon.png') }}">
+<!-- Favicons -->
+<link rel="shortcut icon" href="{{ asset('admin/assets/img/favicon.png') }}">
 
+<!-- Select 2 -->
+<link rel="stylesheet" href="{{ asset('admin/assets/css/select2.min.css') }}">
 
-    <link href="{{ asset('dashboard/assets/vendor/chartist/css/chartist.min.css') }}" rel="stylesheet"
-        type="text/css" />
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/bootstrap/css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css') }}">
 
-    <link href="{{ asset('dashboard/assets/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet"
-        type="text/css" />
+<!-- Fontawesome CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/fontawesome/css/all.min.css') }}">
 
-    <link href="{{ asset('dashboard/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}"
-        rel="stylesheet" type="text/css" />
+<!-- Map CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css') }}">
 
-    <link href="{{ asset('dashboard/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('dashboard/assets/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet"
-        type="text/css" />
+<!-- DataTable CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/css/dataTables.bootstrap4.min.css') }}">
+
+<!-- Feather CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/plugins/feather/feather.css') }}">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{{ asset('admin/assets/css/admin.css') }}">
+
 
 </head>
 
 <body>
-
-    <!--*******************
-        Preloader start
-    ********************-->
-    <div id="preloader">
-        <div class="sk-three-bounce">
-            <div class="sk-child sk-bounce1"></div>
-            <div class="sk-child sk-bounce2"></div>
-            <div class="sk-child sk-bounce3"></div>
-        </div>
-    </div>
-    <!--*******************
-        Preloader end
-    ********************-->
-
-    <!--**********************************
-        Main wrapper start
-    ***********************************-->
-    <div id="main-wrapper">
-        <!--**********************************
- Nav header start
-***********************************-->
-        <div class="nav-header">
-            <a href="{{ route('home') }}" class="brand-logo">
-                <span class="logo-abbr" width="66.5px" height="66.5px" style="font-size: 70px">
-                    B
-                </span>
-                <span class="brand-title" width="101.5px" height="29.5px">
-                    lue Color
-                </span>
-            </a>
-            <div class="nav-control">
-                <div class="hamburger">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
-                </div>
-            </div>
-        </div>
-        <!--**********************************
- Nav header end
-***********************************-->
-        <!--**********************************
- Header start
-***********************************-->
+    <div class="main-wrapper">
+    
+        <!-- Header -->
         <div class="header">
-            <div class="header-content">
-                <nav class="navbar navbar-expand">
-                    <div class="collapse navbar-collapse justify-content-between">
-                        <div class="header-left">
-                            <div class="dashboard_bar">
-                                Dashboard </div>
-                        </div>
-                        <ul class="navbar-nav header-right">
-                            <li class="nav-item dropdown notification_dropdown">
-                                <a class="nav-link  ai-icon" href="#" role="button" data-bs-toggle="dropdown">
-                                    <svg width="26" height="28" viewBox="0 0 26 28" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.45251 25.6682C10.0606 27.0357 11.4091 28 13.0006 28C14.5922 28 15.9407 27.0357 16.5488 25.6682C15.4266 25.7231 14.2596 25.76 13.0006 25.76C11.7418 25.76 10.5748 25.7231 9.45251 25.6682Z"
-                                            fill="#3E4954" />
-                                        <path
-                                            d="M25.3531 19.74C23.8769 17.8785 21.3995 14.2195 21.3995 10.64C21.3995 7.09073 19.1192 3.89758 15.7995 2.72382C15.7592 1.21406 14.5183 0 13.0006 0C11.4819 0 10.2421 1.21406 10.2017 2.72382C6.88095 3.89758 4.60064 7.09073 4.60064 10.64C4.60064 14.2207 2.12434 17.8785 0.647062 19.74C0.154273 20.3616 0.00191325 21.1825 0.240515 21.9363C0.473484 22.6721 1.05361 23.2422 1.79282 23.4595C3.08755 23.8415 5.20991 24.2715 8.44676 24.491C9.84785 24.5851 11.3543 24.64 13.0007 24.64C14.646 24.64 16.1524 24.5851 17.5535 24.491C20.7914 24.2715 22.9127 23.8415 24.2085 23.4595C24.9477 23.2422 25.5268 22.6722 25.7597 21.9363C25.9983 21.1825 25.8448 20.3616 25.3531 19.74Z"
-                                            fill="#3E4954" />
-                                    </svg>
-                                    <span class="badge light text-white bg-primary rounded-circle">0</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <div id="DZ_W_Notification1" class="widget-media dz-scroll p-3 height380">
-                                        <ul class="timeline">
-                                            <li>
-                                                <div class="timeline-panel">
-                                                    <div class="media me-2 media-primary">
-                                                        <i class="fa fa-home"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h6 class="mb-1">No New Notifications</h6>
-
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a class="all-notification" href="#">See all notifications <i
-                                            class="ti-arrow-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown header-profile">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-
-                                    <i class="fa fa-user-circle fa-3x"></i>
-                                    <div class="header-info">
-                                        <span class="text-black">{{ Auth::user()->name }}</span>
-                                        <p class="fs-12 mb-0">Super Admin</p>
-                                    </div>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <a href="" class="dropdown-item ai-icon">
-                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
-                                            width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                            <circle cx="12" cy="7" r="4"></circle>
-                                        </svg>
-                                        <span class="ms-2">Profile </span>
-                                    </a>
-                                    <a href="" class="dropdown-item ai-icon">
-                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success"
-                                            width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path
-                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                            </path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
-                                        <span class="ms-2">Inbox </span>
-                                    </a>
-                                    <button type="submit" form="logout" class="dropdown-item ai-icon">
-                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
-                                            width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                                            <polyline points="16 17 21 12 16 7"></polyline>
-                                            <line x1="21" y1="12" x2="9" y2="12">
-                                            </line>
-                                        </svg>
-                                        <span class="ms-2">Logout </span>
-                                    </button>
-                                    <form id="logout" action="{{ route('logout') }}" method="post">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="header-left"> 
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo.svg" alt="Logo" width="30" height="30">
+                </a>
+                <a href="index.html" class=" logo-small">
+                    <img src="assets/img/logo-small.svg" alt="Logo" width="30" height="30">
+                </a>
             </div>
+            <a class="mobile_btn" id="mobile_btn" href="javascript:void(0);">
+                <i class="fas fa-align-left"></i>
+            </a>
+            <div class="header-split">
+                <div class="page-headers">
+                    <div class="search-bar">
+						<span><i class="fe fe-search"></i></span>
+						<input type="text" placeholder="Search" class="form-control">
+					</div>
+                </div>
+                <ul class="nav user-menu">
+                    <!-- Notifications -->
+                    <li class="nav-item">
+                        <a href="../index.html" class="viewsite" ><i class="fe fe-globe me-2"></i>View Site</a>
+                    </li>
+                    <li class="nav-item dropdown has-arrow dropdown-heads flag-nav">
+                        <a class="nav-link" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
+                            <img src="assets/img/flags/us1.png" alt="" height="20"> 
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <img src="assets/img/flags/us.png" class="me-2" alt="" height="16"> English
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <img src="assets/img/flags/fr.png" class="me-2" alt="" height="16"> French
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <img src="assets/img/flags/es.png" class="me-2" alt="" height="16"> Spanish
+                            </a>
+                            <a href="javascript:void(0);" class="dropdown-item">
+                                <img src="assets/img/flags/de.png" class="me-2" alt="" height="16"> German
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item  has-arrow dropdown-heads ">
+                        <a href="javascript:void(0);" class="toggle-switch">
+                            <i class="fe fe-moon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown has-arrow dropdown-heads ">
+                        <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                            <i class="fe fe-bell"></i>
+                        </a>
+                        <div class="dropdown-menu notifications">
+                            <div class="topnav-dropdown-header">
+                                <span class="notification-title">Notifications</span>
+                                <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+                            </div>
+                            <div class="noti-content">
+                                <ul class="notification-list">
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="" src="assets/img/provider/provider-01.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Thomas Herzberg have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">15 Sep 2020 10:20 PM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="" src="assets/img/provider/provider-02.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Matthew Garcia have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">13 Sep 2020 03:56 AM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="" src="assets/img/provider/provider-03.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Yolanda Potter have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">12 Sep 2020 09:25 PM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/provider/provider-04.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Ricardo Flemings have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">11 Sep 2020 06:36 PM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/provider/provider-05.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Maritza Wasson have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">10 Sep 2020 08:42 AM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/provider/provider-06.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Marya Ruiz have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">9 Sep 2020 11:01 AM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-message">
+                                        <a href="admin-notification.html">
+                                            <div class="media d-flex">
+                                                <span class="avatar avatar-sm flex-shrink-0">
+                                                    <img class="avatar-img rounded-circle" alt="User Image" src="assets/img/provider/provider-07.jpg">
+                                                </span>
+                                                <div class="media-body flex-grow-1">
+                                                    <p class="noti-details">
+                                                        <span class="noti-title">Richard Hughes have been subscribed</span>
+                                                    </p>
+                                                    <p class="noti-time">
+                                                        <span class="notification-time">8 Sep 2020 06:23 AM</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="topnav-dropdown-footer">
+                                <a href="admin-notification.html">View all Notifications</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item  has-arrow dropdown-heads ">
+                        <a href="javascript:void(0);" class="win-maximize">
+                            <i class="fe fe-maximize" ></i>
+                        </a>
+                    </li>
+                    
+                    <!-- User Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="user-link  nav-link" data-bs-toggle="dropdown">
+                            <span class="user-img">
+                                <img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
+                                <span class="animate-circle"></span>
+                            </span>
+                            <span class="user-content">
+                                <span class="user-name">John Smith</span>
+                                <span class="user-details">Demo User</span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu menu-drop-user">
+                            <div class="profilemenu ">
+                                <div class="user-detials">
+                                    <a href="account.html">
+                                        <span class="profile-image">
+                                            <img src="assets/img/user.jpg" alt="img" class="profilesidebar">
+                                        </span>
+                                        <span class="profile-content">
+                                            <span>John Smith</span>
+                                            <span><span class="__cf_email__" data-cfemail="bef4d1d6d0fed9d3dfd7d290ddd1d3">[email&#160;protected]</span></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="subscription-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="account-settings.html" >Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="localization.html">Settings</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="submit" form="logout" class="dropdown-item ai-icon">
+                                    <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger"
+                                        width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12">
+                                        </line>
+                                    </svg>
+                                    <span class="ms-2">Logout </span>
+                                </button>
+                                <form id="logout" action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- /User Menu -->
+                </ul>
+            </div>
+            
         </div>
-        <!--**********************************
- Header end ti-comment-alt
-***********************************-->
-        <!--**********************************
- Sidebar start
-***********************************-->
-        <div class="deznav">
-            <div class="deznav-scroll">
-                <ul class="metismenu" id="menu">
-                    <li><a href="{{ route('home') }}" class="ai-icon" aria-expanded="false">
+        <!-- /Header -->
+        
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ asset('assets/img/logo.svg') }}" class="img-fluid logo" alt="">
+                    </a>
+                    {{-- <a href="index.html">
+                        <img src="{{ asset('assets/img/logo-small.svg') }}" class="img-fluid logo-small" alt="">
+                    </a> --}}
+                </div>
+                {{-- <div class="siderbar-toggle">
+                    <label class="switch" id="toggle_btn">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div> --}}
+            </div>
+            
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title m-0">
+                            <h6>Home</h6>
+                        </li>
+                        <li><a href="{{ route('home') }}" class="ai-icon" aria-expanded="false">
                             <i class="flaticon-381-networking"></i>
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
-                            aria-expanded="false">
-                            <i class="flaticon-381-television"></i>
-                            <span class="nav-text">Services</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="{{route('admin-services.create')}}">Add Service</a></li>
-                            <li><a href="{{route('admin-services.index')}}">All Services</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Categories</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="{{ route('service-categories.index') }}">Categories</a></li>
-                                    <li><a href="{{ route('service-subcategories.index') }}">Subcategories</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="app_calendar.html">Reviews</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="bookings" class="ai-icon" aria-expanded="false">
-                            <i class="fa fa-calendar"></i>
-                            <span class="nav-text">Bookings</span>
-                        </a>
-                    </li>
-
-                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
-                            aria-expanded="false">
-                            <i class="fa fa-blog"></i>
-                            <span class="nav-text">Blog</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="flot.html">All Blogs</a></li>
-                            <li><a href="morris.html">Add Blog</a></li>
-                            <li><a href="chartjs.html">Categories</a></li>
-                            <li><a href="chartist.html">Comments</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
-                            aria-expanded="false">
-                            <i class="fa fa-map"></i>
-                            <span class="nav-text">Locations</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="{{route('counties.index')}}">Counties</a></li>
-                            <li><a href="{{route('cities.index')}}">Cities</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
-                            aria-expanded="false">
-                            <i class="flaticon-381-internet"></i>
-                            <span class="nav-text">Membership</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="accordion.html">Subscriptions</a></li>
-                            <li><a href="alert.html">Transactions</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-menu"><a class="has-arrow ai-icon" href="javascript:void()"
-                            aria-expanded="false">
-                            <i class="fa fa-users"></i>
-                            <span class="nav-text">User Management</span>
-                        </a>
-                        <ul aria-expanded="false">
-                            <li><a href="select2.html">Admin Users</a></li>
-                            <li><a href="nestable.html">Service Providers</a></li>
-                            <li><a href="noui_slider.html">Users</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="widget_basic.html" class="ai-icon" aria-expanded="false">
-                            <i class="flaticon-381-settings-2"></i>
-                            <span class="nav-text">Roles & Permissions</span>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="copyright">
-                    <p><strong>Blue Color</strong> © {{ now()->year }} All Rights Reserved</p>
-
+                        <li class="menu-title">
+                            <h6>Services</h6>
+                        </li>
+                        <li>
+                            <a href="{{route('admin-services.index')}}" ><i class="fe fe-briefcase"></i> 
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('service-categories.index') }}"><i class="fe fe-file-text"></i> 
+                                <span>Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('service-subcategories.index') }}"><i class="fe fe-clipboard"></i> <span>Sub Categories</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-star"></i> 
+                                <span>Review</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="review-type.html">Review Type</a>
+                                </li>
+                                <li>
+                                    <a href="review.html">Review</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Booking</h6>
+                        </li>
+                        <li>
+                            <a href="booking.html"><i class="fe fe-smartphone"></i> <span> Bookings</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Finance & Accounts</h6>
+                        </li>
+                        <li>
+                            <a href="banktransferlist.html"><i class="fe fe-file"></i> 
+                                <span>Bank Transfer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="wallet.html"><i class="fe fe-credit-card"></i> 
+                                <span>Wallet</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="refund-request.html"><i class="fe fe-git-pull-request"></i> <span>Refund Request</span></a>
+                        </li>
+                        <li>
+                            <a href="cash-on-delivery.html"><i class="fe fe-dollar-sign"></i> <span>Cash on Delivery</span></a>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-credit-card"></i> 
+                                <span>Payouts</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="payout-request.html">Payout Requests</a>
+                                </li>
+                                <li>
+                                    <a href="payout-settings.html">Payout Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sales-transactions.html"><i class="fe fe-bar-chart"></i> <span>Sales Transactions</span></a>
+                        </li>
+                        <li>
+                            <a href="tax-rates.html"><i class="fe fe-file-text"></i> 
+                                <span>Tax Rates</span>
+                            </a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Others</h6>
+                        </li>
+                        <li>
+                            <a href="chat.html"><i class="fe fe-message-square"></i> <span>Chat</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Content</h6>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-file"></i> 
+                                <span>Pages</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="add-page.html">Add Page</a>
+                                </li>
+                                <li>
+                                    <a href="pages-list.html">Pages</a>
+                                </li>
+                                <li>
+                                    <a href="page-list.html">Pages List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-file-text"></i> 
+                                <span>Blog</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="all-blog.html">All Blog</a>
+                                </li>
+                                <li>
+                                    <a href="add-blog.html">Add Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blogs-categories.html">Categories</a>
+                                </li>
+                                <li>
+                                    <a href="blogs-comments.html">Blog Comments</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-map-pin"></i> 
+                                <span>Location</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="countries.html">Countries</a>
+                                </li>
+                                <li>
+                                    <a href="states.html">States</a>
+                                </li>
+                                <li>
+                                    <a href="cities.html">Cities</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="testimonials.html"><i class="fe fe-star"></i> <span>Testimonials</span></a>
+                        </li>
+                        <li>
+                            <a href="faq.html"><i class="fe fe-help-circle"></i> <span>FAQ</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Membership</h6>
+                        </li>
+                        <li>
+                            <a href="membership.html"><i class="fe fe-user"></i> <span>Membership</span></a>
+                        </li>
+                        <li>
+                            <a href="membership-addons.html"><i class="fe fe-user-plus"></i> <span>Membership Addons</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Reports</h6>
+                        </li>
+                        <li>
+                            <a href="admin-earnings.html"><i class="fe fe-user"></i> 
+                                <span>Admin Earnings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="provider-earnings.html"><i class="fe fe-dollar-sign"></i> 
+                                <span>Provider Earnings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="membership-transaction.html"><i class="fe fe-tv"></i> 
+                                <span>Membership Transaction</span>
+                            </a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>User Management</h6>
+                        </li>
+                        <li class="submenu">
+                            <a href="javascript:void(0);"><i class="fe fe-user"></i> 
+                                <span> Users</span>
+                                <span class="menu-arrow"><i class="fe fe-chevron-right"></i></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="user-list.html">Users</a>
+                                </li>
+                                <li>
+                                    <a href="user-customers.html">Customers</a>
+                                </li>
+                                <li>
+                                    <a href="user-providers.html">Professional </a>
+                                </li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="roles-permissions.html"><i class="fe fe-file"></i> <span>Roles & Permissions</span></a>
+                        </li>
+                        <li>
+                            <a href="delete-account-requests.html"><i class="fe fe-trash-2"></i> <span>Delete Account Requests</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Locations</h6>
+                        </li>
+                        <li class="submenu">
+                            <li><a href="{{route('counties.index')}}"><i class="fa fa-map-marker"></i> <span>Counties</span></a></li>
+                            <li><a href="{{route('cities.index')}}"><i class="fa fa-map-marker"></i> <span>Cities</span></a></li>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Marketing</h6>
+                        </li>
+                        <li>
+                            <a href="marketing-coupons.html"><i class="fe fe-bookmark"></i> <span>Coupons</span></a>
+                        </li>
+                        <li>
+                            <a href="marketing-service.html"><i class="fe fe-briefcase"></i> <span>Service Offers</span></a>
+                        </li>
+                        <li>
+                            <a href="marketing-featured.html"><i class="fe fe-briefcase"></i> <span>Featured Services</span></a>
+                        </li>
+                        <li>
+                            <a href="marketing-newsletter.html"><i class="fe fe-mail"></i> <span>Email Newsletter</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Management</h6>
+                        </li>
+                        <li>
+                            <a href="cachesystem.html"><i class="fe fe-user"></i> 
+                                <span>Cache System</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="email-templates.html"><i class="fe fe-mail"></i> <span>Email Templates</span></a>
+                        </li>
+                        <li>
+                            <a href="sms-templates.html"><i class="fe fe-message-square"></i> <span>SMS Templates</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Support</h6>
+                        </li>
+                        <li>
+                            <a href="contact-messages.html"><i class="fe fe-message-square"></i> <span>Contact Messages</span></a>
+                        </li>
+                        <li>
+                            <a href="abuse-reports.html"><i class="fe fe-file-text"></i> <span>Abuse Reports</span></a>
+                        </li>
+                        <li>
+                            <a href="announcements.html"><i class="fe fe-volume-2"></i> <span>Announcements</span></a>
+                        </li>
+                        <li class="menu-title">
+                            <h6>Settings</h6>
+                        </li>
+                        <li>
+                            <a href="localization.html" ><i class="fe fe-settings"></i> <span>Settings</span></a>
+                        </li>
+                        <li>
+                            <a href="signin.html"><i class="fe fe-log-out"></i> <span>Logout</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <!-- /Sidebar -->
         @yield('content')
-        <div class="footer">
-            <div class="copyright">
-                <p>Copyright © Designed &amp; Developed by <a href="https://techxers.co.ke/" target="_blank">Techxers
-                        Limited</a> {{ now()->year }}</p>
-            </div>
+       
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright © Designed &amp; Developed by <a href="https://techxers.co.ke/" target="_blank">Techxers
+                    Limited</a> {{ now()->year }}</p>
         </div>
-        <!--**********************************
- Footer end
-***********************************-->
     </div>
 
-    <script src="{{ asset('dashboard/assets/vendor/global/global.min.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+    <div id="overlayer">
+        <span class="loader">
+        <span class="loader-inner"></span>
+        </span>
+    </div>
 
-    <script src="{{ asset('dashboard/assets/vendor/chart.js/Chart.bundle.min.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/vendor/owl-carousel/owl.carousel.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/vendor/peity/jquery.peity.min.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/js/dashboard/dashboard-1.js') }}"></script>
+    <!-- jQuery -->
+    <script data-cfasync="false" src="https://html.truelysell.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{{ asset('admin/assets/js/jquery-3.6.0.min.js') }}"></script>
+    
+<!-- Select 2 JS -->
+<script src="{{ asset('admin/assets/js/select2.min.js') }}"></script>
 
-    <script src="{{ asset('dashboard/assets/js/custom.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/js/deznav-init.js') }}"></script>
-    {{-- <script src="{{ asset('dashboard/assets/js/demo.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/js/styleSwitcher.js') }}"></script> --}}
-    <script src="{{ asset('dashboard/assets/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('dashboard/assets/js/plugins-init/datatables.init.js') }}"></script>
+<!-- Chart JS -->
+<script src="{{ asset('admin/assets/plugins/apexchart/apexcharts.min.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/apexchart/chart-data.js') }}"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="{{ asset('admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+<!-- Feather Icon JS -->
+<script src="{{ asset('admin/assets/js/feather.min.js') }}"></script>
+
+<!-- DataTable JS -->
+<script src="{{ asset('admin/assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('admin/assets/js/dataTables.bootstrap4.min.js') }}"></script>
+
+<!-- Slimscroll JS -->
+<script src="{{ asset('admin/assets/plugins/slimscroll/jquery.slimscroll.min.js') }}"></script>
+
+<!-- Map JS -->
+<script src="{{ asset('admin/assets/plugins/slimscroll/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-ru-mill.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-us-aea.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-uk_countries-mill.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/jvectormap/jquery-jvectormap-in-mill.js') }}"></script>
+<script src="{{ asset('admin/assets/js/jvectormap.js') }}"></script>
+
+<!-- Sweetalert 2 -->
+<script src="{{ asset('admin/assets/plugins/sweetalert/sweetalert2.all.min.js') }}"></script>
+<script src="{{ asset('admin/assets/plugins/sweetalert/sweetalerts.min.js') }}"></script>
+
+<!-- Custom JS -->
+<script src="{{ asset('admin/assets/js/admin.js') }}"></script>
 
 
-    <script>
-        function carouselReview() {
-            /*  testimonial one function by = owl.carousel.js */
-            function checkDirection() {
-                var htmlClassName = document.getElementsByTagName('html')[0].getAttribute('class');
-                if (htmlClassName == 'rtl') {
-                    return true;
-                } else {
-                    return false;
-
-                }
-            }
-            jQuery('.testimonial-one').owlCarousel({
-                loop: true,
-                autoplay: true,
-                margin: 15,
-                nav: false,
-                dots: false,
-                left: true,
-                rtl: checkDirection(),
-                navText: ['', ''],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    800: {
-                        items: 2
-                    },
-                    991: {
-                        items: 2
-                    },
-
-                    1200: {
-                        items: 2
-                    },
-                    1600: {
-                        items: 2
-                    }
-                }
-            })
-            jQuery('.testimonial-two').owlCarousel({
-                loop: true,
-                autoplay: true,
-                margin: 15,
-                nav: false,
-                dots: true,
-                left: true,
-                rtl: checkDirection(),
-                navText: ['', ''],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    991: {
-                        items: 3
-                    },
-
-                    1200: {
-                        items: 3
-                    },
-                    1600: {
-                        items: 4
-                    }
-                }
-            })
-        }
-        jQuery(window).on('load', function() {
-            setTimeout(function() {
-                carouselReview();
-            }, 1000);
-        });
-    </script>
-
-    <!--**********************************
-        Main wrapper end
-    ***********************************-->
 </body>
 
-<!-- Mirrored from jobie.dexignzone.com/codeigniter/demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Nov 2022 19:39:56 GMT -->
 
+<!-- Mirrored from html.truelysell.com/template3/admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 09:50:59 GMT -->
 </html>

@@ -13,32 +13,32 @@
     <!-- Title -->
     @yield('title')
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/img/favicon/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets1/img/favicon/favicon-32x32.png')}}">
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/bootstrap.css')}}">
     <!--Font Awesome css-->
-    <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/font-awesome.min.css')}}">
     <!--Magnific css-->
-    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/magnific-popup.css')}}">
     <!--Owl-Carousel css-->
-    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/owl.theme.default.min.css')}}">
     <!--Animate css-->
-    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/animate.min.css')}}">
     <!--Select2 css-->
-    <link rel="stylesheet" href="{{asset('assets/css/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/select2.min.css')}}">
     <!--Slicknav css-->
-    <link rel="stylesheet" href="{{asset('assets/css/slicknav.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/slicknav.min.css')}}">
     <!--Bootstrap-Datepicker css-->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/bootstrap-datepicker.min.css')}}">
     <!--Jquery UI css-->
-    <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/jquery-ui.min.css')}}">
     <!--Perfect-Scrollbar css-->
-    <link rel="stylesheet" href="{{asset('assets/css/perfect-scrollbar.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/perfect-scrollbar.min.css')}}">
     <!--Site Main Style css-->
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/style.css')}}">
     <!--Responsive css-->
-    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('assets1/css/responsive.css')}}">
 </head>
 
 <body>
@@ -52,8 +52,8 @@
                     <div class="col-lg-2">
                         <div class="site-logo">
                             <a href="/">
-                                {{-- <img src="{{asset('assets/img/logo.png')}}" alt="jobguru" class="non-stick-logo" />
-                                <img src="{{asset('assets/img/logo-2.png')}}" alt="jobguru" class="stick-logo" /> --}}
+                                {{-- <img src="{{asset('assets1/img/logo.png')}}" alt="jobguru" class="non-stick-logo" />
+                                <img src="{{asset('assets1/img/logo-2.png')}}" alt="jobguru" class="stick-logo" /> --}}
                              <h1 class="text-white"><span class="text-success">BlueColor</span></h1>   
                             </a>
                         </div>
@@ -136,7 +136,7 @@
                         <div class="single-footer-widget">
                             <div class="footer-logo">
                                 <a href="/">
-                                    {{-- <img src="{{asset('assets/img/logo.png')}}" alt="jobguru logo" /> --}}
+                                    {{-- <img src="{{asset('assets1/img/logo.png')}}" alt="jobguru logo" /> --}}
                                     <h1 class="text-white"><span class="text-success">BlueColor</span></h1> 
                                 </a>
                             </div>
@@ -155,7 +155,7 @@
                             <h3>recent post</h3>
                             <div class="latest-post-footer clearfix">
                                 <div class="latest-post-footer-left">
-                                    <img src="{{asset('assets/img/footer-post-2.jpg')}}" alt="post" />
+                                    <img src="{{asset('assets1/img/footer-post-2.jpg')}}" alt="post" />
                                 </div>
                                 <div class="latest-post-footer-right">
                                     <h4><a href="#">Website design trends for 2018</a></h4>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="latest-post-footer clearfix">
                                 <div class="latest-post-footer-left">
-                                    <img src="{{asset('assets/img/footer-post-3.jpg')}}" alt="post" />
+                                    <img src="{{asset('assets1/img/footer-post-3.jpg')}}" alt="post" />
                                 </div>
                                 <div class="latest-post-footer-right">
                                     <h4><a href="#">UI experts and modern designs</a></h4>
@@ -215,28 +215,28 @@
 
 
     <!--Jquery js-->
-    <script src="{{asset('assets/js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jquery-3.6.0.min.js')}}"></script>
     <!--Bootstrap js-->
-    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets1/js/bootstrap.bundle.min.js')}}"></script>
     <!--Bootstrap Datepicker js-->
-    <script src="{{asset('assets/js/bootstrap-datepicker.min.js')}}"></script>
+    <script src="{{asset('assets1/js/bootstrap-datepicker.min.js')}}"></script>
     <!--Perfect Scrollbar js-->
-    <script src="{{asset('assets/js/jquery-perfect-scrollbar.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jquery-perfect-scrollbar.min.js')}}"></script>
     <!--Owl-Carousel js-->
-    <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('assets1/js/owl.carousel.min.js')}}"></script>
     <!--SlickNav js-->
-    <script src="{{asset('assets/js/jquery.slicknav.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jquery.slicknav.min.js')}}"></script>
     <!--Magnific js-->
-    <script src="{{asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jquery.magnific-popup.min.js')}}"></script>
     <!--Select2 js-->
-    <script src="{{asset('assets/js/select2.min.js')}}"></script>
+    <script src="{{asset('assets1/js/select2.min.js')}}"></script>
     <!--jquery-ui js-->
-    <script src="{{asset('assets/js/jquery-ui.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jquery-ui.min.js')}}"></script>
     <!--Jarallax js-->
-    <script src="{{asset('assets/js/jarallax.min.js')}}"></script>
-    <script src="{{asset('assets/js/jarallax-video.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jarallax.min.js')}}"></script>
+    <script src="{{asset('assets1/js/jarallax-video.min.js')}}"></script>
     <!--Main js-->
-    <script src="{{asset('assets/js/main.js')}}"></script>
+    <script src="{{asset('assets1/js/main.js')}}"></script>
 </body>
 
 <!-- Mirrored from themescare.com/demos/bluecolor-version-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 05:40:48 GMT -->

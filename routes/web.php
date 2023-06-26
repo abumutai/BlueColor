@@ -28,7 +28,7 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-
+Route::get('/test',function(){ return view('home.users.dashboard.index'); });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::controller(IndexController::class)->group(function () {
@@ -62,6 +62,7 @@ Route::controller(AuthController::class)->group(function () {
     });
     Route::prefix('user')->group(function () {
         Route::get('register', 'userRegister')->name('user.register');
+        Route::get('choosesignup',function(){return view('auth.choosesignup');})->name('choosesignup');
     });
     Route::prefix('users')->group(function () {
         Route::post('register', 'register')->name('users.register');
