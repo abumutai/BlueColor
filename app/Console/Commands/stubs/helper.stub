@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Helpers;
+
+class {{ClassName}}
+{
+    //your class methods.//set to static change when there is need
+    public static function FunctionName()
+    {
+        # code...
+    }
+    
+}

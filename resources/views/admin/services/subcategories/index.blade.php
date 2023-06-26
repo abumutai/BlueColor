@@ -56,39 +56,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($subcategories as $subcategory )
                             <tr>
-                                <td>1</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-03.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Computer</td>
-                                <td>28 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                        <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-02.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Automobile</td>
-                                <td>7 Sep 2022</td>
+                                <td>{{ $loop->iteration }}</td>
+                                <td>{{ $subcategory->title }}</td>
+                                <td>{{ $subcategory->slug }}</td>
+                                <td>{{ Qs::getCategoryByID($subcategory->category_id)->title }}</td>
+                                <td>{{ $subcategory->created_at->format('Y-m-d') }}</td>
+                                
                                 <td>
                                     <div class="table-actions d-flex">
                                          <a class="delete-table me-2" href="edit-subcategories.html" >
@@ -100,138 +75,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-04.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Car Wash</td>
-                                <td>17 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-09.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Cleaning</td>
-                                <td>23 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-08.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Construction</td>
-                                <td>23 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-07.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Interior</td>
-                                <td>1 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-09.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Painting</td>
-                                <td>10 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>
-                                    <div class="table-imgname">
-                                        <img src="assets/img/services/service-12.jpg" class="me-2" alt="img">
-                                        <span>Others</span>
-                                    </div>
-                                </td>
-                                <td>Others</td>
-                                <td>Plumbing</td>
-                                <td>10 Sep 2022</td>
-                                <td>
-                                    <div class="table-actions d-flex">
-                                         <a class="delete-table me-2" href="edit-subcategories.html" >
-                                           <img src="assets/img/icons/edit.svg" alt="svg">
-                                        </a>
-                                        <a class="delete-table" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete-item">
-                                            <img src="assets/img/icons/delete.svg" alt="svg">
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

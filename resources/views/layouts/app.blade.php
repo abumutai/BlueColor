@@ -358,6 +358,13 @@
                             <a href="booking.html"><i class="fe fe-smartphone"></i> <span> Bookings</span></a>
                         </li>
                         <li class="menu-title">
+                            <h6>Locations</h6>
+                        </li>
+                        <li class="submenu">
+                            <li><a href="{{route('counties.index')}}"><i class="fa fa-map-marker"></i> <span>Counties</span></a></li>
+                            <li><a href="{{route('cities.index')}}"><i class="fa fa-map-marker"></i> <span>Cities</span></a></li>
+                        </li>
+                        <li class="menu-title">
                             <h6>Finance & Accounts</h6>
                         </li>
                         <li>
@@ -519,13 +526,6 @@
                         </li>
                         <li>
                             <a href="delete-account-requests.html"><i class="fe fe-trash-2"></i> <span>Delete Account Requests</span></a>
-                        </li>
-                        <li class="menu-title">
-                            <h6>Locations</h6>
-                        </li>
-                        <li class="submenu">
-                            <li><a href="{{route('counties.index')}}"><i class="fa fa-map-marker"></i> <span>Counties</span></a></li>
-                            <li><a href="{{route('cities.index')}}"><i class="fa fa-map-marker"></i> <span>Cities</span></a></li>
                         </li>
                         <li class="menu-title">
                             <h6>Marketing</h6>
