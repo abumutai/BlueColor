@@ -1,244 +1,237 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
-<!-- Mirrored from themescare.com/demos/jobguru-version-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 05:39:31 GMT -->
-
+<!-- Mirrored from html.truelysell.com/template3/provider-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 09:47:13 GMT -->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="jobguru | Job Board HTML Templates from Themescare">
-    <meta name="keyword" content="Job, freelancer, employee, marketplace">
-    <meta name="author" content="Themescare">
-    <!-- Title -->
-    @yield('title')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Truelysell | Template</title>
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets1/img/favicon/favicon-32x32.png')}}">
-    <!--Bootstrap css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/bootstrap.css')}}">
-    <!--Font Awesome css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/font-awesome.min.css')}}">
-    <!--Magnific css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/magnific-popup.css')}}">
-    <!--Owl-Carousel css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets1/css/owl.theme.default.min.css')}}">
-    <!--Animate css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/animate.min.css')}}">
-    <!--Select2 css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/select2.min.css')}}">
-    <!--Slicknav css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/slicknav.min.css')}}">
-    <!--Bootstrap-Datepicker css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/bootstrap-datepicker.min.css')}}">
-    <!--Jquery UI css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/jquery-ui.min.css')}}">
-    <!--Perfect-Scrollbar css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/perfect-scrollbar.min.css')}}">
-    <!--Site Main Style css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/style.css')}}">
-    <!--Responsive css-->
-    <link rel="stylesheet" href="{{asset('assets1/css/responsive.css')}}">
+    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/plugins/fontawesome/css/all.min.css') }}">
+
+    <!-- Feather CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/feather.css') }}">
+
+    <!-- Select CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/plugins/select2/css/select2.min.css') }}">
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-datetimepicker.min.css') }}">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
-<body>
 
+<body class="provider-body">
 
-    <!-- Header Area Start -->
-    <header class="jobguru-header-area stick-top forsticky">
-        <div class="menu-animation">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <div class="site-logo">
-                            <a href="/">
-                                {{-- <img src="{{asset('assets1/img/logo.png')}}" alt="jobguru" class="non-stick-logo" />
-                                <img src="{{asset('assets1/img/logo-2.png')}}" alt="jobguru" class="stick-logo" /> --}}
-                             <h1 class="text-white"><span class="text-success">BlueColor</span></h1>   
-                            </a>
-                        </div>
-                        <!-- Responsive Menu Start -->
-                        <div class="jobguru-responsive-menu"></div>
-                        <!-- Responsive Menu Start -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="header-menu">
-                            <nav id="navigation">
-                                <ul id="jobguru_navigation">
-                                    {{-- <li class="active has-children">
-                                        <a href="#">home</a>
-                                        <ul>
-                                            <li><a href="index-2.html">Home 1</a></li>
-                                            <li><a href="index-3.html">Home 2</a></li>
-                                        </ul>
-                                    </li> --}}
-                                    <li><a href="/">Home</a></li>
-                                    <li class=" has-children">
-                                        <a href="#">Categories</a>
-                                        <ul>
-                                            <li class="has-inner-child">
-                                                <li><a href="{{route('home.jobs')}}">Plumbing</a></li>
-                                            </li>
-                                            <li class="has-inner-child">
-                                                <li><a href="{{route('home.jobs')}}">Mechanic</a></li>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                   
-                                    <li><a href="{{route('home.about')}}">About us</a></li>
-                                    <li><a href="{{route('home.contact')}}">contact us</a></li>
-                                    <li><a href="{{route('home.contact')}}">Blog</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="header-menu">
-                            <nav id="navigation">
-                                <ul id="jobguru_navigation">
-                                    @guest
-                                    <li><a href="{{route('users.login')}}"> <i class="fa fa-lock"></i> Login</a></li>
-                                    <li class=" has-children">
-                                        <a href="#"> <i class="fa fa-user"></i> Register</a>
-                                        <ul>
-                                            <li class="has-inner-child">
-                                                <li><a href="{{route('professional.register')}}">Professional</a></li>
-                                            </li>
-                                            <li class="has-inner-child">
-                                                <li><a href="{{route('user.register')}}">User</a></li>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    @endguest
-                                  @auth
-                                  <li><a href="{{Auth::user()->user_type== 1 ? route('professionals.dashboard') : route('users.dashboard')}}" class="btn btn-success btn-rounded post-jobs bg-transparent text-success mr-2"> <i class="fa fa-home"></i> Dashboard</a></li>
-                                  <li><button form="logout" type="submit" class="post-jobs border-0 text-white"><i class="fa fa-sign-out"></i> Logout</button></li>
-                                  <form id="logout" action="{{route('logout')}}" method="post">@csrf</form>
-                         
-                                  @endauth
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
-    @yield('content')
+	
+	<div class="main-wrapper">
+	
+		<!-- Header -->
+		<div class="header">
+			<div class="header-left"> 
+			<div class="sidebar-logo">
+					<a href="index.html">
+						<img src="assets/img/logo.svg" class="img-fluid logo" alt="">
+					</a>
+					<a href="index.html">
+						<img src="assets/img/logo-small.png" class="img-fluid logo-small" alt="">
+					</a>
+				</div>
+				<div class="siderbar-toggle">
+					<label class="switch" id="toggle_btn">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+			<a class="mobile_btns" id="mobile_btns" href="javascript:void(0);">
+				<i class="fas fa-align-left"></i>
+			</a>
+			<div class="header-split">
+				<div class="page-headers">
+					<div class="search-bar">
+						<span><i class="feather-search"></i></span>
+						<input type="text" placeholder="Search" class="form-control">
+					</div>
+				</div>
+				<ul class="nav user-menu">
+					<!-- Notifications -->
+					<li class="nav-item">
+						<a href="index.html" class="viewsite" ><i class="feather-globe me-2"></i>View Site</a>
+					</li>
+					<li class="nav-item dropdown has-arrow dropdown-heads flag-nav">
+						<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button">
+							<img src="assets/img/flags/us1.png" alt="" height="20"> 
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/us.png" class="me-2" alt="" height="16"> English
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/fr.png" class="me-2" alt="" height="16"> French
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/es.png" class="me-2" alt="" height="16"> Spanish
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="assets/img/flags/de.png" class="me-2" alt="" height="16"> German
+							</a>
+						</div>
+					</li>
+					<li class="nav-item  has-arrow dropdown-heads ">
+						<a href="#">
+							<i class="feather-moon"></i>
+						</a>
+					</li>
+					<li class="nav-item dropdown has-arrow dropdown-heads ">
+						<a href="#" data-bs-toggle="dropdown">
+							<i class="feather-bell"></i>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<div>
+									<span class="notification-title">Notifications</span>
+									<select>
+										<option>All</option>
+										<option>Read</option>
+									</select>
+								</div>
+								<a href="javascript:void(0)" class="clear-noti">Mark all as read <i class="fa-regular fa-circle-check"></i> </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<div class="media d-flex">
+											<a href="notification.html">
+												<span class="avatar avatar-sm avatar-online flex-shrink-0">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-02.jpg">
+												</span>
+											</a>
+											<div class="media-body flex-grow-1">
+												<a href="notification.html"><p class="noti-details">Lex Murph <span class="noti-title"> requested access to</span> Computer & Server AMC Service </p></a>
+												<div class="notify-btns">
+													<button class="btn btn-primary">Accept</button>
+													<button class="btn btn-secondary">Cancel</button>
+												</div>
+												<p class="noti-time"><span class="notification-time">Today 10:04 PM</span></p>
+											</div>
+										</div>
+									</li>
+									<li class="notification-message">
+										<a href="provider-notifcations.html">
+											<div class="media d-flex">
+												<span class="avatar avatar-sm avatar-online flex-shrink-0">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-01.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details">Ray Arnold <span class="noti-title">left 6 comments on</span> Commercial Painting Services</p>
+													<p class="noti-time"><span class="notification-time">Today 9:45 PM</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="provider-notifcations.html">
+											<div class="media d-flex">
+												<span class="avatar avatar-sm avatar-online flex-shrink-0">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-03.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details">Dennis Nedry <span class="noti-title">commented on</span> Electric Panel Repairing Service </p>
+													<h6>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  commodo consequat..”</h6>
+													<p class="noti-time"><span class="notification-time">Yesterday 8:17 AM</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="provider-notifcations.html">
+											<div class="media d-flex">
+												<span class="avatar avatar-sm avatar-online flex-shrink-0">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/profiles/avatar-04.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details">John Hammond <span class="noti-title">has booked your</span> House Cleaning Services </p>
+													<p class="noti-time"><span class="notification-time">Last Wednesday at 11:15 AM</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="provider-notifcations.html">View More <img src="assets/img/icons/circle-icon.svg" alt=""></a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item  has-arrow dropdown-heads ">
+						<a href="#" class="win-maximize">
+							<i class="feather-maximize" ></i>
+						</a>
+					</li>
 
-    <!-- Footer Area Start -->
-    <footer class="jobguru-footer-area">
-        <div class="footer-top section_50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <div class="footer-logo">
-                                <a href="/">
-                                    {{-- <img src="{{asset('assets1/img/logo.png')}}" alt="jobguru logo" /> --}}
-                                    <h1 class="text-white"><span class="text-success">BlueColor</span></h1> 
-                                </a>
-                            </div>
-                            <p>Home of Blue Color Jobs</p>
-                            <ul class="footer-social">
-                                <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#" class="skype"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    {{-- <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>recent post</h3>
-                            <div class="latest-post-footer clearfix">
-                                <div class="latest-post-footer-left">
-                                    <img src="{{asset('assets1/img/footer-post-2.jpg')}}" alt="post" />
-                                </div>
-                                <div class="latest-post-footer-right">
-                                    <h4><a href="#">Website design trends for 2018</a></h4>
-                                    <p>January 14 - 2018</p>
-                                </div>
-                            </div>
-                            <div class="latest-post-footer clearfix">
-                                <div class="latest-post-footer-left">
-                                    <img src="{{asset('assets1/img/footer-post-3.jpg')}}" alt="post" />
-                                </div>
-                                <div class="latest-post-footer-right">
-                                    <h4><a href="#">UI experts and modern designs</a></h4>
-                                    <p>January 12 - 2018</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget">
-                            <h3>main links</h3>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-double-right "></i> About BlueColor</a></li>
-          
-                                <li><a href="#"><i class="fa fa-angle-double-right "></i> Terms & Conditions</a>
-                                </li>
+					<!-- User Menu -->
+					<li class="nav-item dropdown has-arrow account-item">
+						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<div class="user-infos">
+								<span class="user-img">
+									<img src="assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="">
+								</span>
+								<div class="user-info">
+									<h6>John Smith</h6>
+									<p>Demo User</p>
+								</div>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end emp">
+							<a class="dropdown-item" href="provider-profile-settings.html">
+								<i class="feather-user me-2"></i> Profile
+							</a>
+							<a class="dropdown-item" href="{{ route('logout') }}">
+								<i class="feather-log-out me-2"></i> Logout
+							</a>
+						</div>
+					</li>
+					<!-- /User Menu -->
+				</ul>
+			</div>
+			
+		</div>
+		<!-- /Header -->
+        @include('home.employer_sidebar')
+		@yield('content')
+        <script data-cfasync="false" src="https://html.truelysell.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.1.min.js"></script>
 
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-footer-widget footer-contact">
-                            <h3>Contact Info</h3>
-                            <p><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                            <p><i class="fa fa-phone"></i> 012-3456-789</p>
-                            <p><i class="fa fa-envelope-o"></i> info@bluecolor.com</p>
-                            <p><i class="fa fa-envelope-o"></i> info@bluecolor.com</p>
-                            <p><i class="fa fa-fax"></i> 112-3456-7898</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright-left">
-                            <p>Copyright &copy; {{now()->year}} BlueColor. All Rights Reserved</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
+	<!-- Bootstrap Core JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
 
+	<!-- Fearther JS -->
+	<script src="assets/js/feather.min.js"></script>
+	
+	<!-- select JS -->
+	<script src="assets/plugins/select2/js/select2.min.js"></script>
 
-    <!--Jquery js-->
-    <script src="{{asset('assets1/js/jquery-3.6.0.min.js')}}"></script>
-    <!--Bootstrap js-->
-    <script src="{{asset('assets1/js/bootstrap.bundle.min.js')}}"></script>
-    <!--Bootstrap Datepicker js-->
-    <script src="{{asset('assets1/js/bootstrap-datepicker.min.js')}}"></script>
-    <!--Perfect Scrollbar js-->
-    <script src="{{asset('assets1/js/jquery-perfect-scrollbar.min.js')}}"></script>
-    <!--Owl-Carousel js-->
-    <script src="{{asset('assets1/js/owl.carousel.min.js')}}"></script>
-    <!--SlickNav js-->
-    <script src="{{asset('assets1/js/jquery.slicknav.min.js')}}"></script>
-    <!--Magnific js-->
-    <script src="{{asset('assets1/js/jquery.magnific-popup.min.js')}}"></script>
-    <!--Select2 js-->
-    <script src="{{asset('assets1/js/select2.min.js')}}"></script>
-    <!--jquery-ui js-->
-    <script src="{{asset('assets1/js/jquery-ui.min.js')}}"></script>
-    <!--Jarallax js-->
-    <script src="{{asset('assets1/js/jarallax.min.js')}}"></script>
-    <script src="{{asset('assets1/js/jarallax-video.min.js')}}"></script>
-    <!--Main js-->
-    <script src="{{asset('assets1/js/main.js')}}"></script>
+    <!-- Datetimepicker JS -->
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="assets/js/script.js"></script>
+	
 </body>
 
-<!-- Mirrored from themescare.com/demos/bluecolor-version-2/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 05:40:48 GMT -->
-
+<!-- Mirrored from html.truelysell.com/template3/provider-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 09:47:31 GMT -->
 </html>

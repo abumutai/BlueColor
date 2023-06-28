@@ -77,6 +77,7 @@ Route::prefix('professional')->group(function () {
     Route::controller(ProfessionalController::class)->group(function () {
         Route::get('dashboard', 'dashboard')->name('professionals.dashboard');
         Route::get('services', 'services')->name('professionals.services');
+        Route::get('bookings','bookings')->name('professional.bookings');
     });
     Route::resource('services',ServiceController::class);
 });

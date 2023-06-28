@@ -36,7 +36,7 @@ class BookingController extends Controller
      * @param  \App\Http\Requests\StoreBookingRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreBookingRequest $request)
+    public function store(Request $request)
     {
         //
     }

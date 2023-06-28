@@ -19,4 +19,8 @@ class ProfessionalController extends Controller
 
         return view('home.professionals.dashboard.services');
     }
+    public function bookings()
+    {
+        return view('home.professionals.bookings.index');
+    }
 }
