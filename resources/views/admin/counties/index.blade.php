@@ -36,7 +36,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="btn btn-primary" href="add-counties.html"><i class="fa fa-plus me-2"></i>Add County </a>
+                        <a class="btn btn-primary" href="{{ route('counties.create') }}"><i class="fa fa-plus me-2"></i>Add County </a>
                     </li>
                 </ul>
             </div>

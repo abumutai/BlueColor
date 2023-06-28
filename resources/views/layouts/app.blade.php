@@ -355,7 +355,7 @@
                             <h6>Booking</h6>
                         </li>
                         <li>
-                            <a href="booking.html"><i class="fe fe-smartphone"></i> <span> Bookings</span></a>
+                            <a href="{{ route('admin-bookings.index') }}"><i class="fe fe-smartphone"></i> <span> Bookings</span></a>
                         </li>
                         <li class="menu-title">
                             <h6>Locations</h6>

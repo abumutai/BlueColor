@@ -37,7 +37,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="btn btn-primary" href="add-service.html"><i class="fa fa-plus me-2"></i>Add Services
+                            <a class="btn btn-primary" href="{{ route('admin-services.create') }}"><i class="fa fa-plus me-2"></i>Add Services
                             </a>
                         </li>
                     </ul>

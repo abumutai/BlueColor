@@ -5,13 +5,10 @@
 @endsection
 
 @section('content')
-    <div class="content-body">
-        <div class="container-fluid">
-            <div class="row page-titles">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Add City</a></li>
-                </ol>
-            </div>
+<div class="page-wrapper">
+    <div class="content">
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 m-auto">
             <!-- row -->
             @if (session('exception'))
                 <div class="alert alert-danger">
@@ -62,5 +59,7 @@
                 </div>
             </div>
         </div>
+        </div>
+    </div>
     </div>
 @endsection

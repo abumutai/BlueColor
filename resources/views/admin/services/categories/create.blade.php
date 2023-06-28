@@ -5,55 +5,44 @@
 @endsection
 
 @section('content')
-    <div class="content-body">
-        <div class="container-fluid">
-            <div class="row page-titles">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="javascript:void(0)">Add Service Category</a></li>
-                </ol>
+<div class="page-wrapper">
+    <div class="content">
+        @if (session('exception'))
+            <div class="alert alert-danger">
+                {{session('exception')}}
             </div>
-            <!-- row -->
-            @if (session('exception'))
-                <div class="alert alert-danger">
-                    {{session('exception')}}
+        @endif
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 m-auto">
+                <div class="content-page-header">
+                    <h5>Add Categories</h5>
                 </div>
-            @endif
-            <div class="row">
-                <div class="col-xl-9 col-lg-9">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Category Details</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="basic-form">
-                                <form action="{{ route('service-categories.store') }}" method="POST" enctype="multipart/form-data">
-                                    @csrf
-                                    <div class="mb-3">
-                                        <label for="">Category Name</label>
-                                        <input type="text" class="form-control input-default " placeholder="Name"
-                                            name="name" value="{{old('name')}}">
-                                        @error('name')
-                                            <div class="alert alert-danger">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="">Category Image</label>
-                                        <input type="file" class="form-file-input form-control" name="image">
-                                        @error('image')
-                                            <div class="alert alert-danger">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Add</button>
-                                </form>
+                <form action="{{ route('service-categories.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="mb-3">
+                        <label for="">Category Name</label>
+                        <input type="text" class="form-control input-default " placeholder="Name"
+                            name="name" value="{{old('name')}}">
+                        @error('name')
+                            <div class="alert alert-danger">
+                                {{ $message }}
                             </div>
-                        </div>
+                        @enderror
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="">Category Image</label>
+                        <input type="file" class="form-file-input form-control" name="image">
+                        @error('image')
+                            <div class="alert alert-danger">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </form>
             </div>
         </div>
     </div>
+</div> 
+</div>
 @endsection

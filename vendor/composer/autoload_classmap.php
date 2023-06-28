@@ -6,8 +6,10 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\HelperCommand' => $baseDir . '/app/Console/Commands/HelperCommand.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Helpers\\Qs' => $baseDir . '/app/Helpers/Qs.php',
     'App\\Http\\Controllers\\AdminServiceController' => $baseDir . '/app/Http/Controllers/AdminServiceController.php',
     'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -35,6 +37,7 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Models\\Booking' => $baseDir . '/app/Models/Booking.php',
     'App\\Models\\City' => $baseDir . '/app/Models/City.php',
     'App\\Models\\County' => $baseDir . '/app/Models/County.php',
     'App\\Models\\Service' => $baseDir . '/app/Models/Service.php',
@@ -157,6 +160,7 @@ return array(
     'Cron\\HoursField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
     'Cron\\MinutesField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+    'Database\\Factories\\BookingFactory' => $baseDir . '/database/factories/BookingFactory.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\CategoriesSeeder' => $baseDir . '/database/seeders/CategoriesSeeder.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',

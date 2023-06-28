@@ -343,8 +343,8 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -524,8 +524,10 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\HelperCommand' => __DIR__ . '/../..' . '/app/Console/Commands/HelperCommand.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helpers\\Qs' => __DIR__ . '/../..' . '/app/Helpers/Qs.php',
         'App\\Http\\Controllers\\AdminServiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminServiceController.php',
         'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -553,6 +555,7 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Booking' => __DIR__ . '/../..' . '/app/Models/Booking.php',
         'App\\Models\\City' => __DIR__ . '/../..' . '/app/Models/City.php',
         'App\\Models\\County' => __DIR__ . '/../..' . '/app/Models/County.php',
         'App\\Models\\Service' => __DIR__ . '/../..' . '/app/Models/Service.php',
@@ -675,6 +678,7 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Database\\Factories\\BookingFactory' => __DIR__ . '/../..' . '/database/factories/BookingFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\CategoriesSeeder' => __DIR__ . '/../..' . '/database/seeders/CategoriesSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',

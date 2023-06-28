@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CountyController;
 use App\Http\Controllers\UserController;
@@ -28,7 +29,7 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-Route::get('/test',function(){ return view('home.users.dashboard.index'); });
+Route::get('/test',function(){ return view('admin.bookings.index'); });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::controller(IndexController::class)->group(function () {
@@ -93,4 +94,6 @@ Route::prefix('admin')->group(function(){
     Route::resource('cities',CityController::class);
 
     Route::resource('admin-services',AdminServiceController::class);
+
+    Route::resource('admin-bookings',BookingController::class);
 });

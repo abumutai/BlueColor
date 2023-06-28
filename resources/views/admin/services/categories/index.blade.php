@@ -36,7 +36,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="btn btn-primary" href="add-categories.html"><i class="fa fa-plus me-2"></i>Add Categories </a>
+                        <a class="btn btn-primary" href="{{ route('service-categories.create') }}"><i class="fa fa-plus me-2"></i>Add Categories </a>
                     </li>
                 </ul>
             </div>
