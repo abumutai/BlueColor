@@ -14,28 +14,28 @@
                <a href="{{route('professional.bookings')}}"><i class="feather-calendar"></i> <span>Bookings </span></a>
             </li>
             <li>
-               <a href="provider-payout.html"><i class="feather-credit-card"></i> <span>Payout</span></a>
+               <a href="{{ route('payout') }}"><i class="feather-credit-card"></i> <span>Payout</span></a>
             </li>
             <li>
-               <a href="provider-availability.html"><i class="feather-clock"></i> <span>Availability</span></a>
+               <a href="{{ route('availability') }}"><i class="feather-clock"></i> <span>Availability</span></a>
             </li>
             <li>
-               <a href="provider-holiday.html"><i class="feather-calendar"></i> <span>Holidays & Leave</span></a>
+               <a href="{{ route('holiday') }}"><i class="feather-calendar"></i> <span>Holidays & Leave</span></a>
             </li>
             <li>
-               <a href="provider-coupons.html"><i class="feather-bookmark"></i> <span>Coupons</span></a>
+               <a href="{{ route('home.professionals.coupons') }}"><i class="feather-bookmark"></i> <span>Coupons</span></a>
             </li>
             <li>
                <a href="{{route('home.employer.dashboard.post')}}"><i class="feather-dollar-sign"></i> <span>Subscription</span></a>
             </li>
             <li>
-               <a href="provider-offers.html"><i class="feather-percent"></i> <span>Offers</span></a>
+               <a href="{{ route('home.professionals.offers') }}"><i class="feather-percent"></i> <span>Offers</span></a>
             </li>
             <li>
-               <a href="{{route('home.employer.dashboard.post')}}"><i class="feather-star"></i> <span>Reviews</span></a>
+               <a href="{{route('home.professionals.reviews')}}"><i class="feather-star"></i> <span>Reviews</span></a>
             </li>
             <li>
-               <a href="provider-earnings.html"><i class="feather-dollar-sign"></i> <span>Earnings</span></a>
+               <a href="{{ route('home.professionals.earnings') }}"><i class="feather-dollar-sign"></i> <span>Earnings</span></a>
             </li>
             <li>
                <a href="provider-chat.html"><i class="feather-message-circle"></i> <span>Chat</span></a>

@@ -185,7 +185,7 @@
 						<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
 							<div class="user-infos">
 								<span class="user-img">
-									<img src="assets/img/profiles/avatar-02.jpg" class="rounded-circle" alt="">
+									<img src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" class="rounded-circle" alt="">
 								</span>
 								<div class="user-info">
 									<h6>John Smith</h6>

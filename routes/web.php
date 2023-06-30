@@ -70,7 +70,7 @@ Route::controller(AuthController::class)->group(function () {
         Route::get('login', 'usersLogin')->name('users.login');
         Route::post('login', 'usersSubmitLogin')->name('users.login.submit');
     });
-    Route::post('logout', 'logout')->name('logout');
+    Route::get('logout', 'logout')->name('logout');
 });
 
 Route::prefix('professional')->group(function () {
@@ -78,9 +78,17 @@ Route::prefix('professional')->group(function () {
         Route::get('dashboard', 'dashboard')->name('professionals.dashboard');
         Route::get('services', 'services')->name('professionals.services');
         Route::get('bookings','bookings')->name('professional.bookings');
+        
     });
     Route::resource('services',ServiceController::class);
 });
+Route::get('payout',function(){return view('home.professionals.payouts.index');})->name('payout');
+Route::get('holidays',function(){ return view('home.professionals.holiday');})->name('holiday');
+Route::get('availability',function(){return view('home.professionals.availabilty');})->name('availability');
+Route::get('coupons',function(){return view('home.professionals.coupons');})->name('home.professionals.coupons');
+Route::get('reviews',function(){return view('home.professionals.reviews');})->name('home.professionals.reviews');
+Route::get('earnings',function(){return view('home.professionals.earnings');})->name('home.professionals.earnings');
+Route::get('offers',function(){return view('home.professionals.offers');})->name('home.professionals.offers');
 Route::controller(UserController::class)->group(function () {
     Route::prefix('user')->group(function () {
         Route::get('dashboard', 'dashboard')->name('users.dashboard');
