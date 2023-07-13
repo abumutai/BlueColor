@@ -188,8 +188,8 @@
 									<img src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" class="rounded-circle" alt="">
 								</span>
 								<div class="user-info">
-									<h6>John Smith</h6>
-									<p>Demo User</p>
+									<h6>{{ Auth::user()->name }}</h6>
+									<p>{{ Auth::user()->name }}</p>
 								</div>
 							</div>
 						</a>

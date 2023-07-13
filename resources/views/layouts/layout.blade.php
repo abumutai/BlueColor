@@ -324,6 +324,33 @@
                             </li>
                         </ul>
                     @endguest
+                @if(Auth::user())
+                    
+                
+                    <!-- User Menu -->
+						<li class="nav-item dropdown has-arrow account-item">
+							<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+								<div class="user-infos">
+									<span class="user-img">
+										<img src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" class="rounded-circle" alt="">
+									</span>
+									<div class="user-info">
+										<h6>{{ Auth::user()->name }}</h6>
+										<p>{{ Auth::user()->name }}</p>
+									</div>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end emp">
+								<a class="dropdown-item" href="customer-profile.html">
+									<i class="feather-user me-2"></i> Profile
+								</a>
+								<a class="dropdown-item" href="{{ route('logout') }}">
+									<i class="feather-log-out me-2"></i> Logout
+								</a>
+							</div>
+						</li>
+						<!-- /User Menu -->
+                        @endif
 
                 </nav>
             </div>
