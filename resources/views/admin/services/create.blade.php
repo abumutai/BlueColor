@@ -5,6 +5,9 @@
 @endsection
 
 @section('content')
+<div class="page-wrapper">
+    <div class="content">
+        <div class="row">
     <div class="content-body">
         <div class="container-fluid">
             <div class="row page-titles">
@@ -181,4 +184,7 @@
             </div>
         </div>
     </div>
+</div>
+</div>
+</div>
 @endsection

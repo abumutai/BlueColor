@@ -5,1030 +5,356 @@
     @endsection
 @section('content')
      
-     <!-- Candidate Dashboard Area Start -->
-     <section class="hero-section">			
+    <!-- Customer Menu -->
+    <div class="content">
       <div class="container">
-         <div class="home-banner">
-            <div class="row align-items-center w-100">
-               <div class="col-lg-7 col-md-10 mx-auto">
-                  <div class="section-search aos" data-aos="fade-up">
-                     <h1>Professional Services For Your Home & Commercial </h1>
-                     <p>Search From 100 Awesome Verified Ads!</p>
-                     <div class="search-box">
-                        <form action="https://html.truelysell.com/template3/search.html"> 
-                           <div class="search-input line">
-                              <div class="search-group-icon">
-                                 <i class="feather-map-pin"></i>
-                              </div>
-                              <div class="form-group mb-0">
-                                 <label>Your Location</label>
-                                 <input type="text" class="form-control" placeholder="America">
-                              </div>
-                           </div>
-                           <div class="search-input">
-                              <div class="search-group-icon search-icon">
-                                 <i class="feather-search"></i>
-                              </div>
-                              <div class="form-group mb-0">
-                                 <label>What are you looking for?</label>
-                                 <input type="text" class="form-control" placeholder="Car Repair Services">
-                              </div>
-                           </div>
-                           <div class="search-btn">
-                              <button class="btn btn-primary" type="submit"><i class="feather-search me-2"></i>Search</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-5">
-                  <div class="banner-imgs">
-                     <div class="banner-1 shape-1">
-                        <img class="img-fluid" alt="banner" src="{{ asset('assets/img/banner1.png') }}">
-                     </div>
-                     <div class="banner-2 shape-3">
-                        <img class="img-fluid" alt="banner" src="{{ asset('assets/img/banner2.png') }}">
-                     </div>
-                     <div class="banner-3 shape-3">
-                        <img class="img-fluid" alt="banner" src="{{ asset('assets/img/banner3.png') }}">
-                     </div>
-                     <div class="banner-4 shape-2">
-                        <img class="img-responsive" alt="banner" src="{{ asset('assets/img/banner4.png') }}">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>	
-      </div>
-   </section>
-   <!-- /Hero Section -->
-   
-   <!-- Feature Section -->
-   <section class="feature-section">			
-      <div class="container">			
-         <div class="section-heading">
-            <div class="row">
-               <div class="col-md-6 aos" data-aos="fade-up">
-                  <h2>Featured Categories</h2>
-                  <p>What do you need to find?</p>
-               </div>
-               <div class="col-md-6 text-md-end aos" data-aos="fade-up">
-                  <a href="categories.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
-               </div>
-            </div>
-         </div>
          <div class="row">
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-01.svg" alt="img">
-                     </span>
+         
+            <!-- Customer Menu -->
+            <div class="col-md-4 col-lg-3 theiaStickySidebar">
+               <div class="settings-widget">
+                  <div class="settings-header">
+                     <div class="settings-img">
+                        <img src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" alt="user">
+                     </div>
+                     <h6>John Smith</h6>
+                     <p>Member Since Sep 2021</p>
                   </div>
-                  <h5>Construction</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-02.jpg" alt="img">
+                  <div class="settings-menu">
+                     <ul>
+                        <li>
+                           <a href="customer-dashboard.html" class="active">
+                              <i class="feather-grid"></i> <span>Dashboard</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-booking.html">
+                              <i class="feather-smartphone"></i> <span>Bookings</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-favourite.html">
+                              <i class="feather-heart"></i> <span>Favorites</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-wallet.html">
+                              <i class="feather-credit-card"></i>  <span>Wallet</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-reviews.html">
+                              <i class="feather-star"></i> <span>Reviews</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-chat.html">
+                              <i class="feather-message-circle"></i> <span>Chat</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="customer-profile.html">
+                              <i class="feather-settings"></i> <span>Settings</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="{{ route('logout') }}">
+                              <i class="feather-log-out"></i> <span>Logout</span>
+                           </a>
+                        </li>
+                     </ul>
                   </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-02.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Car Wash</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/feature.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-03.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Electrical</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-01.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-04.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Cleaning</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-09.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-05.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Interior</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-07.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-06.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Carpentry</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-03.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-07.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Computer</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-06.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-               <a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-                  <div class="feature-icon">
-                     <span>
-                        <img src="assets/img/icons/feature-icon-08.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Plumbing</h5>
-                  <div class="feature-overlay">
-                     <img src="assets/img/services/service-11.jpg" alt="img">
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /Feature Section -->
-   
-   <!-- Service Section -->
-   <section class="service-section">			
-      <div class="container">
-         <div class="section-heading">
-            <div class="row">
-               <div class="col-md-6 aos" data-aos="fade-up">						
-                  <h2>Featured Services</h2>
-                  <p>Explore the greates our services. You won’t be disappointed</p>
-               </div>
-               <div class="col-md-6 text-md-end aos" data-aos="fade-up">
-                  <div class="owl-nav mynav"></div>
                </div>
             </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12">
-               <div class="owl-carousel service-slider">
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-01.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Cleaning</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
+            <!-- /Customer Menu -->
+            
+            <div class="col-md-8 col-lg-9">
+               <div class="widget-title">
+                  <h4>Dashboard</h4>
+               </div>
+               
+               <!-- Dashboard Widget -->
+               <div class="row">
+                  <div class="col-md-6 col-lg-3">
+                     <div class="dash-widget">
+                        <div class="dash-img">
+                           <span class="dash-icon bg-yellow">
+                              <img src="assets/img/icons/dash-icon-01.svg" alt="">
+                           </span>
+                           <div class="dash-value"><img src="{{ asset('assets/img/icons/up-icon.svg') }}" alt=""> +16.24%</div>
                         </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-01.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Electric Panel Repairing Service</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>New Jersey, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$25.00<span class="old-price">$35.00</span></h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
+                        <div class="dash-info">
+                           <div class="dash-order">
+                              <h6>Total Orders</h6>
+                              <h5>27</h5>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-02.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Construction</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="dash-widget">
+                        <div class="dash-img">
+                           <span class="dash-icon bg-blue">
+                              <img src="assets/img/icons/wallet-icon-01.svg" alt="">
+                           </span>
+                           <div class="dash-value text-danger"><img src="{{ asset('assets/img/icons/down-icon.svg') }}" alt=""> +18.52%</div>
                         </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-02.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Toughened Glass Fitting Services</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$45.00</h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
+                        <div class="dash-info">
+                           <div class="dash-order">
+                              <h6>Total Spend</h6>
+                              <h5>$2500</h5>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-03.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Carpentry</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="dash-widget">
+                        <div class="dash-img">
+                           <span class="dash-icon bg-blue">
+                              <img src="assets/img/icons/wallet-add.svg" alt="">
+                           </span>
+                           <div class="dash-value"><img src="{{ asset('assets/img/icons/up-icon.svg') }}" alt=""> +12.10%</div>
                         </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-03.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Wooden Carpentry Work</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$45.00</h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
+                        <div class="dash-info">
+                           <div class="dash-order">
+                              <h6>Wallet</h6>
+                              <h5>$200</h5>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-11.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Construction</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
+                  <div class="col-md-6 col-lg-3">
+                     <div class="dash-widget">
+                        <div class="dash-img">
+                           <span class="dash-icon bg-light-danger">
+                              <img src="assets/img/icons/wallet-amt.svg" alt="">
+                           </span>
+                           <div class="dash-value"><img src="{{ asset('assets/img/icons/up-icon.svg') }}" alt=""> +08.15%</div>
                         </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-04.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Plumbing Services</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Georgia, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$45.00</h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
+                        <div class="dash-info">
+                           <div class="dash-order">
+                              <h6>Total Savings</h6>
+                              <h5>$354</h5>
+                           </div>
                         </div>
                      </div>
                   </div>
+               </div>
+               <!-- /Dashboard Widget -->					
+               
+               <div class="row">
+                  <!-- Recent Booking -->
+                  <div class="col-lg-8 d-flex flex-column">
+                     <h6 class="user-title">Recent Booking</h6>
+                     <div class="table-responsive recent-booking flex-fill">
+                        <table class="table mb-0">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <h2 class="table-avatar">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img rounded" src="{{ asset('assets/img/services/service-06.jpg') }}" alt="User Image"></a>
+                                       <a href="#">Computer Repair<span><i class="feather-calendar"></i> 22 Sep 2022</span></a>
+                                    </h2>
+                                 </td>
+                                 <td>
+                                    <h2 class="table-avatar table-user">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img" src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" alt="User Image"></a>
+                                       <a href="#">
+                                          John Smith
+                                          <span><span class="__cf_email__" data-cfemail="4a202522240a2d272b232664292527">[email&#160;protected]</span></span>
+                                       </a>
+                                    </h2>
+                                 </td>
+                                 <td class="text-end">
+                                    <a href="#" class="btn btn-light-danger">Cancel</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h2 class="table-avatar">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img rounded" src="{{ asset('assets/img/services/service-04.jpg') }}" alt="User Image"></a>
+                                       <a href="#">Car Repair Services<span><i class="feather-calendar"></i> 20 Sep 2022</span></a>
+                                    </h2>
+                                 </td>
+                                 <td>
+                                    <h2 class="table-avatar table-user">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img" src="{{ asset('assets/img/profiles/avatar-03.jpg') }}" alt="User Image"></a>
+                                       <a href="#">
+                                          Timothy
+                                          <span><span class="__cf_email__" data-cfemail="89fde0e4e6fde1f0c9eee4e8e0e5a7eae6e4">[email&#160;protected]</span></span>
+                                       </a>
+                                    </h2>
+                                 </td>
+                                 <td class="text-end">
+                                    <a href="#" class="btn btn-light-danger">Cancel</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h2 class="table-avatar">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img rounded" src="{{ asset('assets/img/services/service-07.jpg') }}" alt="User Image"></a>
+                                       <a href="#">Interior Designing<span><i class="feather-calendar"></i> 19 Sep 2022</span></a>
+                                    </h2>
+                                 </td>
+                                 <td>
+                                    <h2 class="table-avatar table-user">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img" src="{{ asset('assets/img/profiles/avatar-06.jpg') }}" alt="User Image"></a>
+                                       <a href="#">
+                                          Jordan
+                                          <span><span class="__cf_email__" data-cfemail="0b6164796f6a654b6c666a626725686466">[email&#160;protected]</span></span>
+                                       </a>
+                                    </h2>
+                                 </td>
+                                 <td class="text-end">
+                                    <a href="#" class="btn btn-light-danger">Cancel</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h2 class="table-avatar">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img rounded" src="{{ asset('assets/img/services/service-08.jpg') }}" alt="User Image"></a>
+                                       <a href="#">Steam Car Wash<span><i class="feather-calendar"></i> 18 Sep 2022</span></a>
+                                    </h2>
+                                 </td>
+                                 <td>
+                                    <h2 class="table-avatar table-user">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img" src="{{ asset('assets/img/profiles/avatar-09.jpg') }}" alt="User Image"></a>
+                                       <a href="#">
+                                          Armand
+                                          <span><span class="__cf_email__" data-cfemail="3d5c4f505c53597d5a505c5451135e5250">[email&#160;protected]</span></span>
+                                       </a>
+                                    </h2>
+                                 </td>
+                                 <td class="text-end">
+                                    <a href="#" class="btn btn-light-danger">Cancel</a>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <h2 class="table-avatar">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img rounded" src="{{ asset('assets/img/services/service-09.jpg') }}" alt="User Image"></a>
+                                       <a href="#">House Cleaning Services<span><i class="feather-calendar"></i> 17 Sep 2022</span></a>
+                                    </h2>
+                                 </td>
+                                 <td>
+                                    <h2 class="table-avatar table-user">
+                                       <a href="#" class="avatar avatar-m me-2"><img class="avatar-img" src="assets/img/profiles/avatar-10.jpg" alt="User Image"></a>
+                                       <a href="#">
+                                          Joseph
+                                          <span><span class="__cf_email__" data-cfemail="aac0c5d9cfdac2eacdc7cbc3c684c9c5c7">[email&#160;protected]</span></span>
+                                       </a>
+                                    </h2>
+                                 </td>
+                                 <td class="text-end">
+                                    <a href="#" class="btn btn-light-danger">Cancel</a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <!-- /Recent Booking -->
+                  
+                  <!-- Recent Transaction -->
+                  <div class="col-lg-4 d-flex flex-column">
+                     <h6 class="user-title">Recent Transaction</h6>
+                     <div class="table-responsive transaction-table flex-fill">
+                        <table class="table mb-0">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <div class="table-book d-flex align-items-center">
+                                       <span class="book-img">
+                                          <img src="assets/img/icons/trans-icon-01.svg" alt="">
+                                       </span>
+                                       <div>
+                                          <h6>Service Booking</h6>
+                                          <p><i class="feather-calendar"></i>22 Sep 2022 <span><i class="feather-clock"></i> 10:12 AM</span></p>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td class="text-end">
+                                    <h5 class="trans-amt">$280.00</h5>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="table-book d-flex align-items-center">
+                                       <span class="book-img">
+                                          <img src="assets/img/icons/trans-icon-02.svg" alt="">
+                                       </span>
+                                       <div>
+                                          <h6>Service Refund</h6>
+                                          <p><i class="feather-calendar"></i>22 Sep 2022 <span><i class="feather-clock"></i> 10:12 AM</span></p>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td class="text-end">
+                                    <h5 class="trans-amt">$100.00</h5>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="table-book d-flex align-items-center">
+                                       <span class="book-img">
+                                          <img src="assets/img/icons/trans-icon-03.svg" alt="">
+                                       </span>
+                                       <div>
+                                          <h6>Wallet Topup</h6>
+                                          <p><i class="feather-calendar"></i>22 Sep 2022 <span><i class="feather-clock"></i> 10:12 AM</span></p>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td class="text-end">
+                                    <h5 class="trans-amt">$1000.00</h5>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="table-book d-flex align-items-center">
+                                       <span class="book-img">
+                                          <img src="assets/img/icons/trans-icon-01.svg" alt="">
+                                       </span>
+                                       <div>
+                                          <h6>Service Booking</h6>
+                                          <p><i class="feather-calendar"></i>22 Sep 2022 <span><i class="feather-clock"></i> 10:12 AM</span></p>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td class="text-end">
+                                    <h5 class="trans-amt">$280.00</h5>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <div class="table-book d-flex align-items-center">
+                                       <span class="book-img">
+                                          <img src="assets/img/icons/trans-icon-01.svg" alt="">
+                                       </span>
+                                       <div>
+                                          <h6>Service Booking</h6>
+                                          <p><i class="feather-calendar"></i>22 Sep 2022 <span><i class="feather-clock"></i> 10:12 AM</span></p>
+                                       </div>
+                                    </div>
+                                 </td>
+                                 <td class="text-end">
+                                    <h5 class="trans-amt">$280.00</h5>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <!-- /Recent Transaction -->
                   
                </div>
             </div>
-            <div class="btn-sec aos" data-aos="fade-up">
-               <a href="search.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /Service Section -->
-
-   <!-- Providers Section -->
-   <section class="providers-section">			
-      <div class="container">
-         <div class="section-heading">
-            <div class="row">
-               <div class="col-md-6 aos" data-aos="fade-up">					
-                  <h2>Top Providers</h2>
-                  <p>Meet Our Experts</p>	
-               </div>
-               <div class="col-md-6 text-md-end aos" data-aos="fade-up">
-                  <a href="providers.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="row  aos" data-aos="fade-up">
-            <div class="col-lg-3 col-sm-6">
-               <div class="providerset">
-                  <div class="providerset-img">
-                     <a href="provider-details.html">
-                        <img src="assets/img/provider/provider-11.jpg" alt="img">
-                     </a>
-                  </div>
-                  <div class="providerset-content">
-                     <div class="providerset-price">
-                        <div class="providerset-name">
-                           <h4><a href="provider-details.html">John Smith</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
-                           <span>Electrician</span>
-                        </div>
-                        <div class="providerset-prices">
-                           <h6>$20.00<span>/hr</span></h6>
-                        </div>
-                     </div>
-                     <div class="provider-rating">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fa-solid fa-star-half-stroke filled"></i><span>(320)</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-               <div class="providerset">
-                  <div class="providerset-img">
-                     <a href="provider-details.html">
-                        <img src="assets/img/provider/provider-12.jpg" alt="img">
-                     </a>
-                  </div>
-                  <div class="providerset-content">
-                     <div class="providerset-price">
-                        <div class="providerset-name">
-                           <h4><a href="provider-details.html">Michael</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
-                           <span>Carpenter</span>
-                        </div>
-                        <div class="providerset-prices">
-                           <h6>$50.00<span>/hr</span></h6>
-                        </div>
-                     </div>
-                     <div class="provider-rating">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fa-solid fa-star-half-stroke filled"></i><span>(228)</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-               <div class="providerset">
-                  <div class="providerset-img">
-                     <a href="provider-details.html">
-                        <img src="assets/img/provider/provider-13.jpg" alt="img">
-                     </a>
-                  </div>
-                  <div class="providerset-content">
-                     <div class="providerset-price">
-                        <div class="providerset-name">
-                           <h4><a href="provider-details.html">Antoinette</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
-                           <span>Cleaner</span>
-                        </div>
-                        <div class="providerset-prices">
-                           <h6>$25.00<span>/hr</span></h6>
-                        </div>
-                     </div>
-                     <div class="provider-rating">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fa-solid fa-star-half-stroke filled"></i><span>(130)</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-               <div class="providerset">
-                  <div class="providerset-img">
-                     <a href="provider-details.html">
-                        <img src="assets/img/provider/provider-14.jpg" alt="img">
-                     </a>
-                  </div>
-                  <div class="providerset-content">
-                     <div class="providerset-price">
-                        <div class="providerset-name">
-                           <h4><a href="provider-details.html">Thompson</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
-                           <span>Mechanic</span>
-                        </div>
-                        <div class="providerset-prices">
-                           <h6>$25.00<span>/hr</span></h6>
-                        </div>
-                     </div>
-                     <div class="provider-rating">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fa-solid fa-star-half-stroke filled"></i><span>(95)</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Providers Section -->
-
-   <!-- Work Section -->
-   <section class="work-section pt-0">		
-      <div class="container">
-         <div class="row  aos" data-aos="fade-up">
-            <div class="col-md-12">
-               <div class="offer-paths">
-                  <div class="offer-pathimg">
-                     <img src="assets/img/offer.png" alt="img">
-                  </div>
-                  <div class="offer-path-content">
-                     <h3>We Are Offering 14 Days Free Trial</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore minim veniam, quis nostrud exercitation ullamco magna aliqua. </p>
-                     <a href="free-trial.html" class="btn btn-primary btn-views">Try 14 Days Free Trial<i class="feather-arrow-right-circle"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>	
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 text-center">
-               <div class="section-heading aos" data-aos="fade-up">
-                  <h2>How It Works</h2>
-                  <p>Aliquam lorem ante, dapibus in, viverra quis</p>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-4">
-               <div class="work-box aos" data-aos="fade-up">
-                  <div class="work-icon">
-                     <span>
-                        <img src="assets/img/icons/work-icon.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Choose What To Do</h5>
-                  <p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
-                  <h4>01</h4>
-               </div>						
-            </div>
-            <div class="col-md-4">
-               <div class="work-box aos" data-aos="fade-up">
-                  <div class="work-icon">
-                     <span>
-                        <img src="assets/img/icons/find-icon.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Find What You Want</h5>
-                  <p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
-                  <h4>02</h4>
-               </div>						
-            </div>
-            <div class="col-md-4">
-               <div class="work-box aos" data-aos="fade-up">
-                  <div class="work-icon">
-                     <span>
-                        <img src="assets/img/icons/place-icon.svg" alt="img">
-                     </span>
-                  </div>
-                  <h5>Amazing Places</h5>
-                  <p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
-                  <h4>03</h4>
-               </div>						
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /Work Section -->
-   
-   <!-- Service Section -->
-   <section class="service-section">			
-      <div class="container">
-         <div class="section-heading">
-            <div class="row">
-               <div class="col-md-6 aos" data-aos="fade-up">
-                  <h2>Most Popular Services</h2>
-                  <p>Explore the greates our services. You won’t be disappointed</p>
-               </div>
-               <div class="col-md-6 text-md-end aos" data-aos="fade-up">
-                  <div class="owl-nav mynav1"></div>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12">
-               <div class="owl-carousel popular-slider">
-                     
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-04.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Car Wash</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
-                        </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-01.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Car Repair Services</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Maryland City, MD, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$20.00<span class="old-price">$35.00</span></h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-05.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Cleaning</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
-                        </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-02.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Commercial Painting Services</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Alabama, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$500.00</h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-06.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Computer</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
-                        </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-03.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Computer & Server AMC Service</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>California, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$80.00<span class="old-price">$96.00</span></h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="service-widget aos" data-aos="fade-up">
-                     <div class="service-img">
-                        <a href="service-details.html">
-                           <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-08.jpg">
-                        </a>
-                        <div class="fav-item">
-                           <a href="categories.html"><span class="item-cat">Cleaning</span></a>
-                           <a href="javascript:void(0)" class="fav-icon">
-                              <i class="feather-heart"></i>
-                           </a>
-                        </div>
-                        <div class="item-info">
-                           <a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-04.jpg" class="avatar" alt=""></span></a>
-                        </div>
-                     </div>
-                     <div class="service-content">
-                        <h3 class="title">
-                           <a href="service-details.html">Steam Car Wash</a>
-                        </h3>
-                        <p><i class="feather-map-pin"></i>Texas, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-                        <div class="serv-info">
-                           <h6>$500.00</h6>
-                           <a href="service-details.html" class="btn btn-book">Book Now</a>
-                        </div>
-                     </div>
-                  </div>
                   
-               </div>
-            </div>
-            <div class="btn-sec aos" data-aos="fade-up">
-               <a href="search.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
-            </div>
          </div>
+         
       </div>
-   </section>
-   <!-- /Service Section -->
+   </div>
 
-   <!-- pricing Section -->
-   <section class="service-section pricing-sections pt-0">			
-      <div class="container">
-         <div class="section-heading">
-            <div class="row">
-               <div class="col-md-12 text-center aos" data-aos="fade-up">
-                  <h2>Pricing Plans</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-               </div>
-            </div>
-         </div>
-         <div class="row aos" data-aos="fade-up">
-            <div class="col-lg-4 col-sm-12">
-               <div class="pricing-popular">
-                  <span class="btn w-100">Popular</span>
-               </div>
-               <div class="pricing-plans">
-                  <div class="pricing-planshead">
-                     <h4>Basic</h4>
-                     <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                     <h6>$50<span>/month</span></h6>
-                  </div>
-                  <div class="pricing-planscontent">
-                     <ul>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis unde omnis natus error</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Duis irure dolor reprehenderit voluptate</span>
-                        </li>
-                        <li class="inactive">
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Nemo enim ipsam voluptatem quia </span>
-                        </li>
-                        <li class="inactive">
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis iste natus error </span>
-                        </li>
-                        <li class="inactive">
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit </span>
-                        </li>
-                     </ul>
-                     <div class="pricing-btn">
-                        <a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-               <div class="pricing-popular active">
-                  <span class="btn w-100">Popular</span>
-               </div>
-               <div class="pricing-plans active">
-                  <div class="pricing-planshead">
-                     <h4>Standard</h4>
-                     <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                     <h6>$100<span>/month</span></h6>
-                  </div>
-                  <div class="pricing-planscontent">
-                     <ul>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis unde omnis natus error</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Duis irure dolor reprehenderit voluptate</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Nemo enim ipsam voluptatem quia </span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis iste natus error </span>
-                        </li>
-                        <li class="inactive">
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit </span>
-                        </li>
-                     </ul>
-                     <div class="pricing-btn">
-                        <a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-               <div class="pricing-popular ">
-                  <span class="btn w-100">Popular</span>
-               </div>
-               <div class="pricing-plans ">
-                  <div class="pricing-planshead">
-                     <h4>Premium</h4>
-                     <h5>Lorem ipsum dolor sit amet, consectetur</h5>
-                     <h6>$150<span>/month</span></h6>
-                  </div>
-                  <div class="pricing-planscontent">
-                     <ul>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis unde omnis natus error</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Duis irure dolor reprehenderit voluptate</span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Nemo enim ipsam voluptatem quia </span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Sed perspiciatis iste natus error </span>
-                        </li>
-                        <li>
-                           <i class="fa fa-check-circle me-2 text-primary"></i>
-                           <span>Lorem dolor consecteturadipiscing elit </span>
-                        </li>
-                     </ul>
-                     <div class="pricing-btn">
-                        <a href="search.html" class="btn btn-primary btn-view">Get Started<i class="feather-arrow-right-circle"></i></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /pricing Section -->
-   
-   <!-- Client Section -->
-   <section class="client-section">			
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 text-center">
-               <div class="section-heading aos" data-aos="fade-up">
-                  <h2>What our client says</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-12">
-               <div class="owl-carousel testimonial-slider">
-                     
-                  <div class="client-widget aos" data-aos="fade-up">
-                     <div class="client-img">
-                        <a href="#">
-                           <img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-01.jpg">
-                        </a>
-                     </div>
-                     <div class="client-content">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                        <h5>Sophie Moore</h5>
-                        <h6>Director</h6>
-                     </div>
-                  </div>
-                  <div class="client-widget aos" data-aos="fade-up">
-                     <div class="client-img">
-                        <a href="#">
-                           <img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-02.jpg">
-                        </a>
-                     </div>
-                     <div class="client-content">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                        <h5>Mike Hussy</h5>
-                        <h6>Lead</h6>
-                     </div>
-                  </div>
-                  <div class="client-widget aos" data-aos="fade-up">
-                     <div class="client-img">
-                        <a href="#">
-                           <img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-03.jpg">
-                        </a>
-                     </div>
-                     <div class="client-content">
-                        <div class="rating">
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                           <i class="fas fa-star filled"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                        <h5>John Doe</h5>
-                        <h6>CEO</h6>
-                     </div>
-                  </div>
-                  
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /Client Section -->
-   
-   <!-- Blog Section -->
-   <section class="blog-section">			
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 text-center aos" data-aos="fade-up">
-               <div class="section-heading">
-                  <h2>Latest Blog</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-               </div>
-            </div>
-         </div>
-         <div class="row justify-content-between">
-            <div class="col-lg-4 col-md-6 d-flex">
-               <div class="blog flex-fill aos" data-aos="fade-up">
-                  <div class="blog-image">
-                     <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-01.jpg" alt="Post Image"></a>
-                  </div>
-                  <div class="blog-content">
-                     <ul class="blog-item">
-                        <li><i class="feather-calendar"></i>09 Aug 2022</li>
-                        <li>
-                           <div class="post-author">
-                              <a href="#"><i class="feather-user"></i><span>Hal Lewis</span></a>
-                           </div>
-                        </li>
-                     </ul>
-                     <h3 class="blog-title">
-                        <a href="blog-details.html">How to Choose a Electrical ServiceProvider?</a>
-                     </h3>
-                  </div>
-               </div>					
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex">
-               <div class="blog flex-fill aos" data-aos="fade-up">
-                  <div class="blog-image">
-                     <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-02.jpg" alt="Post Image"></a>
-                  </div>
-                  <div class="blog-content">
-                     <ul class="blog-item">
-                        <li><i class="feather-calendar"></i>09 Aug 2022</li>
-                        <li>
-                           <div class="post-author">
-                              <a href="#"><i class="feather-user"></i><span>JohnDoe</span></a>
-                           </div>
-                        </li>
-                     </ul>
-                     <h3 class="blog-title">
-                        <a href="blog-details.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                     </h3>
-                  </div>
-               </div>						
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex">
-               <div class="blog flex-fill aos" data-aos="fade-up">
-                  <div class="blog-image">
-                     <a href="blog-details.html"><img class="img-fluid" src="assets/img/blog/blog-03.jpg" alt="Post Image"></a>
-                  </div>
-                  <div class="blog-content">
-                     <ul class="blog-item">
-                        <li><i class="feather-calendar"></i>09 Aug 2022</li>
-                        <li>
-                           <div class="post-author">
-                              <a href="#"><i class="feather-user"></i><span>Greg Avery</span></a>
-                           </div>
-                        </li>
-                     </ul>
-                     <h3 class="blog-title">
-                        <a href="blog-details.html">Construction Service Scams: How to Avoid Them</a>
-                     </h3>
-                  </div>
-               </div>							
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- /Blog Section -->
-
-   <!-- Partners Section -->
-   <section class="blog-section pt-0">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12 text-center aos " data-aos="fade-up">
-               <div class="section-heading">
-                  <h2>Our Partners</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur elit</p>
-               </div>
-            </div>
-            <div class="owl-carousel partners-slider aos " data-aos="fade-up">
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner1.svg" alt="img">
-               </div>
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner2.svg" alt="img">
-               </div>
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner3.svg" alt="img">
-               </div>
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner4.svg" alt="img">
-               </div>
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner5.svg" alt="img">
-               </div>
-               <div class="partner-img">
-                  <img src="assets/img/partner/partner6.svg" alt="img">
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Partners Section -->
-
-   <!-- App Section -->
-   <section class="app-section">
-      <div class="container">
-         <div class="app-sec">
-            <div class="row">
-               <div class="col-lg-6 col-12">
-                  <div class="col-md-12">
-                     <div class="heading aos" data-aos="fade-up">
-                        <h2>Download Our App</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <h6>Scan the QR code to get the app now</h6>
-                        <div class="scan-img">										
-                           <img src="assets/img/scan-img.png" class="img-fluid" alt="img">
-                        </div>
-                     </div>
-                  </div>
-                  <div class="downlaod-btn aos" data-aos="fade-up">
-                     <a href="#" target="_blank">
-                        <img src="assets/img/googleplay.svg" alt="img">
-                     </a>									
-                     <a href="#" target="_blank">
-                        <img src="assets/img/appstore.svg" alt="img">
-                     </a>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-12">
-                  <div class="appimg-set aos" data-aos="fade-up">
-                     <img src="assets/img/app-img.png" class="img-fluid" alt="img">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
    <!-- /App Section -->
      <!-- Candidate Dashboard Area End -->
 @endsection

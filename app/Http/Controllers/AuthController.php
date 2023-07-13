@@ -61,10 +61,12 @@ class AuthController extends Controller
     }
     public function usersSubmitLogin(Request $request)
     {
+        // return $request;
         $credentials =  $request->validate([
             'email' => 'required|email',
             'password' => 'required'
         ]);
+        $credentials = ['email'=>$request->email,'password'=>$request->password];
         try {
             if (Auth::attempt($credentials)) {
                 $request->session()->regenerate();
@@ -75,7 +77,10 @@ class AuthController extends Controller
                 } else {
                     return redirect()->route('users.dashboard');
                 }
+                // return Auth::user();
             }
+
+            // return 'Not authenticated';
             return redirect()->back()->with('exception','The provided credentials did not match our records')->onlyInput('email');
         } catch (Exception $e) {
             return redirect()->back()->with('exception','An unexpected error occurred. Please try again.')->onlyInput('email');
@@ -110,7 +115,8 @@ class AuthController extends Controller
             $request->session()->invalidate();
  
             $request->session()->regenerateToken();
-            return redirect()->route('admin.login');
+            // return redirect()->route('admin.login');
+            return redirect()->route('users.login');
         }
         else{
             Auth::logout();

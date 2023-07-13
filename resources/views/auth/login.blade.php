@@ -15,8 +15,8 @@
                     <div class="login-wrap">
                         <div class="login-header">
                             <h3>Login</h3>
-                            <p>We'll send a confirmation code to your email.</p>
-                            <h6>Sign in with <a href="login-phone.html">Phone Number</a></h6>
+                            {{-- <p>We'll send a confirmation code to your email.</p>
+                            <h6>Sign in with <a href="login-phone.html">Phone Number</a></h6> --}}
                         </div>
                         
                         <!-- Login Form -->
@@ -53,12 +53,12 @@
                                             <span class="checkmark"></span>Remember Me
                                         </label>
                                     </div>
-                                    <div class="col-6 text-end">
+                                    {{-- <div class="col-6 text-end">
                                         <label class="custom_check">
                                             <input type="checkbox" name="loginotp"  class="loginotp">
                                             <span class="checkmark"></span>Login with OTP
                                         </label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <button class="btn btn-primary w-100 login-btn" type="submit">Login</button>

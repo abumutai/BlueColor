@@ -47,6 +47,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request);
         $request->validate([
             'title' => 'required',
             'charges' => 'required|numeric',
