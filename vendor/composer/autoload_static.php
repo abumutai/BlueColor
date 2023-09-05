@@ -352,8 +352,8 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -534,6 +534,7 @@ class ComposerStaticInitb972b7dae202ba70c80d07c4319ab1ec
         'App\\Console\\Commands\\HelperCommand' => __DIR__ . '/../..' . '/app/Console/Commands/HelperCommand.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helpers\\ImageHandler' => __DIR__ . '/../..' . '/app/Helpers/ImageHandler.php',
         'App\\Helpers\\Qs' => __DIR__ . '/../..' . '/app/Helpers/Qs.php',
         'App\\Http\\Controllers\\AdminServiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminServiceController.php',
         'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',

@@ -9,6 +9,7 @@ return array(
     'App\\Console\\Commands\\HelperCommand' => $baseDir . '/app/Console/Commands/HelperCommand.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Helpers\\ImageHandler' => $baseDir . '/app/Helpers/ImageHandler.php',
     'App\\Helpers\\Qs' => $baseDir . '/app/Helpers/Qs.php',
     'App\\Http\\Controllers\\AdminServiceController' => $baseDir . '/app/Http/Controllers/AdminServiceController.php',
     'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',

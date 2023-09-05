@@ -39,8 +39,8 @@
 <body>
     <div class="main-wrapper">
     
-        <!-- Header -->
-        <div class="header">
+         <!-- Header -->
+         <div class="header">
             <div class="header-left"> 
                 <a href="index.html" class="logo">
                     <img src="assets/img/logo.svg" alt="Logo" width="30" height="30">
@@ -231,30 +231,48 @@
                         </a>
                     </li>
                     
-                    
                     <!-- User Menu -->
-						<li class="nav-item dropdown has-arrow account-item">
-							<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-								<div class="user-infos">
-									<span class="user-img">
-										<img src="{{ asset('assets/img/profiles/avatar-02.jpg') }}" class="rounded-circle" alt="">
-									</span>
-									<div class="user-info">
-										<h6>{{ Auth::user()->name }}</h6>
-										<p>{{ Auth::user()->name }}</p>
-									</div>
-								</div>
-							</a>
-							<div class="dropdown-menu dropdown-menu-end emp">
-								<a class="dropdown-item" href="customer-profile.html">
-									<i class="feather-user me-2"></i> Profile
-								</a>
-								<a class="dropdown-item" href="{{ route('logout') }}">
-									<i class="feather-log-out me-2"></i> Logout
-								</a>
-							</div>
-						</li>
-					
+                    <!-- User Menu -->
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)" class="user-link  nav-link" data-bs-toggle="dropdown">
+                            <span class="user-img">
+                                <img class="rounded-circle" src="{{ asset('assets/img/user.jpg') }}" width="40" alt="Admin">
+                                <span class="animate-circle"></span>
+                            </span>
+                            <span class="user-content">
+                                <span class="user-name">{{ auth()->user()->name }}</span>
+                                <span class="user-details">{{ auth()->user()->name }}</span>
+                            </span>
+                        </a>
+                        <div class="dropdown-menu menu-drop-user">
+                            <div class="profilemenu ">
+                                <div class="user-detials">
+                                    <a href="account.html">
+                                        <span class="profile-image">
+                                            <img src="assets/img/user.jpg" alt="img" class="profilesidebar">
+                                        </span>
+                                        <span class="profile-content">
+                                            <span>{{ auth()->user()->name }}</span>
+                                            <span><span class="__cf_email__" data-cfemail="bef4d1d6d0fed9d3dfd7d290ddd1d3">[email&#160;protected]</span></span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="subscription-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="account-settings.html" >Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="localization.html">Settings</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="subscription-logout">
+                                    <a href="signin.html">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <!-- /User Menu -->
                 </ul>
             </div>

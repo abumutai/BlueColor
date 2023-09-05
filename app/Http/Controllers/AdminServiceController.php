@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ImageHandler;
 use App\Models\City;
 use App\Models\County;
 use App\Models\Service;
@@ -13,7 +14,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
-
+use Illuminate\Support\Str;
 class AdminServiceController extends Controller
 {
     /**
@@ -64,20 +65,40 @@ class AdminServiceController extends Controller
             'description' => 'required|string'
         ]);
         try {
-           $image = $uploadImageService->upload('services',$request->image);
-           Service::create([
-                'provider_id' => $request->provider,
-                'title' => $request->title,
-                'amount' => $request->amount,
-                'county_id' => $request->county,
-                'city_id' => $request->city,
-                'address' => $request->county.' county ,'.$request->city.' city/town',
-                'category_id' => $request->category,
-                'sub_category_id' => $request->subcategory,
-                'description' => $request->description,
-                'user_id' => Auth::user()->id,
-                'image' => $image
-           ]);
+        //    $image = $uploadImageService->upload('services',$request->image);
+        $image = $request->title;
+        $slug = Str::slug($image,'-');
+        $path = '/services';
+        
+
+        Service::create([
+            'provider_id' => $request->provider,
+            'title' => $request->title,
+            'amount' => $request->amount,
+            'county_id' => $request->county,
+            'city_id' => $request->city,
+            'address' => $request->county.' county ,'.$request->city.' city/town',
+            'category_id' => $request->category,
+            'sub_category_id' => $request->subcategory,
+            'description' => $request->description,
+            'user_id' => Auth::user()->id,
+            'image' => $slug
+       ]);
+
+        if ($request->hasFile('image')) {
+
+            $photo = $request->file('image');
+            $f['name'] = $slug . '.png'; // Change the file extension to PNG
+
+            $f['path'] = $photo->storeAs(
+                ImageHandler::getUploadPath($path),
+                $f['name'],
+                'public'
+            );
+
+            ImageHandler::ImageCompress($photo, $f['path'],396);
+
+        }
            return redirect()->route('admin-services.index')->with('success','Service created successfully.');
         } catch (Exception $e) {
             Log::critical($e);

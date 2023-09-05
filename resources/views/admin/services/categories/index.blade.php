@@ -35,15 +35,21 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a class="btn btn-primary" href="{{ route('service-categories.create') }}"><i class="fa fa-plus me-2"></i>Add Categories </a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-12 ">
                 <div class="table-resposnive table-div">
+                    <div align = "right">
+                        <button class="btn btn-primary btn-sm" style="margin-bottom: 15px">
+                            <a style="color: black" href="{{ route('service-categories.create') }}"><i class="fa fa-plus me-2"></i>Add Categories
+                            </a>
+                        </button>
+                    </div>
                     <table class="table datatable">
                         <thead>
                             <tr>
@@ -60,7 +66,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $category->title }}</td>
-                                <td>{{ $category->iteration }}</td>
+                                <td>{{ $category->title }}</td>
                                 <td>{{ $category->created_at }}</td>
                                 <td>{{ $category->feature }}<span class="sliders round"></span></td>
                                    <td> <div class="table-actions d-flex">

@@ -11,6 +11,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 class ServiceController extends Controller
 {
@@ -61,8 +62,6 @@ class ServiceController extends Controller
         ]);
         try {
             $image = $request->image;
-            $image_name = time().'.'.$image->extension();
-            $image->move(public_path('service/images'),$image_name);
             Service::create([
                 'provider_id' => Auth::user()->id,
                 'title' => $request->title,
@@ -74,7 +73,7 @@ class ServiceController extends Controller
                 'sub_category_id' => $request->subcategory,
                 'description' => $request->description,
                 'user_id' => Auth::user()->id,
-                'image' => $image_name
+                'image' => Str::slug($image,'-')
             ]);
             return redirect()->route('services.index')->with('success','Service added successfully.');
         } catch (Exception $e) {

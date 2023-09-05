@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ImageHandler;
 use App\Models\ServiceCategory;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 
 class ServiceCategoryController extends Controller
 {
@@ -44,14 +46,31 @@ class ServiceCategoryController extends Controller
             'image' => 'required|mimes:png,jpeg,svg,jpg'
         ]);
         try {
-            $image = $request->image;
-            $image_name = time() . '.' . $image->extension();
-            $image->move(public_path('service/categories/images'), $image_name);
+            $image_name = $request->name;
+            $image_slug = Str::slug($image_name,'-');
+            $path = '/services/categories';
+
+            // $image = $request->image;
+            // $image_name = time() . '.' . $image->extension();
+            // $image->move(public_path('service/categories/images'), $image_name);
+           
+
             ServiceCategory::create([
                 'title' => $request->name,
                 'image' => $image_name,
                 'user_id' => Auth::user()->id
             ]);
+            //pass the image through the image handler class for compressing and storage
+            if ($request->hasFile('image')){
+                $photo = $request->file('image');
+                $f['name'] = $image_slug . '.png';
+
+                $f['path'] = $photo->storeAs(
+                    ImageHandler::getUploadPath($path), $f['name'],'public'
+                );
+
+                ImageHandler::ImageCompress($photo, $f['path'],396);
+            }
             return redirect()->route('service-categories.index')->with('success', 'Service Category added successfully.');
         } catch (Exception $e) {
             Log::critical($e);

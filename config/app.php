@@ -210,7 +210,8 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'Qs'=>'App\Helpers\Qs'
+        'Qs'=>'App\Helpers\Qs',
+        'ImageHandler'=>'App\Helpers\ImageHandler'
     ])->toArray(),
 
 ];

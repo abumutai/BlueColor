@@ -36,16 +36,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li>
-                            <a class="btn btn-primary" href="{{ route('admin-services.create') }}"><i class="fa fa-plus me-2"></i>Add Services
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="tab-sets">
+                        
                         <div class="tab-contents-sets">
                             <ul>
                                 <li>
@@ -71,6 +68,14 @@
             <div class="row">
                 <div class="col-12 ">
                     <div class="table-resposnive table-div">
+                        <div align = "right">
+                        <button class="btn btn-primary btn-sm" style="margin-bottom: 15px">
+                            <a style="color: black" href="{{ route('admin-services.create') }}"><i class="fa fa-plus me-2"></i>Add Services
+                            </a>
+                        </button>
+                    </div>
+                                
+                            
                         <table class="table datatable">
                             <thead>
                                 <tr>
@@ -86,6 +91,7 @@
                             </thead>
                             <tbody>
                                 @foreach ($services as $service)
+                                {{-- {{ ImageHandler::ImageUrl($service->image) }} --}}
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $service->title }}</td>
