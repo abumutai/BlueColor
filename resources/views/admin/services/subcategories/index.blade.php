@@ -114,7 +114,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="btn btn-primary" href="add-subcategories.html"><i class="fa fa-plus me-2"></i>Add Sub Categories </a>
+                        <a class="btn btn-primary" href="{{ route('service-subcategories.create') }}"><i class="fa fa-plus me-2"></i>Add Sub Categories </a>
                     </li>
                 </ul>
             </div>
