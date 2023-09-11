@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\ImageHandler;
 use Exception;
 use Illuminate\Http\Request;
 use App\Models\ServiceCategory;
 use App\Models\ServiceSubCategory;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class ServiceSubCategoryController extends Controller
 {
@@ -41,21 +43,35 @@ class ServiceSubCategoryController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request;
         $request->validate([
             'name' => 'required|unique:service_categories,title',
             'image' => 'required|mimes:png,jpeg,svg,jpg',
             'category' => 'required'
         ]);
         try {
-            $image = $request->image;
-            $image_name = time() . '.' . $image->extension();
-            $image->move(public_path('service/subcategories/images'), $image_name);
+
+            $image_name = $request->name;
+            $image_slug = Str::slug($image_name,'-');
+            $path = '/services/subcategories';
+
             ServiceSubCategory::create([
                 'title' => $request->name,
-                'image' => $image_name,
+                'image' => $image_slug,
                 'user_id' => Auth::user()->id,
                 'category_id' => $request->category
             ]);
+
+            if ($request->hasFile('image')){
+                $photo = $request->file('image');
+                $f['name'] = $image_slug . '.png';
+
+                $f['path'] = $photo->storeAs(
+                    ImageHandler::getUploadPath($path), $f['name'],'public'
+                );
+
+                ImageHandler::ImageCompress($photo, $f['path'],396);
+            }
             return redirect()->route('service-subcategories.index')->with('success', 'Service SubCategory added successfully.');
         } catch (Exception $e) {
             Log::critical($e);

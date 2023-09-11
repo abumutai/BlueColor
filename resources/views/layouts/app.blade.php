@@ -32,6 +32,7 @@
 
 <!-- Main CSS -->
 <link rel="stylesheet" href="{{ asset('admin/assets/css/admin.css') }}">
+<link rel="stylesheet" href="{{ asset('admin/assets/css/image.css') }}">
 
 
 </head>

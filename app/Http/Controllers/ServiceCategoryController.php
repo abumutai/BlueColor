@@ -57,7 +57,7 @@ class ServiceCategoryController extends Controller
 
             ServiceCategory::create([
                 'title' => $request->name,
-                'image' => $image_name,
+                'image' => $image_slug,
                 'user_id' => Auth::user()->id
             ]);
             //pass the image through the image handler class for compressing and storage

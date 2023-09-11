@@ -1,0 +1,5 @@
+.image-resize {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Automatically adjust height to maintain aspect ratio */
+    border-radius: 10px; /* Adjust the border radius to control the roundness */
+}
