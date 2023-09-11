@@ -96,16 +96,17 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td><img src="{{ ImageHandler::ImageUrl($service->image) }}"  class="image-resize">  {{  $service->title }}</td>
                                         <td>
-                                            @foreach ($categories as $category)
+                                            {{-- @foreach ($categories as $category)
                                                 @if ($category->id == $service->category_id)
                                                     {{ $category->name }}
                                                 @endif
-                                            @endforeach
+                                            @endforeach --}}
+                                            {{ $service->category->title }}
                                         </td>
-                                        <td>{{ Qs::getSubCategoryByID($service->sub_category_id )->title}}</td>
+                                        <td>{{ $service->subcategory->title}}</td>
                                         <td>{{ $service->amount }}</td>
                                         <td>{{ $service->status }}</td>
-                                        <td>{{ $service->updated_at }}</td>
+                                        <td>{{ $service->user->name }}</td>
                                         <td>
                                         <div class="table-actions d-flex">
                                             <a class="delete-table me-2" href="edit-categories.html" ><span class="sliders round"></span>

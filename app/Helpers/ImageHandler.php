@@ -34,11 +34,6 @@ class ImageHandler
         return url('/') . '/storage/uploads/services/' . $slug . '.png';
     }
 
-    // public static function OnuImageUrl($serial)
-    // {
-    //     return '/uploads/onus/images/' . $serial . '.png';
-    // }
-
     public static function ImageCompress($photo, $path, $width, $height = null)
     {
         // Define the maximum size of the compressed image in kilobytes

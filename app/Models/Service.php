@@ -42,4 +42,9 @@ class Service extends Model
     {
         return $this->belongsTo(County::class);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
