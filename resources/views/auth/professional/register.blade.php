@@ -27,31 +27,32 @@
                             <input type="hidden" name="user_type" value="1">
                             <div class="form-group">
                                 <label class="col-form-label">Name</label>
-                                <input type="text" class="form-control" placeholder="Enter your name">
+                                <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Enter your name">
+                                @error('name')<span class="text-danger">{{ $message }}</span>@enderror  
                             </div>
                             <div class="form-group">
                                 <label class="col-form-label">E-mail</label>
-                                <input type="email" class="form-control" placeholder="example@email.com">
+                                <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="example@email.com">
+                                @error('email')<span class="text-danger">{{ $message }}</span>@enderror
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <label class="col-form-label">Phone Number</label>
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-lg group_formcontrol"
-                                            id="phone" name="phone" placeholder="(256) 789-6253">
+                                            value="{{ old('phone_number') }}" name="phone_number" placeholder="(256) 789-6253">
+                                             @error('phone_number')<span class="text-danger">{{ $message }}</span>@enderror
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-form-label d-block">Password<span class="brief-bio float-end">Must
-                                        be 8 Characters at Least</span></label>
+                                <label class="col-form-label d-block">Password</label>
                                 <div class="pass-group">
-                                    <input type="password" class="form-control pass-input"
-                                        placeholder="*************">
-                                    <span class="toggle-password feather-eye"></span>
+                                    <input type="password" class="form-control pass-input" name="password"><span class="toggle-password feather-eye"></span>
+                                    @error('password')<span class="text-danger">{{ $message }}</span>@enderror
                                 </div>
                             </div>
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-6">
                                     <label class="custom_check">
                                         <input type="checkbox" name="rememberme" class="rememberme">
@@ -64,7 +65,7 @@
                                         <span class="checkmark"></span>Login with OTP
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
                             <button type="submit" class="btn btn-primary w-100 login-btn">Submit</button>
                             <div class="dont_have">
                                 <a href="{{ route('users.login') }}">Already have an account?</a>

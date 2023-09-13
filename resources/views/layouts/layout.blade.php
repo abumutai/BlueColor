@@ -363,7 +363,7 @@
         <div class="mouse-cursor cursor-inner"></div>
         <!-- /Cursor -->
         <!-- Footer Area Start -->
-        <footer class="jobguru-footer-area">
+        <!-- <footer class="jobguru-footer-area">
             <div class="footer-top section_50">
                 <div class="container">
                     <div class="row">
@@ -447,8 +447,137 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <!-- Footer Area End -->
+        <footer class="footer">
+		
+			<!-- Footer Top -->
+			<div class="footer-top aos" data-aos="fade-up">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<div class="footer-logo">
+									<a href=""><img src="{{asset('assets1/img/logo.png')}}" alt="logo">
+                                        <h1 class="text-white"><span class="text-primary">BlueColor</span></h1>
+                                    </a>
+                                    
+								</div>
+								<div class="footer-content">
+                                    <p>Home of Blue Color Jobs</p>
+								</div>
+								<div class="footer-selects">
+									<h2 class="footer-title">Language & Currency</h2>
+									<div class="row">
+										<div class="col-lg-12 d-flex">
+											<div class="footer-select">
+												<img src="assets/img/icons/global.svg" alt="img">
+												<select class="select">
+													<option>English</option>
+													<option>France</option>
+													<option>Spanish</option>
+												</select>
+											</div>
+											<div class="footer-select">
+												<img src="assets/img/icons/dropdown.svg" class="footer-dropdown" alt="img">
+												<select class="select">
+													<option>US Dollars</option>
+													<option>INR</option>
+													<option>Kuwait</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Footer Widget -->
+						</div>
+						<div class="col-lg-2 col-md-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget footer-menu">
+								<h2 class="footer-title">Quick Links</h2>
+								<ul>
+									<li>
+										<a href="about-us.html">About Us</a>
+									</li>
+									<li>
+										<a href="blog-grid.html">Blogs</a>
+									</li>
+									<li>
+										<a href="contact-us.html">Contact Us</a>
+									</li>
+									<li>
+										<a href="provider-signup.html">Become a Professional</a>
+									</li>
+									<li>
+										<a href="user-signup.html">Become a User</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /Footer Widget -->
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget footer-contact">
+								<h2 class="footer-title">Contact Us</h2>
+								<div class="footer-contact-info">
+									<div class="footer-address">
+										<p><span><i class="feather-map-pin"></i></span> Nairobi, Kenya</p>
+									</div>
+									<p><span><i class="feather-phone"></i></span>012-3456-789</p>
+									<p class="mb-0"><span><i class="feather-mail"></i></span> <a href="" class="__cf_email__" data-cfemail="41353334242d3832242d2d012439202c312d246f222e2c">[email&#160;protected]</a></p>
+								</div>
+							</div>
+							<!-- /Footer Widget -->
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<!-- Footer Widget -->
+							<div class="footer-widget">
+								<h2 class="footer-title">Follow Us</h2>
+								<div class="social-icon">
+									<ul>
+										<li>
+											<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+										</li>
+									</ul>
+								</div>
+								<h2 class="footer-subtitle">Newsletter Signup</h2>
+								<div class="subscribe-form">
+                                    <input type="email" class="form-control" placeholder="Enter Email Address">
+                                    <button type="submit" class="btn footer-btn">
+                                        <i class="feather-send"></i>
+                                    </button>
+                                </div>
+							</div>
+							<!-- /Footer Widget -->
+						</div>
+                        <!--footer copyright-->
+                        <div class="footer-copyright text-center">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="copyright-center">
+                                            <p>Copyright &copy; {{ now()->year }} BlueColor. All Rights Reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /footer copyright-->
+					</div>
+				</div>
+			</div>
+			<!-- /Footer Top -->
 
         <!-- Cursor -->
         <div class="mouse-cursor cursor-outer"></div>

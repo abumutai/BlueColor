@@ -94,7 +94,7 @@
                                 {{-- {{ ImageHandler::ImageUrl($service->image) }} --}}
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td><img src="{{ ImageHandler::ImageUrl($service->image) }}"  class="image-resize">  {{  $service->title }}</td>
+                                        <td><img src="{{ ImageHandler::ImageUrl($service->image, 'services') }}"  class="image-resize">  {{  $service->title }}</td>
                                         <td>
                                             {{-- @foreach ($categories as $category)
                                                 @if ($category->id == $service->category_id)

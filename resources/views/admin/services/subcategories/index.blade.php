@@ -156,9 +156,10 @@
                            @foreach ($subcategories as $subcategory )
                            <tr>
                                <td>{{ $loop->iteration }}</td>
-                               <td><img src="{{ ImageHandler::ImageUrl($subcategory->image) }}" class="image-resize" >  {{ $subcategory->title }}></td>
-                               <td>{{ $subcategory->slug }}</td>
-                               <td>{{ Qs::getCategoryByID($subcategory->category_id)->title }}</td>
+                               <td><img src="{{ ImageHandler::ImageUrl($subcategory->image, 'services', 'subcategories') }}" class="image-resize">  {{ $subcategory->title }}</td>
+                               <td>{{ $subcategory->title }}</td>
+                               {{-- <td>{{ Qs::getCategoryByID($subcategory->category_id) }}</td> --}}
+                               <td>{{$subcategory->title }}</td> <!--use relationship to fetch category -->
                                <td>{{ $subcategory->created_at->format('Y-m-d') }}</td>
                                
                                <td>

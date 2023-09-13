@@ -65,7 +65,7 @@
                             @foreach ($categories as $category )
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td><img src="{{ ImageHandler::ImageUrl($category->image) }}"  class="image-resize">    {{ $category->title }}</td>
+                                <td><img src="{{ ImageHandler::ImageUrl($category->image, 'services', 'categories') }}"  class="image-resize">    {{ $category->title }}</td>
                                 <td>{{ $category->title }}</td>
                                 <td>{{ $category->created_at }}</td>
                                 <td>{{ $category->feature }}<span class="sliders round"></span></td>

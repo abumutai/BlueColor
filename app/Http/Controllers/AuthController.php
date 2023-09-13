@@ -25,19 +25,20 @@ class AuthController extends Controller
     }
     public function register(Request $request)
     {
+        // return $request;
         $request->validate([
             'name' => 'required',
             'email' => 'email|required|unique:users,email',
-            'password' => 'required|min:8|confirmed',
-            'phone_number' => 'numeric|required|unique:users,phone|min:9'
+            // 'phone_number' => 'numeric|required|unique:users,phone|min:9',
+            // 'password' => 'required|min:8|confirmed'
         ]);
         try {
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Hash::make($request->password),
                 'phone' => $request->phone_number,
-                'user_type' => $request->user_type,
+                'password' => Hash::make($request->password),
+                'user_type' => $request->user_type
             ]);
             if ($user) {
                 Auth::login($user);

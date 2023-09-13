@@ -29,10 +29,17 @@ class ImageHandler
         return 'uploads/' . $type . '/';
     }
 
-    public static function ImageUrl($slug)
+    public static function ImageUrl($slug, ...$segments)
     {
-        return url('/') . '/storage/uploads/services/' . $slug . '.png';
+        $basePath = '/storage/uploads/';
+
+        $path = array_filter($segments);
+
+        $path[] = $slug . '.png';
+
+        return url($basePath . implode('/', $path));
     }
+
 
     public static function ImageCompress($photo, $path, $width, $height = null)
     {
@@ -66,7 +73,8 @@ class ImageHandler
         }
 
         $img->resize(
-            $width,$height
+            $width,
+            $height
         );
         // Store the compressed image in storage
         Storage::disk('public')->put($path, (string)$img);
