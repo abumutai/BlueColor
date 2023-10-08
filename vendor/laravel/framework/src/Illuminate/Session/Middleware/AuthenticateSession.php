@@ -106,4 +106,11 @@ class AuthenticateSession implements AuthenticatesSessions
     {
         return $this->auth;
     }
+    protected function redirectTo($request)
+{
+    if (!$request->expectsJson()) {
+        return route('login'); // Replace 'login' with the actual name or URL of your login route
+    }
+}
+
 }

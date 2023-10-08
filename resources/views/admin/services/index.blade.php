@@ -95,17 +95,21 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td><img src="{{ ImageHandler::ImageUrl($service->image, 'services') }}"  class="image-resize">  {{  $service->title }}</td>
-                                        <td>
-                                            {{-- @foreach ($categories as $category)
-                                                @if ($category->id == $service->category_id)
-                                                    {{ $category->name }}
-                                                @endif
-                                            @endforeach --}}
-                                            {{ $service->category->title }}
-                                        </td>
+                                        <td>{{ $service->category->title }}</td>
                                         <td>{{ $service->subcategory->title}}</td>
                                         <td>{{ $service->amount }}</td>
-                                        <td>{{ $service->status }}</td>
+                                        @if($service->status == 'pending')
+                                        <td><span class="badge badge-warning">{{ $service->status }}</span></td>
+                                        @endif
+                                        @if($service->status == 'active')
+                                        <td><span class="badge badge-success">{{ $service->status }}</span></td>
+                                        @endif
+                                        @if($service->status == 'inactive')
+                                        <td><span class="badge badge-primary">{{ $service->status }}</span></td>
+                                        @endif
+                                        @if($service->status == 'deleted')
+                                        <td><span class="badge badge-danger">{{ $service->status }}</span></td>
+                                        @endif
                                         <td>{{ $service->user->name }}</td>
                                         <td>
                                         <div class="table-actions d-flex">

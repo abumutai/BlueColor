@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="{{ asset('admin/assets/css/image.css') }}">
 
 
+
 </head>
 
 <body>

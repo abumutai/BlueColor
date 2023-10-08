@@ -24,10 +24,8 @@ class AdminServiceController extends Controller
      */
     public function index()
     {
-        $services = Service::all();
-        // return $services;
-        $categories = ServiceCategory::all();
-        return view('admin.services.index',compact('services','categories'));
+        $services = Service::with('category','subcategory')->get();
+        return view('admin.services.index',compact('services'));
     }
 
     /**

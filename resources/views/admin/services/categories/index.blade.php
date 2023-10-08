@@ -67,8 +67,16 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td><img src="{{ ImageHandler::ImageUrl($category->image, 'services', 'categories') }}"  class="image-resize">    {{ $category->title }}</td>
                                 <td>{{ $category->title }}</td>
-                                <td>{{ $category->created_at }}</td>
-                                <td>{{ $category->feature }}<span class="sliders round"></span></td>
+                                <td>{{$category->created_at->format('Y-m-d') }}</td>
+                                <td>
+                                    <form action="" method="POST">
+                                        @csrf
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="featureToggle{{ $category->id }}" {{ $category->feature ? 'checked' : '' }}>
+                                            <input type="hidden" name="feature" value="{{ $category->feature ? 1 : 0 }}">
+                                        </div>
+                                    </form>
+                                </td>
                                    <td> <div class="table-actions d-flex">
                                         <a class="delete-table me-2" href="edit-categories.html" >
                                            <img src="assets/img/icons/edit.svg" alt="svg">
