@@ -29,7 +29,7 @@ Route::get('/', function () {
     return view('home.index');
 });
 
-Route::get('/test',function(){ return view('admin.bookings.index'); });
+Route::get('/test',[ProfessionalController::class, 'bookings']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::controller(IndexController::class)->group(function () {
