@@ -143,4 +143,13 @@ class ServiceCategoryController extends Controller
         $serviceCategory->delete();
         return redirect()->route('service-categories.index')->with('success','Service Category deleted successfully');
     }
+
+    public function featureToggle(Request $request,$id)
+    {
+        Log::info($request->all());
+        $category = ServiceCategory::where('id',$id)->first();
+        $category ->update([
+            'featured' => $request->has('feature') ? 'YES' : 'NO'
+        ]);
+    }
 }

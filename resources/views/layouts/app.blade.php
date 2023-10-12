@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>Truelysell | Template</title>
+    <title>Blue Color</title>
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="{{ asset('admin/assets/img/favicon.png') }}">
@@ -271,7 +271,7 @@
                                     </ul>
                                 </div>
                                 <div class="subscription-logout">
-                                    <a href="signin.html">Log Out</a>
+                                    <a href="{{ route('logout') }}">Log Out</a>
                                 </div>
                             </div>
                         </div>

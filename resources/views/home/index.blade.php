@@ -79,110 +79,21 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 col-lg-3">
+					@foreach ($categories as $category)
+						<div class="col-md-6 col-lg-3">
 						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
 							<div class="feature-icon">
 								<span>
 									<img src="assets/img/icons/feature-icon-01.svg" alt="img">
 								</span>
 							</div>
-							<h5>Construction</h5>
+							<h5>{{ $category->title }}</h5>
 							<div class="feature-overlay">
-								<img src="assets/img/services/service-02.jpg" alt="img">
+								<img src="{{ ImageHandler::ImageUrl($category->image, 'services','categories') }}" alt="img">
 							</div>
 						</a>
 					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-02.svg" alt="img">
-								</span>
-							</div>
-							<h5>Car Wash</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/feature.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-03.svg" alt="img">
-								</span>
-							</div>
-							<h5>Electrical</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-01.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-04.svg" alt="img">
-								</span>
-							</div>
-							<h5>Cleaning</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-09.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-05.svg" alt="img">
-								</span>
-							</div>
-							<h5>Interior</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-07.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-06.svg" alt="img">
-								</span>
-							</div>
-							<h5>Carpentry</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-03.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-07.svg" alt="img">
-								</span>
-							</div>
-							<h5>Computer</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-06.jpg" alt="img">
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 col-lg-3">
-						<a href="service-details.html" class="feature-box aos" data-aos="fade-up">
-							<div class="feature-icon">
-								<span>
-									<img src="assets/img/icons/feature-icon-08.svg" alt="img">
-								</span>
-							</div>
-							<h5>Plumbing</h5>
-							<div class="feature-overlay">
-								<img src="assets/img/services/service-11.jpg" alt="img">
-							</div>
-						</a>
-					</div>
+					@endforeach
 				</div>
 			</div>
 		</section>
@@ -205,13 +116,14 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="owl-carousel service-slider">
+							@foreach ($services as $service)
 							<div class="service-widget aos" data-aos="fade-up">
 								<div class="service-img">
 									<a href="service-details.html">
-										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-01.jpg">
+										<img class="img-fluid serv-img" alt="Service Image" src="{{ ImageHandler::ImageUrl($service->image, 'services') }}">
 									</a>
 									<div class="fav-item">
-										<a href="categories.html"><span class="item-cat">Cleaning</span></a>
+										<a href="categories.html"><span class="item-cat">{{ $service->category->title }}</span></a>
 										<a href="javascript:void(0)" class="fav-icon">
 											<i class="feather-heart"></i>
 										</a>
@@ -222,93 +134,16 @@
 								</div>
 								<div class="service-content">
 									<h3 class="title">
-										<a href="service-details.html">Electric Panel Repairing Service</a>
+										<a href="service-details.html">{{ $service->title }} Service</a>
 									</h3>
 									<p><i class="feather-map-pin"></i>New Jersey, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
 									<div class="serv-info">
-										<h6>$25.00<span class="old-price">$35.00</span></h6>
+										<h6>{{ $service->amount }}<span class="old-price">$35.00</span></h6>
 										<a href="service-details.html" class="btn btn-book">Book Now</a>
 									</div>
 								</div>
 							</div>
-							<div class="service-widget aos" data-aos="fade-up">
-								<div class="service-img">
-									<a href="service-details.html">
-										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-02.jpg">
-									</a>
-									<div class="fav-item">
-										<a href="categories.html"><span class="item-cat">Construction</span></a>
-										<a href="javascript:void(0)" class="fav-icon">
-											<i class="feather-heart"></i>
-										</a>
-									</div>
-									<div class="item-info">
-										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-02.jpg" class="avatar" alt=""></span></a>
-									</div>
-								</div>
-								<div class="service-content">
-									<h3 class="title">
-										<a href="service-details.html">Toughened Glass Fitting Services</a>
-									</h3>
-									<p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-									<div class="serv-info">
-										<h6>$45.00</h6>
-										<a href="service-details.html" class="btn btn-book">Book Now</a>
-									</div>
-								</div>
-							</div>
-							<div class="service-widget aos" data-aos="fade-up">
-								<div class="service-img">
-									<a href="service-details.html">
-										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-03.jpg">
-									</a>
-									<div class="fav-item">
-										<a href="categories.html"><span class="item-cat">Carpentry</span></a>
-										<a href="javascript:void(0)" class="fav-icon">
-											<i class="feather-heart"></i>
-										</a>
-									</div>
-									<div class="item-info">
-										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-03.jpg" class="avatar" alt=""></span></a>
-									</div>
-								</div>
-								<div class="service-content">
-									<h3 class="title">
-										<a href="service-details.html">Wooden Carpentry Work</a>
-									</h3>
-									<p><i class="feather-map-pin"></i>Montana, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-									<div class="serv-info">
-										<h6>$45.00</h6>
-										<a href="service-details.html" class="btn btn-book">Book Now</a>
-									</div>
-								</div>
-							</div>
-							<div class="service-widget aos" data-aos="fade-up">
-								<div class="service-img">
-									<a href="service-details.html">
-										<img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-11.jpg">
-									</a>
-									<div class="fav-item">
-										<a href="categories.html"><span class="item-cat">Construction</span></a>
-										<a href="javascript:void(0)" class="fav-icon">
-											<i class="feather-heart"></i>
-										</a>
-									</div>
-									<div class="item-info">
-										<a href="providers.html"><span class="item-img"><img src="assets/img/profiles/avatar-04.jpg" class="avatar" alt=""></span></a>
-									</div>
-								</div>
-								<div class="service-content">
-									<h3 class="title">
-										<a href="service-details.html">Plumbing Services</a>
-									</h3>
-									<p><i class="feather-map-pin"></i>Georgia, USA<span class="rate"><i class="fas fa-star filled"></i>4.9</span></p>
-									<div class="serv-info">
-										<h6>$45.00</h6>
-										<a href="service-details.html" class="btn btn-book">Book Now</a>
-									</div>
-								</div>
-							</div>
+							@endforeach
 							
 						</div>
 					</div>

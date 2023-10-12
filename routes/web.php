@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CountyController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfessionalController;
@@ -25,11 +26,9 @@ use App\Models\ServiceCategory;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/test',[ProfessionalController::class, 'bookings']);
+Route::get('/test',[DashboardController::class, 'services']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::controller(IndexController::class)->group(function () {
@@ -96,6 +95,7 @@ Route::controller(UserController::class)->group(function () {
 });
 
 Route::prefix('admin')->group(function(){
+    Route::post('featured/{id}',[ServiceCategoryController::class, 'featureToggle'])->name('feature.toggle');
     Route::resource('service-categories',ServiceCategoryController::class);
     Route::resource('service-subcategories',ServiceSubCategoryController::class);
 
@@ -105,4 +105,8 @@ Route::prefix('admin')->group(function(){
     Route::resource('admin-services',AdminServiceController::class);
 
     Route::resource('admin-bookings',BookingController::class);
+});
+
+Route::prefix('dashboard')->group(function(){
+    Route::get('dashoard',[DashboardController::class, 'services']);
 });

@@ -69,11 +69,11 @@
                                 <td>{{ $category->title }}</td>
                                 <td>{{$category->created_at->format('Y-m-d') }}</td>
                                 <td>
-                                    <form action="" method="POST">
+                                    <form action="{{ route('feature.toggle', $category->id) }}" method="POST">
                                         @csrf
+                                        @method('PUT') <!-- Use the PATCH HTTP method for updates -->
                                         <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="featureToggle{{ $category->id }}" {{ $category->feature ? 'checked' : '' }}>
-                                            <input type="hidden" name="feature" value="{{ $category->feature ? 1 : 0 }}">
+                                            <input class="form-check-input" type="checkbox" id="featureToggle{{ $category->id }}" name="feature" {{ $category->featured === 'YES' ? 'checked' : '' }}>
                                         </div>
                                     </form>
                                 </td>

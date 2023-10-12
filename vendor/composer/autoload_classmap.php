@@ -166,6 +166,7 @@ return array(
     'Cron\\MinutesField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
     'Cron\\MonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
     'Database\\Factories\\BookingFactory' => $baseDir . '/database/factories/BookingFactory.php',
+    'Database\\Factories\\CityFactory' => $baseDir . '/database/factories/CityFactory.php',
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\BookingSeeder' => $baseDir . '/database/seeders/BookingSeeder.php',
     'Database\\Seeders\\CategoriesSeeder' => $baseDir . '/database/seeders/CategoriesSeeder.php',

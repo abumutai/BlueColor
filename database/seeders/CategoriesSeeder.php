@@ -24,7 +24,8 @@ class CategoriesSeeder extends Seeder
                 ServiceCategory::create([
                     'title' => $category,
                     'image' => 'default.png',
-                    'user_id' => User::where('user_type',0)->first()->id
+                    'user_id' => User::where('user_type',0)->first()->id,
+                    'featured'=> 'NO'
                 ]);
             }
         }

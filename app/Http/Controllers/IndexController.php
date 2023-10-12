@@ -2,10 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
+use App\Models\ServiceCategory;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
+    public function index()
+    {
+        $services = Service::with('category')->latest()->limit(5)->get();
+        $categories = ServiceCategory::all();
+        
+        
+
+        // return $services;
+        return view('home.index')->with(['services'=> $services,'categories'=> $categories]);
+    }
     public function jobs()
     {
         return view('home.jobs');

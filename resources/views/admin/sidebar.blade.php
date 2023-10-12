@@ -3,11 +3,9 @@
     <div class="sidebar-header">
         <div class="sidebar-logo">
             <a href="{{ route('home') }}">
-                <img src="{{ asset('assets/img/logo-03.png') }}" class="img-fluid logo" alt="">
+                {{-- <img src="{{ asset('assets/img/logo-03.png') }}" class="img-fluid logo" alt=""> --}}
+                <h1 class="text-white"><span class="text-primary">BlueColor</span></h1>
             </a>
-            {{-- <a href="index.html">
-                <img src="{{ asset('assets/img/logo-small.svg') }}" class="img-fluid logo-small" alt="">
-            </a> --}}
         </div>
         {{-- <div class="siderbar-toggle">
             <label class="switch" id="toggle_btn">
