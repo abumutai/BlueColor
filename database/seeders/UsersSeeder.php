@@ -23,7 +23,7 @@ class UsersSeeder extends Seeder
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('123456789'),
                 'user_type' => 0,
-                'phone' => '254707174948'
+                'phone' => '254707282965'
             ]);
         }
 
@@ -34,7 +34,7 @@ class UsersSeeder extends Seeder
                 'email' => 'professional@gmail.com',
                 'password' => Hash::make('123456789'),
                 'user_type' => 1,
-                'phone' => '254707174948'
+                'phone' => '254707282965'
             ]);
         }
 
@@ -45,7 +45,7 @@ class UsersSeeder extends Seeder
                 'email' => 'user@gmail.com',
                 'password' => Hash::make('123456789'),
                 'user_type' => 2,
-                'phone' => '254707174948'
+                'phone' => '254707282965'
             ]);
         }
     }
