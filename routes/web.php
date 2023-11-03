@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminServiceController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CountyController;
@@ -39,6 +40,7 @@ Route::controller(IndexController::class)->group(function () {
     Route::get('jobs', 'jobs')->name('home.jobs');
     Route::get('about', 'about')->name('home.about');
     Route::get('contact', 'contact')->name('home.contact');
+    Route::get('works', 'howItWorks')->name('home.howitworks');
     Route::get('candidate/dashboard', 'candidateDashboard')->name('home.candidate.dashboard');
     Route::get('candidate/profile', 'candidateProfile')->name('home.candidate.profile');
     Route::get('candidate/applications', 'candidateApplications')->name('home.candidate.applications');
@@ -113,4 +115,12 @@ Route::prefix('admin')->group(function(){
 
 Route::prefix('dashboard')->group(function(){
     Route::get('dashoard',[DashboardController::class, 'services']);
+});
+
+
+//blog controller
+Route::prefix('blog')->group(function(){
+    Route::controller(BlogController::class)->group(function(){
+        Route::get('blog', 'index')->name('blog.index');
+    });
 });

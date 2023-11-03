@@ -1,271 +1,426 @@
-@extends('layouts.home')
+@extends('layouts.layout')
 
  @section('title')
      <title>About Us</title>
  @endsection
 
  @section('content')
-     
-    <!-- Breadcromb Area Start -->
-    <section class="jobguru-breadcromb-area">
-        <div class="breadcromb-top section_100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcromb-box">
-                            <h3>About us</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="breadcromb-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="breadcromb-box-pagin">
-                            <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">pages</a></li>
-                                <li class="active-breadcromb"><a href="#">About us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcromb Area End -->
-
-
-    <!-- About Area Start -->
-    <section class="jobguru-about-page section_70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="about-main-box">
-                        <p>Donec at cursus sem. Duis condimentum posuere
-                            purus, at venenatis tellus mollis. Vestibulum cursus
-                            convallis venenatis. Sed ut blandit mauris. Proin pret-
-                            ium consequat est, sit amet consectetu
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div class="single-about-box">
-                        <div class="about-box-img">
-                            <a href="#">
-                                <img src="assets/img/abt-1.jpg" alt="about image" />
-                            </a>
-                        </div>
-                        <div class="about-box-text">
-                            <h3>Advertise A Job</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="single-about-box">
-                        <div class="about-box-img">
-                            <a href="#">
-                                <img src="assets/img/abt-2.jpg" alt="about image" />
-                            </a>
-                        </div>
-                        <div class="about-box-text">
-                            <h3>Recruiter Profiles</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="single-about-box">
-                        <div class="about-box-img">
-                            <a href="#">
-                                <img src="assets/img/abt-3.jpg" alt="about image" />
-                            </a>
-                        </div>
-                        <div class="about-box-text">
-                            <h3>Temp Search</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Area End -->
-
-
-    <!-- Pricing Area Start -->
-    <section class="jobguru-pricing-area section_70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="site-heading">
-                        <h2>choose best <span>plan</span></h2>
-                        <p>A better career is out there. We'll help you find it. We're your first step to becoming everything you want to be.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 no-pad-right">
-                    <div class="single-pricing price-basic">
-                        <div class="price-heading">
-                            <h3>basic</h3>
-                        </div>
-                        <div class="price-value">
-                            <h2><i class="fa fa-dollar"></i> 35</h2>
-                            <p>per month</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="#" class="jobguru-btn-2">sign up</a>
-                        </div>
-                        <div class="price-body">
-                            <p>Features of Basic Plan</p>
-                            <p>1 Listing</p>
-                            <p>30 Days Visibility</p>
-                            <p>10 bids per day</p>
-                            <p>Highlighted in Search Results</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 no-pad-all">
-                    <div class="single-pricing price-standard">
-                        <div class="price-heading">
-                            <h3>basic</h3>
-                        </div>
-                        <div class="price-value">
-                            <h2><i class="fa fa-dollar"></i> 35</h2>
-                            <p>per month</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="#" class="jobguru-btn-2">sign up</a>
-                        </div>
-                        <div class="price-body">
-                            <p>Features of Basic Plan</p>
-                            <p>1 Listing</p>
-                            <p>30 Days Visibility</p>
-                            <p>10 bids per day</p>
-                            <p>Highlighted in Search Results</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 no-pad-left">
-                    <div class="single-pricing price-premium">
-                        <div class="price-heading">
-                            <h3>basic</h3>
-                        </div>
-                        <div class="price-value">
-                            <h2><i class="fa fa-dollar"></i> 35</h2>
-                            <p>per month</p>
-                        </div>
-                        <div class="price-btn">
-                            <a href="#" class="jobguru-btn-2">sign up</a>
-                        </div>
-                        <div class="price-body">
-                            <p>Features of Basic Plan</p>
-                            <p>1 Listing</p>
-                            <p>30 Days Visibility</p>
-                            <p>10 bids per day</p>
-                            <p>Highlighted in Search Results</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing Area End -->
-
-
-    <!-- Team Area Start -->
-    <section class="jobguru-team-area section_70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="site-heading">
-                        <h2>Awesome Team <span>Member</span></h2>
-                        <p>A better career is out there. We'll help you find it. We're your first step to becoming everything<br> you want to be.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="team-img">
-                            <img src="assets/img/team-3.jpg" alt="team member" />
-                            <div class="team-overlay">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Jylin Scott</h4>
-                            <p>Founder & CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="team-img">
-                            <img src="assets/img/team-2.jpg" alt="team member" />
-                            <div class="team-overlay">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>James Sienna</h4>
-                            <p>managing director</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="team-img">
-                            <img src="assets/img/team-1.jpg" alt="team member" />
-                            <div class="team-overlay">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Charles Luke</h4>
-                            <p>HR Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="single-team-member">
-                        <div class="team-img">
-                            <img src="assets/img/team-4.jpg" alt="team member" />
-                            <div class="team-overlay">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-text">
-                            <h4>Catherine Matt</h4>
-                            <p>Senior Consultant</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Area End -->
+     <!-- About -->
+			<div class="about-sec">				
+				<div class="container">				
+					<div class="row align-items-center">				
+						<div class="col-lg-6">
+							<div class="about-img">
+								<div class="about-exp">
+									<span>12+ years of experiences</span>
+								</div>
+								<div class="abt-img">
+									<img src="assets/img/about-01.jpg" class="img-fluid" alt="img">
+								</div>
+							</div>
+						</div>					
+						<div class="col-lg-6">
+							<div class="about-content">
+								<h6>ABOUT OUR COMPANY</h6>
+								<h2>Best Solution For Cleaning Services</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim minim veniam, quis nostrud exercitation ullamco laboris nisi esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								<div class="row">
+									<div class="col-md-6">
+										<ul>
+											<li>At vero et accusamus iusto dignissimos</li>
+											<li>At vero et accusamus iusto dignissimos</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul>
+											<li>Nam libero tempore, cum soluta nobis</li>
+											<li>Nam libero tempore, cum soluta nobis</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<!-- /About -->
+            <!-- Work Section -->
+			<section class="work-section work-bg">			
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="section-heading">
+								<h2>How It Works</h2>
+								<p>Aliquam lorem ante, dapibus in, viverra quis</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="work-box">
+								<div class="work-icon">
+									<span>
+										<img src="assets/img/icons/work-icon.svg" alt="img">
+									</span>
+								</div>
+								<h5>Choose What To Do</h5>
+								<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+								<h4>01</h4>
+							</div>						
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<div class="work-icon">
+									<span>
+										<img src="assets/img/icons/find-icon.svg" alt="img">
+									</span>
+								</div>
+								<h5>Find What You Want</h5>
+								<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+								<h4>02</h4>
+							</div>						
+						</div>
+						<div class="col-md-4">
+							<div class="work-box">
+								<div class="work-icon">
+									<span>
+										<img src="assets/img/icons/place-icon.svg" alt="img">
+									</span>
+								</div>
+								<h5>Amazing Places</h5>
+								<p>Lorem ipsum dolor amet, consectetur adipiscing  tempor labore et dolore magna aliqua.</p>
+								<h4>03</h4>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Work Section -->		
+		
+			<!-- Choose Us Section -->
+			<div class="chooseus-sec">				
+				<div class="container">				
+					<div class="row">		
+						<div class="col-md-6">
+							<div class="choose-content">
+								<h2>Why Choose Us</h2>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus</p>
+								<div class="support-card">
+									<h4 class="support-title">
+										<a class="collapsed" data-bs-toggle="collapse" href="#aboutone" aria-expanded="false">24/7 Supports</a>
+									</h4>
+									<div id="aboutone" class="card-collapse collapse">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+								</div>	
+								<div class="support-card">
+									<h4 class="support-title">
+										<a class="collapsed" data-bs-toggle="collapse" href="#abouttwo" aria-expanded="false">Client’s reviews</a>
+									</h4>
+									<div id="abouttwo" class="card-collapse collapse">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+								</div>	
+								<div class="support-card">
+									<h4 class="support-title">
+										<a class="collapsed" data-bs-toggle="collapse" href="#about3" aria-expanded="false">Professional Team</a>
+									</h4>
+									<div id="about3" class="card-collapse collapse">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+								</div>	
+								<div class="support-card">
+									<h4 class="support-title">
+										<a class="collapsed" data-bs-toggle="collapse" href="#about4" aria-expanded="false">Best Services</a>
+									</h4>
+									<div id="about4" class="card-collapse collapse">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+									</div>
+								</div>	
+							</div>
+						</div>					
+						<div class="col-md-6">
+							<div class="chooseus-img">
+								<img src="assets/img/about-02.png" class="img-fluid" alt="img">
+							</div>
+						</div>							
+					</div>
+					<div class="row">		
+						<div class="col-md-3">
+							<div class="choose-icon">
+								<img src="assets/img/icons/choose-icon.svg" class="img-fluid" alt="img">
+								<div class="choose-info">
+									<h5>2583+</h5>
+									<p>Satisfied Clients</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<div class="choose-icon">
+								<img src="assets/img/icons/choose-icon-01.svg" class="img-fluid" alt="img">
+								<div class="choose-info">
+									<h5>2383+</h5>
+									<p>Expert Team</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<div class="choose-icon">
+								<img src="assets/img/icons/choose-icon.png" class="img-fluid" alt="img">
+								<div class="choose-info">
+									<h5>2129+</h5>
+									<p>Project Completed</p>
+								</div>
+							</div>
+						</div>	
+						<div class="col-md-3">
+							<div class="choose-icon border-0">
+								<img src="assets/img/icons/choose-icon-03.svg" class="img-fluid" alt="img">
+								<div class="choose-info">
+									<h5>30+</h5>
+									<p>Years of experience</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Choose Us Section -->
+			
+			<!-- Providers Section -->
+			<section class="providers-section abt-provider">			
+				<div class="container">
+					<div class="section-heading">
+						<div class="row">
+							<div class="col-md-6">					
+								<h2>Top Providers</h2>
+								<p>Meet Our Experts</p>	
+							</div>
+							<div class="col-md-6 text-md-end">
+								<a href="providers.html" class="btn btn-primary btn-view">View All<i class="feather-arrow-right-circle"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="providerset">
+								<div class="providerset-img">
+									<a href="provider-details.html">
+										<img src="assets/img/provider/provider-11.jpg" alt="img">
+									</a>
+								</div>
+								<div class="providerset-content">
+									<div class="providerset-price">
+										<div class="providerset-name">
+											<h4><a href="provider-details.html">John Smith</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+											<span>Electrician</span>
+										</div>
+										<div class="providerset-prices">
+											<h6>$20.00<span>/hr</span></h6>
+										</div>
+									</div>
+									<div class="provider-rating">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fa-solid fa-star-half-stroke filled"></i><span>(320)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="providerset">
+								<div class="providerset-img">
+									<a href="provider-details.html">
+										<img src="assets/img/provider/provider-12.jpg" alt="img">
+									</a>
+								</div>
+								<div class="providerset-content">
+									<div class="providerset-price">
+										<div class="providerset-name">
+											<h4><a href="provider-details.html">Michael</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+											<span>Carpenter</span>
+										</div>
+										<div class="providerset-prices">
+											<h6>$50.00<span>/hr</span></h6>
+										</div>
+									</div>
+									<div class="provider-rating">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fa-solid fa-star-half-stroke filled"></i><span>(228)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="providerset">
+								<div class="providerset-img">
+									<a href="provider-details.html">
+										<img src="assets/img/provider/provider-13.jpg" alt="img">
+									</a>
+								</div>
+								<div class="providerset-content">
+									<div class="providerset-price">
+										<div class="providerset-name">
+											<h4><a href="provider-details.html">Antoinette</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+											<span>Cleaner</span>
+										</div>
+										<div class="providerset-prices">
+											<h6>$25.00<span>/hr</span></h6>
+										</div>
+									</div>
+									<div class="provider-rating">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fa-solid fa-star-half-stroke filled"></i><span>(130)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="providerset">
+								<div class="providerset-img">
+									<a href="provider-details.html">
+										<img src="assets/img/provider/provider-14.jpg" alt="img">
+									</a>
+								</div>
+								<div class="providerset-content">
+									<div class="providerset-price">
+										<div class="providerset-name">
+											<h4><a href="provider-details.html">Thompson</a><i class="fa fa-check-circle" aria-hidden="true"></i></h4>
+											<span>Mechanic</span>
+										</div>
+										<div class="providerset-prices">
+											<h6>$25.00<span>/hr</span></h6>
+										</div>
+									</div>
+									<div class="provider-rating">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fa-solid fa-star-half-stroke filled"></i><span>(95)</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Providers Section -->
+			
+			<!-- Client Section -->
+			<section class="client-section">			
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="section-heading">
+								<h2>What our client says</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur elit</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="owl-carousel testimonial-slider">
+									
+								<div class="client-widget">
+									<div class="client-img">
+										<a href="#">
+											<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-01.jpg">
+										</a>
+									</div>
+									<div class="client-content">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+										<h5>Mike Hussy</h5>
+										<h6>Director</h6>
+									</div>
+								</div>
+								<div class="client-widget">
+									<div class="client-img">
+										<a href="#">
+											<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-02.jpg">
+										</a>
+									</div>
+									<div class="client-content">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+										<h5>Mike Hussy</h5>
+										<h6>Director</h6>
+									</div>
+								</div>
+								<div class="client-widget">
+									<div class="client-img">
+										<a href="#">
+											<img class="img-fluid" alt="Image" src="assets/img/profiles/avatar-03.jpg">
+										</a>
+									</div>
+									<div class="client-content">
+										<div class="rating">
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+											<i class="fas fa-star filled"></i>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+										<h5>Mike Hussy</h5>
+										<h6>Director</h6>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Client Section -->
+			
+			<!-- Service Section -->
+			<div class="service-offer">
+				<div class="container">
+					<div class="col-md-12">
+						<div class="offer-paths about-offer">
+							<div class="offer-path-content">
+								<h3>Looking for the Best Service Finder & Bookings</h3>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore architecto beatae vitae dicta sunt explicabo.</p>
+								<a href="service-grid.html" class="btn btn-primary btn-views">Get Started<i class="feather-arrow-right-circle"></i></a>
+							</div>
+							<div class="offer-pathimg">
+								<img src="assets/img/service-img.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Service Section -->
+		
  @endsection

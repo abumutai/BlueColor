@@ -71,8 +71,8 @@
                         </div>
                         <ul class="main-nav">
                             <li class="has-submenu megamenu active">
-                                <a href="javascript:void(0);">Home <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu mega-submenu">
+                                <a href="javascript:void(0);">Home <!--<i class="fas fa-chevron-down">--></i></a>
+                                {{-- <ul class="submenu mega-submenu">
                                     <li>
                                         <div class="megamenu-wrapper">
                                             <div class="row">
@@ -187,126 +187,27 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> --}}
+                            </li>
+                            <li>
+                                <a href="">Services</i></a>
                             </li>
                             <li class="has-submenu">
-                                <a href="javascript:void(0);">Services <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a href="service-grid.html">Service Grid</a></li>
-                                    <li><a href="service-list.html">Service List</a></li>
-                                    <li><a href="search.html">Search</a></li>
-                                    <li class="has-submenu">
-                                        <a href="javascript:void(0);">Providers</a>
-                                        <ul class="submenu">
-                                            <li><a href="providers.html">Providers List</a></li>
-                                            <li><a href="provider-details.html">Providers Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="service-information.html">Create Service</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-submenu">
-                                <a href="#">Customers <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a href="customer-dashboard.html">Dashboard</a></li>
+                                <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
+                                <ul class="submenu"><!--get the list of the categories-->
+                                    {{-- <li><a href="customer-dashboard.html">Dashboard</a></li>
                                     <li><a href="customer-booking.html">Booking</a></li>
                                     <li><a href="customer-favourite.html">Favorites</a></li>
                                     <li><a href="customer-wallet.html">Wallet</a></li>
                                     <li><a href="customer-reviews.html">Reviews</a></li>
                                     <li><a href="customer-chat.html">Chat</a></li>
-                                    <li><a href="customer-profile.html">Settings</a></li>
+                                    <li><a href="customer-profile.html">Settings</a></li> --}}
                                 </ul>
                             </li>
-                            <li class="has-submenu">
-                                <a href="#">Providers <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a href="provider-dashboard.html">Dashboard</a></li>
-                                    <li><a href="provider-services.html">My Services</a></li>
-                                    <li><a href="provider-booking.html">Booking</a></li>
-                                    <li><a href="provider-payout.html">Payout</a></li>
-                                    <li class="has-submenu">
-                                        <a href="javascript:void(0);">Settings</a>
-                                        <ul class="submenu">
-                                            <li><a href="provider-appointment-settings.html">Appointment Settings</a>
-                                            </li>
-                                            <li><a href="provider-profile-settings.html">Account Settings</a></li>
-                                            <li><a href="provider-social-profile.html">Social Profiles</a></li>
-                                            <li><a href="provider-security-settings.html">Security</a></li>
-                                            <li><a href="provider-plan.html">Plan & Billings</a></li>
-                                            <li><a href="provider-notifcations.html">Notifications</a></li>
-                                            <li><a href="provider-connected-apps.html">Connected Apps</a></li>
-                                            <li><a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#del-account">Delete Account</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="provider-availability.html">Availability</a></li>
-                                    <li><a href="provider-holiday.html">Holidays & Leave</a></li>
-                                    <li><a href="provider-coupons.html">Coupons</a></li>
-                                    <li><a href="provider-offers.html">Offers</a></li>
-                                    <li><a href="provider-reviews.html">Reviews</a></li>
-                                    <li><a href="provider-earnings.html">Earnings</a></li>
-                                    <li><a href="provider-chat.html">Chat</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-submenu">
-                                <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a href="about-us.html">About</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                    <li><a href="how-it-works.html">How It Works</a></li>
-                                    <li class="has-submenu">
-                                        <a href="javascript:void(0);">Error Page</a>
-                                        <ul class="submenu">
-                                            <li><a href="error-404.html">404 Error</a></li>
-                                            <li><a href="error-500.html">500 Error</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-submenu">
-                                        <a href="javascript:void(0);">Authentication</a>
-                                        <ul class="submenu">
-                                            <li><a href="choose-signup.html">Signup Choose </a></li>
-                                            <li><a href="user-signup.html">Customer Signup</a></li>
-                                            <li><a href="provider-signup.html">Provider Signup</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="reset-password.html">Reset Password</a></li>
-                                            <li><a href="password-recovery.html">Password Update</a></li>
-                                            <li><a href="phone-otp.html">Phone OTP</a></li>
-                                            <li><a href="email-otp.html">Email OTP</a></li>
-                                            <li><a href="free-trial.html">Free Trial</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-submenu">
-                                        <a href="javascript:void(0);">Booking</a>
-                                        <ul class="submenu">
-                                            <li><a href="booking.html">Booking</a></li>
-                                            <li><a href="booking-payment.html">Booking Checkout</a></li>
-                                            <li><a href="booking-done.html">Booking Success</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="categories.html">Categories</a></li>
-                                    <li><a href="pricing.html">Pricing Plan</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="maintenance.html">Maintenance</a></li>
-                                    <li><a href="coming-soon.html">Coming Soon</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                                    <li><a href="session-expired.html">Session Expired</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-submenu">
-                                <a href="blog-grid.html">Blog <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-list.html">Blog List</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="login-link">
-                                <a href="choose-signup.html">Register</a>
-                            </li>
-                            <li class="login-link">
-                                <a href="login.html">Login</a>
-                            </li>
+                            <li><a href="{{ route('home.howitworks') }}">How it works</a></li>
+                            <li><a href="{{ route('home.about') }}">About Us</a></li>
+                            <li><a href="{{ route('blog.index') }}">Blog</a></li>
+                            <li><a href="{{ route('home.contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                     @guest
@@ -324,9 +225,10 @@
                             </li>
                         </ul>
                     @endguest
-                @if(Auth::user())
-                    
                 
+                    
+                @auth
+                    
                     <!-- User Menu -->
 						<li class="nav-item dropdown has-arrow account-item">
 							<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
@@ -350,7 +252,8 @@
 							</div>
 						</li>
 						<!-- /User Menu -->
-                        @endif
+                        
+                @endauth
 
                 </nav>
             </div>

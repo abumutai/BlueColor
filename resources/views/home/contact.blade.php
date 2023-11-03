@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.layout')
 
 @section('title')
     <title>Contact Us</title>
@@ -6,110 +6,98 @@
 
 @section('content')
      
-      <!-- Breadcromb Area Start -->
-      <section class="jobguru-breadcromb-area">
-        <div class="breadcromb-top section_100">
-           <div class="container">
-              <div class="row">
-                 <div class="col-md-12">
-                    <div class="breadcromb-box">
-                       <h3>Contact us</h3>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <div class="breadcromb-bottom">
-           <div class="container">
-              <div class="row">
-                 <div class="col-md-12">
-                    <div class="breadcromb-box-pagin">
-                       <ul>
-                          <li><a href="#">home</a></li>
-                          <li><a href="#">pages</a></li>
-                          <li class="active-breadcromb"><a href="#">Contact us</a></li>
-                       </ul>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
-     <!-- Breadcromb Area End -->
+<div class="content">
+				
+   <div class="container">
+   
+      <!-- Contact Details -->
+      <div class="contact-details">
+         <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 d-flex">
+               <div class="contact-info flex-fill">
+                  <span><i class="feather-phone"></i></span>
+                  <div class="contact-data">
+                     <h4>Phone Number</h4>
+                     <p>(888) 888-8888</p>
+                     <p>(123) 456-7890</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+               <div class="contact-info flex-fill">
+                  <span><i class="feather-mail"></i></span>
+                  <div class="contact-data">
+                     <h4>Email Address</h4>
+                     <p><a href="https://html.truelysell.com/cdn-cgi/l/email-protection#abdfd9decec7d2d8cec7c7ebced3cac6dbc7ce85c8c4c6"><span class="__cf_email__" data-cfemail="9befe9eefef7e2e8fef7f7dbfee3faf6ebf7feb5f8f4f6">[email&#160;protected]</span></a></p>
+                     <p><a href="https://html.truelysell.com/cdn-cgi/l/email-protection#f8929790968b95918c90b89d80999588949dd69b9795"><span class="__cf_email__" data-cfemail="472d282f29342a2e332f07223f262a372b226924282a">[email&#160;protected]</span></a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+               <div class="contact-info flex-fill">
+                  <span><i class="feather-map-pin"></i></span>
+                  <div class="contact-data">
+                     <h4>Address</h4>
+                     <p>367 Hillcrest Lane, Irvine, California, United States</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /Contact Details -->
       
+      <!-- Get In Touch -->
+      <div class="row">
+         <div class="col-md-6">
+            <div class="contact-img">
+               <img src="assets/img/contact.jpg" class="img-fluid" alt="img">
+            </div>
+         </div>
+         <div class="col-md-6">
+            <div class="contact-queries">
+               <h2>Get In Touch</h2>
+               <form action="https://html.truelysell.com/template3/contact-us.html">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <label class="col-form-label">Name</label>
+                           <input class="form-control" type="text" placeholder="Enter Name*">
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form-group">
+                           <label class="col-form-label">Email</label>
+                           <input class="form-control" type="email" placeholder="Enter Email Address*">
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <div class="form-group">
+                           <label class="col-form-label">Phone Number</label>
+                           <input class="form-control" type="text" placeholder="Enter Phone Number">
+                        </div>
+                        <div class="form-group">
+                           <label class="col-form-label">Message</label>
+                           <textarea class="form-control" rows="4" placeholder="Type Message"></textarea>
+                        </div>
+                     </div>
+                     <div class="col-md-12">
+                        <button class="btn btn-primary" type="submit">Send Message<i class="feather-arrow-right-circle ms-2"></i></button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
       
-     <!-- Contact Page Start -->
-     <section class="jobguru-contact-page-area section_70">
-        <div class="container">
-           <div class="row">
-              <div class="col-md-5">
-                 <div class="contact-left">
-                    <h3>Contact information</h3>
-                    <div class="contact-details">
-                       <p><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                       <div class="single-contact-btn">
-                          <h4>Email Us</h4>
-                          <a href="#" class="jobguru-btn-2">support@bluecolor.com</a>
-                       </div>
-                       <div class="single-contact-btn">
-                          <h4>Call Us</h4>
-                          <a href="#" class="jobguru-btn-2">+(254)-2134-76894-9</a>
-                       </div>
-                       <div class="social-links-contact">
-                          <h4>Follow Us:</h4>
-                          <ul>
-                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                          </ul>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-7">
-                 <div class="contact-right">
-                    <h3>Feel free to contact us!</h3>
-                    <form>
-                       <div class="row">
-                          <div class="col-md-6">
-                             <div class="single-contact-field">
-                                <input type="text" placeholder="Your Name">
-                             </div>
-                          </div>
-                          <div class="col-md-6">
-                             <div class="single-contact-field">
-                                <input type="email" placeholder="Email Address">
-                             </div>
-                          </div>
-                       </div>
-                       <div class="row">
-                          <div class="col-md-12">
-                             <div class="single-contact-field">
-                                <input type="text" placeholder="Subject">
-                             </div>
-                          </div>
-                       </div>
-                       <div class="row">
-                          <div class="col-md-12">
-                             <div class="single-contact-field">
-                                <textarea placeholder="Write here your message"></textarea>
-                             </div>
-                          </div>
-                       </div>
-                       <div class="row">
-                          <div class="col-md-12">
-                             <div class="single-contact-field">
-                                <button type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
-                             </div>
-                          </div>
-                       </div>
-                    </form>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
-     <!-- Contact Page End -->
+      <!-- /Get In Touch -->
+      
+   </div>
+</div>
+
+<!-- Map -->
+<div class="map-grid">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509170.989457427!2d-123.80081967108484!3d37.192957227641294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sin!4v1669181581381!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-map"></iframe>
+</div>	
+<!-- /Map -->
       
 @endsection

@@ -78,4 +78,9 @@ class IndexController extends Controller
     {
         return view('home.employers.dashboard.change_password');
     }
+
+    public function howItWorks()
+    {
+        return view('home.works');
+    }
 }
