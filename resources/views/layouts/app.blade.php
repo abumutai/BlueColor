@@ -235,7 +235,7 @@
                     
                     
                     <!-- User Menu -->
-                        
+                        @auth
                     <li class="nav-item dropdown">
                         <a href="javascript:void(0)" class="user-link  nav-link" data-bs-toggle="dropdown">
                             <span class="user-img">
@@ -276,6 +276,7 @@
                             </div>
                         </div>
                     </li>
+                    @endauth
                     <!-- /User Menu -->
                 </ul>
             </div>

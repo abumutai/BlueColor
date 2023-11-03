@@ -14,6 +14,7 @@ use App\Http\Controllers\ServiceCategoryController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ServiceSubCategoryController;
 use App\Models\ServiceCategory;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +27,12 @@ use App\Models\ServiceCategory;
 |
 */
 
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->middleware('guest');
 
 Route::get('/test',[DashboardController::class, 'services']);
+
+Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::controller(IndexController::class)->group(function () {

@@ -201,6 +201,8 @@
                     </li>
 
                     <!-- User Menu -->
+                    @auth
+                        
                     <li class="nav-item dropdown has-arrow account-item">
                         <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
                             <div class="user-infos">
@@ -223,6 +225,7 @@
                             </a>
                         </div>
                     </li>
+                    @endauth
                     <!-- /User Menu -->
                 </ul>
             </div>
