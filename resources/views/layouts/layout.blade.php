@@ -195,13 +195,9 @@
                             <li class="has-submenu">
                                 <a href="#">Categories <i class="fas fa-chevron-down"></i></a>
                                 <ul class="submenu"><!--get the list of the categories-->
-                                    {{-- <li><a href="customer-dashboard.html">Dashboard</a></li>
-                                    <li><a href="customer-booking.html">Booking</a></li>
-                                    <li><a href="customer-favourite.html">Favorites</a></li>
-                                    <li><a href="customer-wallet.html">Wallet</a></li>
-                                    <li><a href="customer-reviews.html">Reviews</a></li>
-                                    <li><a href="customer-chat.html">Chat</a></li>
-                                    <li><a href="customer-profile.html">Settings</a></li> --}}
+                                    @foreach (Qs::serviceCategories() as $category)
+                                    <li><a href="">{{ $category->title }}</a></li>
+                                    @endforeach
                                 </ul>
                             </li>
                             <li><a href="{{ route('home.howitworks') }}">How it works</a></li>
@@ -262,96 +258,8 @@
         @yield('content')
         <!-- Footer -->
         <!-- Cursor -->
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
-        <!-- /Cursor -->
-        <!-- Footer Area Start -->
-        <!-- <footer class="jobguru-footer-area">
-            <div class="footer-top section_50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single-footer-widget">
-                                <div class="footer-logo">
-                                    <a href="/">
-                                        {{-- <img src="{{asset('assets1/img/logo.png')}}" alt="jobguru logo" /> --}}
-                                        <h1 class="text-white"><span class="text-primary">BlueColor</span></h1>
-                                    </a>
-                                </div>
-                                <p>Home of Blue Color Jobs</p>
-                                <ul class="footer-social">
-                                    <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#" class="skype"><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        {{-- <div class="col-lg-3 col-md-6">
-							<div class="single-footer-widget">
-								<h3>recent post</h3>
-								<div class="latest-post-footer clearfix">
-									<div class="latest-post-footer-left">
-										<img src="{{asset('assets1/img/footer-post-2.jpg')}}" alt="post" />
-									</div>
-									<div class="latest-post-footer-right">
-										<h4><a href="#">Website design trends for 2018</a></h4>
-										<p>January 14 - 2018</p>
-									</div>
-								</div>
-								<div class="latest-post-footer clearfix">
-									<div class="latest-post-footer-left">
-										<img src="{{asset('assets1/img/footer-post-3.jpg')}}" alt="post" />
-									</div>
-									<div class="latest-post-footer-right">
-										<h4><a href="#">UI experts and modern designs</a></h4>
-										<p>January 12 - 2018</p>
-									</div>
-								</div>
-							</div>
-						</div> --}}
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single-footer-widget">
-                                <h3>main links</h3>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-angle-double-right "></i> About
-                                            BlueColor</a></li>
 
-                                    <li><a href="#"><i class="fa fa-angle-double-right "></i> Terms &
-                                            Conditions</a>
-                                    </li>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single-footer-widget footer-contact">
-                                <h3>Contact Info</h3>
-                                <p><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
-                                <p><i class="fa fa-phone"></i> 012-3456-789</p>
-                                <p><i class="fa fa-envelope-o"></i> info@bluecolor.com</p>
-                                <p><i class="fa fa-envelope-o"></i> info@bluecolor.com</p>
-                                <p><i class="fa fa-fax"></i> 112-3456-7898</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="copyright-left">
-                                <p>Copyright &copy; {{ now()->year }} BlueColor. All Rights Reserved</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
-        <!-- Footer Area End -->
+       
         <footer class="footer">
 		
 			<!-- Footer Top -->
@@ -486,40 +394,6 @@
         <div class="mouse-cursor cursor-outer"></div>
         <div class="mouse-cursor cursor-inner"></div>
         <!-- /Cursor -->
-
-        <!-- Delete Account -->
-        <div class="modal fade custom-modal" id="del-account">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header border-bottom-0 justify-content-between">
-                        <h5 class="modal-title">Delete Account</h5>
-                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="feather-x"></i></button>
-                    </div>
-                    <div class="modal-body pt-0">
-                        <div class="write-review">
-                            <form action="https://html.truelysell.com/template3/login.html">
-                                <p>Are you sureyou want to delete This Account? To delete your account, Type your
-                                    password.</p>
-                                <div class="form-group">
-                                    <label class="col-form-label">Password</label>
-                                    <div class="pass-group">
-                                        <input type="password" class="form-control pass-input"
-                                            placeholder="*************">
-                                        <span class="toggle-password feather-eye"></span>
-                                    </div>
-                                </div>
-                                <div class="modal-submit text-end">
-                                    <a href="#" class="btn btn-secondary me-2"
-                                        data-bs-dismiss="modal">Cancel</a>
-                                    <button type="submit" class="btn btn-danger">Delete Account</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- /Delete Account -->
 
     </div>

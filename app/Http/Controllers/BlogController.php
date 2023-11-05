@@ -43,9 +43,9 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()//pass the id
     {
-        //
+        return view('home.blog.blog_details');//get the details of the blog
     }
 
     /**

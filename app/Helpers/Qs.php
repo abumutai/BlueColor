@@ -16,4 +16,9 @@ class Qs
     {
         return ServiceCategory::find($id);
     }
+
+    public static function serviceCategories()
+    {
+        return ServiceCategory::all();
+    }
 }

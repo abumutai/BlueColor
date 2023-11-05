@@ -122,5 +122,6 @@ Route::prefix('dashboard')->group(function(){
 Route::prefix('blog')->group(function(){
     Route::controller(BlogController::class)->group(function(){
         Route::get('blog', 'index')->name('blog.index');
+        Route::get('details', 'show')->name('blog.details');//pass the id
     });
 });
