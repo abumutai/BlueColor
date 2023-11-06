@@ -146,7 +146,7 @@ class ServiceCategoryController extends Controller
 
     public function featureToggle(Request $request,$id)
     {
-        Log::info($request->all());
+        // Log::info($request->all());
         $category = ServiceCategory::where('id',$id)->first();
         $category ->update([
             'featured' => $request->has('feature') ? 'YES' : 'NO'

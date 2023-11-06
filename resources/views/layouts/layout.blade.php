@@ -71,7 +71,7 @@
                         </div>
                         <ul class="main-nav">
                             <li class="has-submenu megamenu active">
-                                <a href="javascript:void(0);">Home <!--<i class="fas fa-chevron-down">--></i></a>
+                                <a href="{{ route('home') }}">Home <!--<i class="fas fa-chevron-down">--></i></a>
                                 {{-- <ul class="submenu mega-submenu">
                                     <li>
                                         <div class="megamenu-wrapper">
